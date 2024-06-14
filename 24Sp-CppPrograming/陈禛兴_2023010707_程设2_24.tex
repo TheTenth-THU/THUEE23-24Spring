@@ -1,0 +1,701 @@
+\documentclass[10pt, a4paper, oneside, fontset=none]{ctexart}
+
+%调用宏包
+\usepackage{amsmath, amsthm, amssymb, graphicx, wrapfig, mathrsfs}
+\usepackage[bookmarks=true, colorlinks, citecolor=blue, linkcolor=black]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{color, framed, geometry, tcolorbox, nicematrix, xcolor}
+\tcbuselibrary{breakable}%box跨页
+\tcbuselibrary{skins}%box跨页不留边
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{float}
+\usepackage[labelfont=bf, justification=raggedleft]{caption}
+\usepackage{multicol}
+\usepackage{extarrows}
+\usepackage{enumitem}
+\usepackage{yhmath}
+\usepackage[text=\includegraphics{C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png},angle=0]{draftwatermark}%水印
+%\usepackage{tikz}
+
+%基本字体设置
+\usepackage[math-style=ISO, bold-style=ISO]{unicode-math}
+%\newcommand{\symbf}[1]{\boldsymbol{#1}}
+%\newcommand{\symup}[1]{\mathrm{#1}}
+\setmonofont{Iosevka}
+\newfontfamily{\mono}{Cascadia Mono Regular}
+\setCJKmainfont{FZXSSK.TTF}[BoldFont={SourceHanSerifCN-Bold.otf}, ItalicFont={FZXKTK.TTF}, BoldItalicFont={汉仪颜楷W.ttf}]
+\setCJKsansfont{汉仪文黑-45W.ttf}[BoldFont={汉仪文黑-75W.ttf}, ItalicFont={FZYanZQKSJF.TTF}]
+\setCJKmonofont{LXGWNeoXiHei.ttf}
+%附加字体设置
+\newCJKfontfamily{\kaico}{可口可乐在乎体 楷体Coca-ColaCareFontKaiTi.TTF}
+\newCJKfontfamily{\kai}{FZXKTK.TTF}[BoldFont={汉仪颜楷W.ttf}, ItalicFont={方正清刻本悦宋 简繁.TTF}, BoldItalicFont={FZYanZQKSJF.TTF}]
+\newCJKfontfamily{\yan}{方正清刻本悦宋 简繁.TTF}[ItalicFont={FZYanZQKSJF.TTF}]
+\newCJKfontfamily{\xiu}{方正宋刻本秀楷_GBK.TTF}[ItalicFont={方正宋刻本秀楷_GBK.TTF}, BoldFont={FZYanZQKSJF.TTF}]
+\newCJKfontfamily{\run}{汉仪润圆-45W.ttf}[BoldFont={汉仪润圆-75W.ttf}, ItalicFont={汉仪润圆-45W.ttf}]
+\newCJKfontfamily{\wen}{汉仪文黑-45W.ttf}[BoldFont={汉仪文黑-75W.ttf}, ItalicFont={hk4e_zh-cn.ttf}]
+%文档格式
+\geometry{left=1.96cm, right=1.96cm, top=3.18cm, bottom=3.18cm}
+\linespread{1.4}
+\newcommand{\Section}[1]{ \refstepcounter{section} \section*{*\thesection\texorpdfstring{\quad}{} #1} \addcontentsline{toc}{section}{\makebox[0pt][r]{*}\thesection\texorpdfstring{\quad}{} #1} }
+\newcommand{\Subsection}[1]{ \refstepcounter{subsection} \subsection*{*\thesubsection\texorpdfstring{\quad}{} #1} \addcontentsline{toc}{subsection}{\makebox[0pt][r]{*}\thesubsection\texorpdfstring{\quad}{} #1} }
+\newcommand{\Subsubsection}[1]{ \refstepcounter{subsubsection} \subsubsection*{*\thesubsubsection\texorpdfstring{\quad}{} #1} \addcontentsline{toc}{subsubsection}{\makebox[0pt][r]{*}\thesubsubsection\texorpdfstring{\quad}{} #1} }
+\setlist[itemize]{leftmargin=3em, labelsep=0.25em, itemindent=0em, itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt}
+\setlength{\columnsep}{1cm} % 分栏间距
+\setlength{\columnseprule}{.4pt} % 栏分割线粗
+\def\columnseprulecolor{\color{white!50!black}}
+
+%定理环境
+\theoremstyle{plain}
+\newtheorem{theorem}{定理}[subsection]
+\newtheorem{definition}{定义}[section]
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{proposition}[theorem]{命题}
+
+\theoremstyle{definition}
+\newtheorem{example}[theorem]{例}
+\newtheorem{circum}[theorem]{情形}
+
+\newenvironment{proofs}[1][\small\proofname]{\begin{pf}[breakable, enhanced jigsaw]\begin{proof}[#1]\small\kai}{\end{proof}\end{pf}}
+%\newenvironment{solution}{\begin{proofs}[\small\textit{\yan 解}]\small\renewcommand{\qedsymbol}{$\circledS$}}{\end{proofs}}
+\renewcommand{\proofname}{\yan{证明}}
+
+\newenvironment{twoc}{\vspace{-11pt}\begin{multicols}{2}}{\end{multicols}\vspace{-9pt}}
+%颜色命名
+\definecolor{meihong}{rgb}{0.85,0.2,0.47}
+\definecolor{bali}{rgb}{0.2,0.6,0.78}
+\definecolor{qinglv}{rgb}{0,0.35,0.32}
+\newcommand{\colors}[1]{\color{#1!75!black}}
+%tbox环境
+\newtcolorbox{pr}[2][]{colback=black!5!white,colframe=white!75!black,fonttitle=\sffamily\wen\bfseries,title=#2,#1}
+\newtcolorbox[use counter=definition,number within=subsection]{defi}[2][]{colback=bali!5!white,colframe=bali!75!black,fonttitle=\sffamily\wen\bfseries,title=定义~\thetcbcounter. #2,#1}
+\newtcolorbox[auto counter,number within=section]{compl}[2][]{colback=bali!5!white,colframe=bali!65!black,fonttitle=\sffamily\wen\bfseries,label=#2,title=电路部件~\thetcbcounter. #2,#1, fontupper=\kai, fontlower=\kai}
+\newtcolorbox[use counter=theorem,number within=subsection]{theo}[2][]{colback=meihong!5!white,colframe=meihong!75!black,fonttitle=\sffamily\wen\bfseries,fontupper=\run,title=结论~\thetcbcounter. #2,#1}
+\newtcolorbox[use counter=definition,number within=subsection]{defil}[2][]{colback=bali!5!white,colframe=bali!75!black,fonttitle=\sffamily\wen\bfseries,label=#2,title=定义~\thetcbcounter. #2,#1}
+\newtcolorbox[use counter=theorem,number within=subsection]{theol}[2][]{colback=meihong!5!white,colframe=meihong!75!black,fonttitle=\sffamily\wen\bfseries,fontupper=\run,label=#2,title=结论~\thetcbcounter. #2,#1}
+\newtcolorbox[auto counter,number within=section]{note}[2][]{colback=qinglv!5!white,colframe=qinglv!75!black,breakable, enhanced jigsaw,fonttitle=\sffamily\wen\bfseries,title=注~\thetcbcounter. #2,#1}
+\newtcolorbox{prenote}[2][]{colback=gray!5!white,colframe=gray!50!black,breakable, enhanced jigsaw, fonttitle=\sffamily\wen\bfseries,fontupper=\small\kai,title=#2,#1}
+\newtcolorbox{pf}[1][]{colback=black!5!white,colframe=white!75!black, fontupper=\small\kai,#1}
+%\newcommand{\mybox}[1]{\tikz[baseline=(MeNode.base)]{\node[rounded corners, fill=gray!20](MeNode){#1};}}
+
+%代码环境
+\lstset{
+	xleftmargin=3em, xrightmargin=1em, 
+	breaklines,                                 % 自动将长的代码行换行排版
+	extendedchars=false,                        % 解决代码跨页时，章节标题，页眉等汉字不显示的问题
+	rulecolor=\color[rgb]{0.8,0.8,0.8},         % 设置代码框颜色
+	backgroundcolor=\color[rgb]{0.96,0.96,0.96},% 背景颜色
+	keywordstyle=\colors{bali}\bfseries,        % 关键字颜色
+	identifierstyle=\color{black},              % 普通标识符颜色
+	commentstyle=\rm\kai\color{gray},          	% 注释颜色
+	stringstyle=\colors{meihong},      			% 字符串颜色
+	showstringspaces=false,                     % 不显示字符串内的空格
+	numbers=none, numberstyle=\tiny\tt,         % 显示行号
+	basicstyle=\linespread{1}\tt,               % 设置基本字体
+	captionpos=t,                               % title在上方(在bottom即为b)
+	frame=single,                               % 设置代码框形式
+	showtabs=false, 
+	numbersep=15pt, 
+	framesep=1em, 
+	language=C++, 
+	columns=fixed, basewidth=0.5em, 
+	tabsize=4, 
+	gobble=4,
+	aboveskip=8pt, belowskip=8pt, 
+}
+\lstdefinestyle{answer}
+	{rulecolor=\color{bali!75!black}, backgroundcolor=\color{bali!15!white}, keywordstyle=\color{bali!50!black}\bfseries, morecomment=[s][\tt\bfseries\colors{bali}]{<-}{->}, }
+\lstdefinestyle{output}
+	{rulecolor=\color{white!75!black}, backgroundcolor=\color{white!5!black}, language={}, basicstyle=\linespread{1}\color{white}\mono\wen, identifierstyle=\linespread{1}\color{white}\mono, keywordstyle=\color{bali!25!white}\bfseries, morecomment=[s][\tt\bfseries\colors{bali}]{<-}{->}, morecomment=[l][\tt\color{white!80!black}]{//}, showspaces=false, basewidth=0.6em}
+
+%定义格式记号
+\newcommand{\hang}[1][1]{\hangafter 1 \hangindent #1em}
+\newcommand{\den}[2][]{\begin{defi}{#1}\kai #2\end{defi}}
+\newcommand{\din}[2][]{\begin{theo}{#1}\run #2\end{theo}}
+\newcommand{\de}[2][]{\begin{defil}{#1}\kai #2\end{defil}}
+\newcommand{\di}[2][]{\begin{theol}{#1}\run #2\end{theol}}
+\newcommand{\dep}[3][]{\begin{defi}{#1\page{#2}}\kai #3\end{defi}}
+\newcommand{\dip}[3][]{\begin{theo}{#1\page{#2}}\run #3\end{theo}}
+\newcommand{\zhu}[2][]{\begin{note}{#1}\xiu #2\end{note}}
+\newcommand{\tboba}[1]{\textbf{\kai\color{bali!75!black}#1}}
+\newcommand{\mboba}[1]{\kai\symbf{\color{bali!75!black}#1}}
+\newcommand{\tbome}[1]{\textbf{\run\color{meihong!75!black}#1}}
+\newcommand{\mbome}[1]{\run\symbf{\color{meihong!75!black}#1}}
+\newcommand{\prtsc}[2][14]{\begin{center}
+	%\vspace{-1em}
+	\includegraphics[width=#1cm]{C:/Users/16870/.vscode/LaTeX_Application/tex/24Sp/24Sp-CppPrograming/作业结果截图/#2.jpg}
+	\vspace{-1em}
+\end{center}}
+
+%定义算符
+\def\upint{\mathchoice%
+	{\mkern13mu\overline{\vphantom{\intop}\mkern7mu}\mkern-20mu}%
+	{\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+	{\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+	{\mkern7mu\overline{\vphantom{\intop}\mkern7mu}\mkern-14mu}%
+  \int}
+\def\lowint{\mkern3mu\underline{\vphantom{\intop}\mkern7mu}\mkern-10mu\int}
+\newcommand*{\dif}{\mathop{}\!\symrm{d}}
+\newcommand*{\e}{\symrm{e}}
+\renewcommand{\i}{\symrm{i}}
+\newcommand*{\R}{\mathbb{R}}
+\newcommand{\dint}[1][]{\displaystyle{\int #1}}
+\newcommand*{\page}[1]{\hfill P$_\text{#1}$}
+
+\renewcommand{\rightmark}{陈禛兴 2023010707}
+
+%标题、作者、日期
+\title
+{
+	\textbf{计算机程序设计基础（C++）}\textit{作业}
+}
+\author{\zihao{5} T$^\text{T}$T}
+\date{\zihao{5}\kai \today}
+%----------------------------------------------------------
+\begin{document}
+\lineskip=0pt
+\lineskiplimit=0pt
+\ctexset{section={format={\Large\bfseries}}}
+\renewcommand{\thesection}{第\arabic{section}题}
+\renewcommand{\thesubsection}{解答}
+
+\noindent\textbf{\Large\wen 【必做题】}
+
+\section{}
+设计一个函数模板，其中包括数据成员\texttt{T a[n]}以及对其进行排序的成员函数\texttt{sort()}，模板参数\texttt{T}可实例化成字符串。
+
+\subsection{}
+\kai
+
+若将题中「模板参数\texttt{T}可实例化成字符串」理解为\texttt{T}实例化为\textbf{字符串类\texttt{string}}，由于\texttt{string}类带有关系运算符「\texttt{<}」「\texttt{>}」的重载，函数模板可以设计为：
+\begin{lstlisting}[style=answer]
+	#include <iostream>
+	#include <string>
+	using namespace std;
+	
+	template <class T>
+	void sort(T* a, int N)
+	{
+		for (int i = 0; i < N - 1; i++)
+		{
+			for (int j = i + 1; j < N; j++)
+			{
+				if (a[i] > a[j])
+				{
+					T temp = a[i];
+					a[i] = a[j];
+					a[j] = temp;
+				}
+			}
+		}
+	}
+\end{lstlisting}
+这样，这个函数模板就既可以用于\texttt{string}，也可以用于其他众多标准类型数据和重载了关系运算符「\texttt{<}」「\texttt{>}」的数据，适用范围很广。例如这个程序：
+\begin{lstlisting}
+	int main()
+	{
+		/*  按字符串类 string 实例化  */
+		string strs[4] = { "alpha", "beta", "gamma", "delta" };
+		sort(strs, 4);
+		for (int i = 0; i < 4; i++)
+			cout << strs[i] << " ";
+		cout << endl;
+		/*  按整型数 int 实例化  */
+		int nums[5] = { 114, 514, 19, 181, 10 };
+		sort(nums, 5);
+		for (int i = 0; i < 5; i++)
+			cout << nums[i] << " ";
+		cout << endl;
+		return 0;
+	}
+\end{lstlisting}
+其输出为：
+\begin{lstlisting}[style=output]
+	alpha beta delta gamma
+	10 19 114 181 514
+\end{lstlisting}
+\prtsc{12-01-1}
+
+若将「模板参数\texttt{T}可实例化成字符串」理解为\texttt{T}实例化为\textbf{字符指针\texttt{char *}}，即\texttt{T a[n]}实例化为字符串（的首地址）的数组，则这个函数模板设计为：
+\begin{lstlisting}[style=answer]
+	#include <iostream>
+	using namespace std;
+	
+	template <class T>
+	void sort(T* a, int N)
+	{
+		for (int i = 0; i < N - 1; i++)
+		{
+			for (int j = i + 1; j < N; j++)
+			{
+				int k = 0;
+				while (a[i][k] == a[j][k] && a[i][k] != '\0' && a[j][k] != '\0')
+					k++;
+				if (a[i][k] > a[j][k])
+				{
+					T temp = a[i];
+					a[i] = a[j];
+					a[j] = temp;
+				}
+			}
+		}
+	}	
+\end{lstlisting}
+这个函数模板泛用性要差得多，只适用于\texttt{a}为可比较数据的二级指针的情况，即数据组的排序。例如：
+\begin{lstlisting}
+	int main()
+	{
+		/*  按常字符串 const char* 实例化  */
+		const char* strs[4] = { "alpha", "beta", "gamma", "delta" };
+		sort(strs, 4);
+		for (int i = 0; i < 4; i++)
+			cout << strs[i] << " ";
+		cout << endl;
+		/*  按字符数组 char* 实例化  */
+		char** varstrs = new char*[4];
+		for (int i = 0; i < 4; i++)
+		{
+			varstrs[i] = new char[20];
+			cin >> varstrs[i];
+		}
+		sort(varstrs, 4);
+		for (int i = 0; i < 4; i++)
+			cout << varstrs[i] << " ";
+		cout << endl;
+		for (int i = 0; i < 4; i++)
+			delete[] varstrs[i];
+		delete[] varstrs;
+		return 0;
+	}	
+\end{lstlisting}
+其输出为：
+\begin{lstlisting}[style=output]
+	alpha beta delta gamma
+	Hello
+	MyNameIs
+	World
+	#include<iostream>
+	#include<iostream> Hello MyNameIs World
+\end{lstlisting}
+\prtsc{12-01-2}
+
+\newpage
+%------------------------------------------------------------
+\section{}
+\normalfont
+
+设计一个类模板，其中包括数据成员\texttt{T a[n]}以及在其中进行查找数据元素的函数\texttt{int search(T)}，模板参数\texttt{T}可实例化成字符串。
+
+\subsection{}
+\kai
+
+将题中「模板参数\texttt{T}可实例化成字符串」理解为\texttt{T}实例化为\textbf{字符串类\texttt{string}}，由于\texttt{string}类带有关系运算符「\texttt{==}」的重载，类模板可以设计为：
+
+\begin{lstlisting}[style=answer]
+	#include <iostream>
+	#include <string>
+	using namespace std;
+	
+	template <class T, int n>
+	class TArray
+	{
+	private:
+		T a[n];
+	public:
+		TArray()
+		{
+			for (int i = 0; i < n; i++)
+				cin >> a[i];
+		}
+		int search(T);
+	};
+	
+	template <class T, int n>
+	int TArray<T, n>::search(T target)
+	{
+		int result = -1, count = 0;
+		for (int i = 0; i < n; i++)
+			if (a[i] == target)
+			{
+				count++;
+				result = i;
+			}
+		if (count == 1) return result;
+		else if (count == 0) return -1; // not found
+		else return -2; // multiple found
+	}
+\end{lstlisting}
+同样，这个类模板既可以用于\texttt{string}，也可以用于其他众多标准类型数据和重载了关系运算符「\texttt{==}」的数据，适用范围很广。例如：
+\begin{lstlisting}
+	int main()
+	{
+		TArray<string, 5> strarr;
+		string target;
+		cin >> target;
+		int result = strarr.search(target);
+		if (result == -1) cout << "Target \"" << target <<"\" is not found." << endl;
+		else if (result == -2) cout << "Multiple \"" << target << "\" targets is found." << endl;
+		else cout << "Target \"" << target << "\" is found at index " << result << "." << endl;
+		return 0;
+	}
+\end{lstlisting}
+运行的结果为：
+\begin{lstlisting}[style=output]
+	hello World TheTenth_THU
+	#include <string>
+	TheTenth_THU
+	Target "TheTenth_THU" is found at index 2.
+\end{lstlisting}
+\prtsc{12-02}
+
+\normalfont
+\newpage
+%---------------------------------------------------------
+\noindent\textbf{\Large\wen 【选做题】}
+
+\section{}
+参考课件中「类模版派生实例代码」，用「模板类派生新的派生类」的方法（即p18第2种派生方式），重新改写下面（p19～21）的~\ref{line: end}~行程序代码：（输出提示语因编译器编码问题尚未解决已改为英文）
+\begin{lstlisting}[escapeinside={(*@}{@*)}]
+	#include <iostream>
+	using namespace std;
+	
+	/* Node structure */
+	class SNode
+	{
+	public:
+		SNode(int value);
+		~SNode() {};
+		int m_value;
+		SNode* m_next;
+	};
+	
+	/* Class template for linked list */
+	template <class Type>
+	class TList
+	{
+	public:
+		TList();
+		~TList();
+		// Insert a new node with value
+		virtual bool Insert(Type value); 
+		// Delete the first node with value
+		bool Delete(Type value); 
+		// Check if the list contains a node with value
+		bool Contain(Type value); 
+		// Print all the nodes in the list
+		void Print(); 
+	protected:
+		SNode* m_head;
+	};
+	
+	/* Class template for set */
+	template <class Type>
+	class TSet : public TList<Type>
+	{
+	public:
+		// Overload for TSet: Insert a new node with value, check if it already exists first
+		bool Insert(Type value); 
+	};
+	
+	/* Definition */
+	SNode::SNode(int value)
+	{
+		m_value = value;
+		m_next = NULL;
+	}
+	template <class Type>
+	TList<Type>::TList()
+	{
+		m_head = NULL;
+	}
+	template <class Type>
+	TList<Type>::~TList() // Destructor to delete all nodes still in the list
+	{
+		SNode* p = m_head;
+		for (; p != NULL; )
+		{
+			m_head = p->m_next;
+			delete p;
+			p = m_head;
+		}
+	}
+	template <class Type>
+	bool TList<Type>::Insert(Type value)
+	{
+		SNode* pTemp = new SNode(value);
+		if (pTemp == NULL) return false; // Memory allocation failed
+		pTemp->m_next = m_head;
+		m_head = pTemp;
+		return true;
+	}
+	template <class Type>
+	bool TList<Type>::Delete(Type value)
+	{
+		SNode* p1, * p2;
+		if (m_head->m_value == value)
+		{
+			p1 = m_head->m_next;
+			delete m_head;
+			m_head = p1;
+			return true;
+		}
+		else
+		{
+			for (p1 = m_head, p2 = m_head->m_next; p2 != NULL; ) // Traverse the entire list
+			{
+				if (p2->m_value == value)
+				{
+					p1->m_next = p2->m_next;
+					delete p2;
+					return true;
+				}
+				else
+				{
+					p1 = p1->m_next;
+					p2 = p2->m_next;
+				}
+			}
+		}
+		return false; // Value not found in the list
+	}
+	template <class Type>
+	bool TList<Type>::Contain(Type value)
+	{
+		for (SNode* p = m_head; p != NULL; p = p->m_next)
+		{
+			if (p->m_value == value) return true;
+		}
+		return false;
+	}
+	template <class Type>
+	void TList<Type>::Print()
+	{
+		cout << "The values of the nodes are:";
+		for (SNode* p = m_head; p != NULL; p = p->m_next)
+		{
+			cout << " " << p->m_value << "; ";
+		}
+		cout << endl;
+	}
+	template <class Type>
+	bool TSet<Type>::Insert(Type value)
+	{
+		if (!(TList<Type>::Contain(value)) && TList<Type>::Insert(value)) 
+			return true; // Value not in the list, insert it successfully
+		return false; // Value already exists in the list or insert failed for other reasons
+	}
+	
+	// Test code
+	void main()
+	{
+		TList<int> sIntList;
+		sIntList.Insert(12);
+		sIntList.Insert(24);
+		sIntList.Insert(48);
+		sIntList.Insert(96);
+		sIntList.Insert(24); // Insert a duplicate value 24
+		sIntList.Print();
+		sIntList.Delete(24); // Delete one of the duplicate nodes with value 24
+		sIntList.Print();
+	
+		TSet<int> sIntSet;
+		sIntSet.Insert(12);
+		sIntSet.Insert(24);
+		sIntSet.Insert(48);
+		sIntSet.Insert(96);
+		sIntSet.Insert(24); // Insert a duplicate value 24
+		sIntSet.Print();
+		sIntSet.Delete(24); // Delete one of the duplicate nodes with value 24
+		sIntSet.Print();
+	
+		cin.get(); // Pause the console window to see the output
+	}(*@\label{line: end}@*)
+\end{lstlisting}
+另外，链表插入要求是在指定的结点之后插入新结点。结点指定是指输入结点序号值。例如，在3号结点之后插入等。
+\subsection{}
+\kai
+
+改用「模板类派生新的派生类」的方法，就是把用\texttt{int}类型实例化的\texttt{TList}类模板作为基类去派生集合类，此时集合类还使用\texttt{Type}虚拟类型已无意义，故直接改名为\texttt{intSet}。得到程序如下，其中主要修改在第~\ref{line: Change 1}、\ref{line: Change 2s}～\ref{line: Change 2f}、\ref{line: Change 3s}～\ref{line: Change 3f}~行：
+\begin{lstlisting}[style=answer, numbers=left, escapeinside={(*@}{@*)}]
+	#include <iostream>
+	using namespace std;
+	
+	/* Node structure */
+	class SNode
+	{
+	public:
+		SNode(int value);
+		~SNode() {};
+		int m_value;
+		SNode* m_next;
+	};
+	SNode::SNode(int value)
+	{
+		m_value = value;
+		m_next = NULL;
+	}
+	
+	/* Class template for linked list */
+	template <class Type>
+	class TList
+	{
+	public:
+		TList();
+		~TList();
+		// Insert a new node with value after the specified index (default is the head of the list)
+		virtual bool Insert(Type value, int index = -1); (*@\label{line: Change 1}@*)
+		// Delete the first node with value
+		bool Delete(Type value); 
+		// Check if the list contains a node with value
+		bool Contain(Type value); 
+		// Print all the nodes in the list
+		void Print(); 
+	protected:
+		SNode* m_head;
+	};
+	template <class Type>
+	TList<Type>::TList()
+	{
+		m_head = NULL;
+	}
+	template <class Type>
+	TList<Type>::~TList() // Destructor to delete all nodes still in the list
+	{
+		SNode* p = m_head;
+		for (; p != NULL; )
+		{
+			m_head = p->m_next;
+			delete p;
+			p = m_head;
+		}
+	}
+	template <class Type>
+	bool TList<Type>::Insert(Type value, int index) (*@\label{line: Change 2s}@*)
+	{
+		SNode* pTemp = new SNode(value);
+		if (pTemp == NULL) return false; // Memory allocation failed
+		if (index == -1) // Insert at the head of the list
+		{
+			pTemp->m_next = m_head;
+			m_head = pTemp;
+			return true;
+		}
+		for (SNode* p = m_head; p != NULL; p = p->m_next)
+		{
+			index--;
+			if (index == -1) // Insert at the specified index
+			{
+				pTemp->m_next = p->m_next;
+				p->m_next = pTemp;
+				return true;
+			}
+		}
+		return false; // Given index is out of range
+	}(*@\label{line: Change 2f}@*)
+	template <class Type>
+	bool TList<Type>::Delete(Type value)
+	{
+		SNode* p1, * p2;
+		if (m_head->m_value == value)
+		{
+			p1 = m_head->m_next;
+			delete m_head;
+			m_head = p1;
+			return true;
+		}
+		else
+		{
+			for (p1 = m_head, p2 = m_head->m_next; p2 != NULL; ) // Traverse the entire list
+			{
+				if (p2->m_value == value)
+				{
+					p1->m_next = p2->m_next;
+					delete p2;
+					return true;
+				}
+				else
+				{
+					p1 = p1->m_next;
+					p2 = p2->m_next;
+				}
+			}
+		}
+		return false; // Value not found in the list
+	}
+	template <class Type>
+	bool TList<Type>::Contain(Type value)
+	{
+		for (SNode* p = m_head; p != NULL; p = p->m_next)
+		{
+			if (p->m_value == value) return true;
+		}
+		return false;
+	}
+	template <class Type>
+	void TList<Type>::Print()
+	{
+		cout << "The values of the nodes are:";
+		for (SNode* p = m_head; p != NULL; p = p->m_next)
+		{
+			cout << " " << p->m_value << "; ";
+		}
+		cout << endl;
+	}
+	
+	/* Class template for set of integers */
+	template <class Type>
+	class intSet : public TList<int>
+	{
+	public:
+		// Overload for intSet: Insert a new node with value, check if it already exists first
+		bool Insert(int value, int index = -1);
+	};
+	template <class Type>
+	bool intSet<Type>::Insert(int value, int index) (*@\label{line: Change 3s}@*)
+	{
+		if (!(TList<int>::Contain(value)) && TList<int>::Insert(value, index))
+			return true; // Value not in the list, insert it successfully
+		return false; // Value already exists in the list or insert failed for other reasons
+	} (*@\label{line: Change 3f}@*)
+	
+	// Test code
+	void main()
+	{
+		TList<int> sIntList;
+		sIntList.Insert(12); // Insert a new node with value 12 at the head of the list
+		sIntList.Insert(24, 0); // Insert a new node with value 24 after the head of the list
+		sIntList.Insert(48); // Insert a new node with value 48 at the head of the list
+		sIntList.Insert(96, 2); // Insert a new node with value 96 after the second node
+		sIntList.Insert(24, 1); // Insert a duplicate value 24 after the first node
+		sIntList.Print();
+		sIntList.Delete(24); // Delete one of the duplicate nodes with value 24
+		sIntList.Print();
+	
+		intSet<int> sIntSet;
+		sIntSet.Insert(12); // Insert a new node with value 12 at the head of the list
+		sIntSet.Insert(24, 0); // Insert a new node with value 24 after the head of the list
+		sIntSet.Insert(48); // Insert a new node with value 48 at the head of the list
+		sIntSet.Insert(96, 2); // Insert a new node with value 96 after the second node
+		sIntSet.Insert(24, 1); // Insert a duplicate value 24 after the first node
+		sIntSet.Print();
+		sIntSet.Delete(24); // Delete one of the duplicate nodes with value 24
+		sIntSet.Print();
+	
+		cin.get(); // Pause the console window to see the output
+	}
+\end{lstlisting}
+程序运行结果为：
+\begin{lstlisting}[style=output]
+	The values of the nodes are: 48;  12;  24;  24;  96;
+	The values of the nodes are: 48;  12;  24;  96;
+	The values of the nodes are: 48;  12;  24;  96;
+	The values of the nodes are: 48;  12;  96;
+	 
+\end{lstlisting}
+\prtsc{12-03}
+
+
+%------------------------------------------------------------
+\end{document}
