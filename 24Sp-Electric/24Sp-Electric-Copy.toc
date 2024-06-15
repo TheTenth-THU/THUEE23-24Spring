@@ -1,0 +1,31 @@
+\contentsline {section}{\numberline {4}非线性器件}{2}{section.4}%
+\contentsline {subsection}{\numberline {4.1}\textsl {pn}结与二极管}{2}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}\textsl {p}型半导体与\textsl {n}型半导体}{2}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}\textsl {pn}结}{3}{subsubsection.4.1.2}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}正向偏置电压}{3}{paragraph.4.1.2.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}反向偏置电压}{3}{paragraph.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}\textsl {pn}结二极管}{3}{subsubsection.4.1.3}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}恒压降模型}{3}{paragraph.4.1.3.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}小信号模型}{3}{paragraph.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.4}特殊的二极管}{4}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.2}双极结式晶体管（BJT）}{4}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}BJT的结构与原理}{4}{subsubsection.4.2.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}正激活Active模式}{4}{paragraph.4.2.1.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}反激活Reverse active模式}{5}{paragraph.4.2.1.2}%
+\contentsline {paragraph}{\numberline {\hskip 2emC)}饱和Saturation模式}{5}{paragraph.4.2.1.3}%
+\contentsline {subsubsection}{\numberline {4.2.2}BJT的端口特性}{6}{subsubsection.4.2.2}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}BJT的伏安特性}{6}{paragraph.4.2.2.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}BJT的传递特性}{7}{paragraph.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}BJT直流分析}{7}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}BJT交流分析}{7}{subsubsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.3}金属—氧化物—半导体场效应晶体管（MOSFET）}{8}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}MOSFET的结构与原理}{8}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}MOSFET的端口特性}{8}{subsubsection.4.3.2}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}$\symbf {i_D-v_{DS}}$特性}{8}{paragraph.4.3.2.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}$\symbf {i_D-v_{GS}}$特性}{9}{paragraph.4.3.2.2}%
+\contentsline {paragraph}{\numberline {\hskip 2emC)}$\symbf {v_{DS}-v_{GS}}$特性}{9}{paragraph.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.3}MOSFET的交流增益}{9}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}MOSFET的频率响应}{10}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.4}晶体管模块实例}{12}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}电流镜}{12}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}差分对}{13}{subsubsection.4.4.2}%
