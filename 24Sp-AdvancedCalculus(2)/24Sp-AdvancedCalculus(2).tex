@@ -13,7 +13,7 @@
 \usepackage{esint}
 \usepackage{yhmath}
 \usepackage{dashrule}% 虚线分割线
-\usepackage[text=\includegraphics{C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png},angle=0]{draftwatermark}%水印
+\usepackage[text=\includegraphics{C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png},angle=0]{draftwatermark}%水印
 %\usepackage{tikz}
 %基本字体设置
 \catcode`\，=\active
@@ -2976,11 +2976,11 @@ F(X，Y)=F\left(\sum_{i=1}^nx_i\mathbf{e}_i，Y\right)=\sum_{i=1}^nx_i F(\mathbf
 	当$t\rightarrow0$时，
 	\begin{equation*}
 	f(X_0+t X)=f(X_0)+\mbome{J_{f}(X_0)}tX
-	+\frac{1}{2!}X^T \mbome{H_f(X_0)} X\cdot t^2+o(\|tX\|^2)
+	+\frac{1}{2!}X\tp \mbome{H_f(X_0)} X\cdot t^2+o(\|tX\|^2)
 	\end{equation*}
 	注意到$f(X_0+t X)\ge f(X_0)$，于是
-	$0\le \dfrac{1}{2!}X^TH_f(X_0) X\cdot  t^2+ t^2 o(1)$，
-	进而可得知$0\le X^TH_f(X_0) X$。这表明$H_f(X_0)$
+	$0\le \dfrac{1}{2!}X\tp H_f(X_0) X\cdot  t^2+ t^2 o(1)$，
+	进而可得知$0\le X\tp H_f(X_0) X$。这表明$H_f(X_0)$
 	为正定或半正定。
 \end{proofs}
 
@@ -3237,7 +3237,7 @@ F(X，Y)=F\left(\sum_{i=1}^nx_i\mathbf{e}_i，Y\right)=\sum_{i=1}^nx_i F(\mathbf
 
 \subsection{曲面与曲线}
 
-我们已知，取$P_0(x_0，y_0，z_0)\in \mathbb{R}^3$，设 $\v{e}=(a，b，c)\tp \in\mathbb{R}^3$为非零向量，过$P_0$沿方向$\v{e}$的直线$\Gamma$的方程为
+我们已知，取$P_0(x_0，y_0，z_0)\in \mathbb{R}^3$，设 $\v{e}=(a，b，c)\tp \in\mathbb{R}^3$为非零向量，过$P_0$沿方向$\v{e}$的直线$\varGamma$的方程为
 \begin{equation*}
 	\dfrac{x-x_0}{a}=\dfrac{y-y_0}{b}=\dfrac{z-z_0}{c}
 \end{equation*}
@@ -3248,7 +3248,7 @@ $\begin{cases}
 	z=z_0+ct\text{。}
 \end{cases}$若$abc=0$，则零分量的对应分子也为零，形式上也写成上面形式。
 
-过$P_0$并且与$\Gamma$垂直的平面$S$称为$\Gamma$过$P_0$的\tboba{法平面}，它的方程为
+过$P_0$并且与$\varGamma$垂直的平面$S$称为$\varGamma$过$P_0$的\tboba{法平面}，它的方程为
 $\begin{pmatrix}
 	x-x_0\\[-3pt]
 	y-y_0\\[-3pt]
@@ -3259,7 +3259,7 @@ $\begin{pmatrix}
 	c
 \end{pmatrix}=0$，
 也就是说$a(x-x_0)+b(y-y_0)+c(z-z_0)=0$。
-我们称$\v{e}$为平面$S$的\tboba{法向量}，$\Gamma$为$S$的\tboba{法线}。
+我们称$\v{e}$为平面$S$的\tboba{法向量}，$\varGamma$为$S$的\tboba{法线}。
 
 \subsubsection{曲面的表示}
 
@@ -3417,13 +3417,13 @@ $\v{n}=\begin{pmatrix}
 
 \paragraph{空间曲线的参数表示法}
 
-考虑$\Gamma: \begin{cases}
+考虑$\varGamma: \begin{cases}
 	x=x(t)，\\[-3pt]
 	y=y(t)，\\[-3pt]
 	z=z(t)，
 \end{cases}
 ~~t\in [\alpha，\beta]$，
-若上述这些函数在点$t=t_0$处可微，则称曲线$\Gamma$在
+若上述这些函数在点$t=t_0$处可微，则称曲线$\varGamma$在
 相应点$P_0(x_0，y_0，z_0)$处可微，相应\tboba{切线}方程为
 $\begin{cases}
 	x-x_0=x'(t_0)(t-t_0)，\\[-3pt]
@@ -3434,18 +3434,18 @@ $\begin{cases}
 \begin{equation*}
 	\dfrac{x-x_0}{x'(t_0)}=\dfrac{y-y_0}{y'(t_0)}=\dfrac{z-z_0}{z'(t_0)}，
 \end{equation*}
-我们将经过点$P_0$并且与上述切线垂直的平面称为$\Gamma$在点$P_0$处的\tboba{法平面}，其方程为
+我们将经过点$P_0$并且与上述切线垂直的平面称为$\varGamma$在点$P_0$处的\tboba{法平面}，其方程为
 \begin{equation*}
 	x'(t_0)(x-x_0)+y'(t_0)(y-y_0)+z'(t_0)(z-z_0)=0
 \end{equation*}
 
 \paragraph{空间曲线的隐函数表示法}
 
-考虑$\Gamma: \begin{cases}
+考虑$\varGamma: \begin{cases}
 	F_1(x，y，z)=0，\\[-3pt]
 	F_2(x，y，z)=0，
 \end{cases}$~~
-设$F_1，F_2$在点$P_0(x_0，y_0，z_0)$可微 且$\mathop\mathrm{grad}F_1(P_0)$，$\mathop\mathrm{grad}F_2(P_0)$不为零，则曲线$\Gamma$在该点的切线为
+设$F_1，F_2$在点$P_0(x_0，y_0，z_0)$可微 且$\mathop\mathrm{grad}F_1(P_0)$，$\mathop\mathrm{grad}F_2(P_0)$不为零，则曲线$\varGamma$在该点的切线为
 \begin{equation*}
 	\begin{cases}
 		\dfrac{\partial F_1}{\partial x}(P_0)(x-x_0)+
@@ -4295,45 +4295,6 @@ $\forall P\in\partial \varOmega$，假设$\v{\tau}_{0}(P)=(\cos \alpha，\sin \a
 \end{example}
 例~\ref{e.g: 与路径无关引例}~中，实际上不论\(L\)取何包围原点的闭合曲线，都有$\displaystyle\int_{L}\frac{(x+y)\dif y+(x-y)\dif x}{x^2+y^2}=2\pi$。
 
-\paragraph{平面上第二类曲线积分与路径的无关性}　
-
-\di[第二类曲线积分仅依赖始末点的充要条件]{
-	假设$\varOmega\subset\mathbb{R}^2$ 为非空开集，
-	$\v{F}= (F_1，F_2)^T$
-	在$\varOmega$ 上连续可导，而$A，B\in \varOmega$ 为两个固定点，
-	$L\subset \varOmega$为连接$A，B$的分段光滑曲线。那么，
-	\(\displaystyle \int_{L(\wideparen{AB})}\v{F}\cdot \dif \v{\ell}\)
-	仅依赖$A，B$而与路径$L$无关，\tbome{当且仅当}对于$\varOmega$中
-	过$A，B$的任意分段光滑闭曲线$\varGamma$， 均有
-	\(\displaystyle \oint_{\varGamma^{+}}\v{F}\cdot \dif \v{\ell}=0\)。
-}
-
-\begin{example}
-	曲线积分$\displaystyle\int_{L(\wideparen{AB})}\frac{x\dif x+y\dif y}{\sqrt{x^2+y^2-1}}$在复连通域
-	$\varOmega=\mathbb{R}^2\setminus\bar{B}((0，0);1)$上是否与路径无关? 若是，求其从$A(2，0)$到点$B(0，3)$的积分值。
-	\begin{solution}
-		设$\varGamma$为$\varOmega$中过$A，B$的分段光滑闭曲线 且
-		参数方程为$x=x(t)$，$y=y(t)$，$t\in [a，b]$.  则
-		\begin{equation*}
-		\oint_{\varGamma^{+}}\frac{x\dif x+y\dif y}{\sqrt{x^2+y^2-1}}
-		=\int_a^b\frac{x(t)x'(t)+y(t)y'(t)}{\sqrt{(x(t))^2+(y(t))^2-1}}\dif t
-		=\left(\sqrt{(x(t))^2+(y(t))^2-1}\right)\big|_a^b
-		=0
-		\end{equation*}
-		因此题中的曲线积分在$\varOmega$上与路径无关。
-
-		特别地，若$A= (2，0)$，$B=(0，3)$，并设$L=\overrightarrow{AB}$，
-		则其方程为$y=3-\dfrac{3}{2}x\ (0\le x\le 2)$，于是
-		\begin{align*}
-			\int_{(AB)}\frac{x\dif x+y\dif y}{\sqrt{x^2+y^2-1}}
-			&=\int_{L(\wideparen{AB})}\frac{x\dif x+y\dif y}{\sqrt{x^2+y^2-1}} 
-			=-\int_0^2\frac{x-\frac{3}{2}(3-\frac{3}{2}x)}{\sqrt{x^2+(3-\frac{3}{2}x)^2-1}}\dif x \\
-			&=\left.-\sqrt{x^2+\left(3-\frac{3}{2}x\right)^2-1}\right|_0^2
-			=2\sqrt{2}-\sqrt{3} \qedhere
-		\end{align*}		
-	\end{solution}
-\end{example}
-
 \subsubsection{第二类曲面积分}
 
 设$S\subset \mathbb{R}^3$为连通的光滑曲面，其参数方程为\(\v{r}=(x，y，z)\)，\(\begin{cases}
@@ -4580,6 +4541,263 @@ $\pm\dfrac{D(y，z)}{D(u，v)}$  与  $\cos \alpha$ ，$ \pm\dfrac{D(z，x)}{D(u
 		\end{equation}
 	\end{definition}
 }
+
+\begin{example}
+	求$\displaystyle\oint_{L^{+}}\frac{x\dif x+y\dif y+z\dif z}{x^2+y^2+z^2}$，其中曲线$L$为球面$S: x^2+y^2+z^2=a^2$在第一卦限中与坐标平面
+	相交的圆弧$\wideparen{AB}$，$\wideparen{BC}$，
+	$\wideparen{CA}$连接而成的闭曲线。
+	\begin{solution}
+		记球面\(S\)的第一卦限部分为\(S'\)，定义其正向背离原点，则\(L^+=\partial S'^+\)。由Stokes公式可知
+		\begin{equation*}
+			\oint_{L^{+}}\frac{x\dif x+y\dif y+z\dif z}{x^2+y^2+z^2}
+			=\frac{1}{a^2}\oint_{L^{+}}x\dif x+y\dif y+z\dif z
+			=\frac{1}{a^2}\iint_{S'^{+}}\v{\nabla}\times (x，y，z)\tp\cdot \dif \v{\sigma}
+			=0 \qedhere
+		\end{equation*}
+	\end{solution}
+\end{example}
+\begin{example}
+	计算$\displaystyle\oint_{L^{+}}\frac{x\dif y-y\dif x}{x^2+y^2}$，
+
+	（1）其中$L$是不经过也不围绕$z$轴的闭曲线；
+	
+	（2）其中$L$是围绕$z$轴一圈的闭曲线，从$z$的正向向下看，曲线$L$的正向为逆时针方向。
+
+	\begin{solution}
+		（1）由于闭曲线$L$不经过也不围绕$z$轴，因此存在以$L$为边界且与$z$不相交的曲面$S$，取$S$的正向使之与$L^{+}$满足右手螺旋法则，则
+		\begin{equation*}
+			\oint_{L^{+}}\frac{x\dif y-y\dif x}{x^2+y^2}
+			=\iint_{S^{+}}\v{\nabla}\times \Big(\frac{-y}{x^2+y^2}，\frac{x}{x^2+y^2}，0\Big)\tp \cdot \dif \v{\sigma}
+			=0
+		\end{equation*}
+
+		（2）以$L^{+}$（逆时针）为准线、$z$轴为母线作一个柱面，记
+		该柱面与$xy$平面的交线为$L_1^{+}$（逆时针），该柱面的侧面
+		为$S^+$，其正向向外，则知\(\partial S^+ = L^- + L_1^+\)，由Stokes公式可知
+		\begin{equation*}
+			\oint_{L^{-}+ L_1^{+}}\frac{x\dif y-y\dif x}{x^2+y^2}
+			=\iint_{S^{+}}\v{\nabla}\times\Big(\frac{-y}{x^2+y^2}，\frac{x}{x^2+y^2}，0\Big)\tp \cdot \dif \v{\sigma}
+			=0
+		\end{equation*}
+		即有$\displaystyle \oint_{L^{+}}\frac{x\dif y-y\dif x}{x^2+y^2}=\oint_{L_1^{+}}\frac{x\dif y-y\dif x}{x^2+y^2}$。设$L_1$在$xy$平面所围区域为$D$，取$\delta>0$使得$B((0，0); \delta)\subset D$，令$L_2=\partial B((0，0); \delta)$，则由Green公式可得
+		\begin{equation*}
+			\oint_{L_1^++L_2^-} \frac{x\dif y-y\dif x}{x^2+y^2}
+			=\iint_{D \setminus B((0，0); \delta)} \left(\dfrac{\partial}{\partial x}\frac{x}{x^2+y^2}+\dfrac{\partial}{\partial y}\frac{y}{x^2+y^2}\right) \dif x \dif y
+			=0
+		\end{equation*}
+		于是
+		\begin{equation*}
+			\oint_{L^{+}}\frac{x\dif y-y\dif x}{x^2+y^2}
+			=\oint_{L_1^{+}}\frac{x\dif y-y\dif x}{x^2+y^2}
+			=\oint_{L_2^{+}}\frac{x\dif y-y\dif x}{x^2+y^2}
+			=2\pi	\qedhere
+		\end{equation*}
+	\end{solution}
+\end{example}
+
+\subsection{场论}
+
+\subsubsection{平面上第二类曲线积分与路径的无关性}
+
+\di[平面上第二类曲线积分仅依赖始末点的充要条件]{
+	假设$\varOmega\subset\mathbb{R}^2$ 为非空开集，
+	$\v{F}= (F_1，F_2)\tp$
+	在$\varOmega$ 上连续可导，而$A，B\in \varOmega$ 为两个固定点，
+	$L\subset \varOmega$为连接$A，B$的分段光滑曲线。那么，
+	\(\displaystyle \int_{L(\wideparen{AB})}\v{F}\cdot \dif \v{\ell}\)
+	仅依赖$A，B$而与路径$L$无关，\tbome{当且仅当}对于$\varOmega$中
+	过$A，B$的任意分段光滑闭曲线$\varGamma$， 均有
+	\(\displaystyle \oint_{\varGamma^{+}}\v{F}\cdot \dif \v{\ell}=0\)。
+}
+\begin{proofs}
+	\adjline
+	假设$L_1，L_2\subset \varOmega$ 为连接$A，B$ 的两条分段
+	光滑的曲线，从$A$出发经$L_1$到$B$后， 再沿$L_2$
+	回到$A$可得到过$A，B$的分段光滑的闭曲线$\varGamma$；
+	而由过$A，B$的任意分段光滑闭曲线$\varGamma$， 也可以切分
+	得到连接$A，B$的分段光滑曲线$L_1，L_2$。此时
+	\begin{equation*}
+	\oint_{\varGamma^{+}}\v{F}\cdot \dif \v{\ell}
+	=\int_{L_1(A)}^{(B)}\v{F}\cdot \dif \v{\ell}-\int_{L_2(A)}^{(B)}\v{F}\cdot \dif \v{\ell}
+	\end{equation*}
+	则$\displaystyle \oint_{\varGamma^{+}}\v{F}\cdot \dif \v{\ell}=0 \Longleftrightarrow \int_{L_1(\wideparen{AB})}\v{F}\cdot \dif \v{\ell}=\int_{L_2(\wideparen{AB})}\v{F}\cdot \dif \v{\ell}$，
+	因此所证结论成立。	
+\end{proofs}
+
+\begin{example}
+	曲线积分$\displaystyle\int_{L(\wideparen{AB})}\frac{x\dif x+y\dif y}{\sqrt{x^2+y^2-1}}$在复连通域
+	$\varOmega=\mathbb{R}^2\setminus\bar{B}((0，0);1)$上是否与路径无关? 若是，求其从$A(2，0)$到点$B(0，3)$的积分值。
+	\begin{solution}
+		设$\varGamma$为$\varOmega$中过$A，B$的分段光滑闭曲线 且
+		参数方程为$x=x(t)$，$y=y(t)$，$t\in [a，b]$.  则
+		\begin{equation*}
+		\oint_{\varGamma^{+}}\frac{x\dif x+y\dif y}{\sqrt{x^2+y^2-1}}
+		=\int_a^b\frac{x(t)x'(t)+y(t)y'(t)}{\sqrt{(x(t))^2+(y(t))^2-1}}\dif t
+		=\left(\sqrt{(x(t))^2+(y(t))^2-1}\right)\big|_a^b
+		=0
+		\end{equation*}
+		因此题中的曲线积分在$\varOmega$上与路径无关。
+
+		特别地，若$A= (2，0)$，$B=(0，3)$，并设$L=\overrightarrow{AB}$，
+		则其方程为$y=3-\dfrac{3}{2}x\ (0\le x\le 2)$，于是
+		\begin{align*}
+			\int_{(AB)}\frac{x\dif x+y\dif y}{\sqrt{x^2+y^2-1}}
+			&=\int_{L(\wideparen{AB})}\frac{x\dif x+y\dif y}{\sqrt{x^2+y^2-1}} 
+			=-\int_0^2\frac{x-\frac{3}{2}(3-\frac{3}{2}x)}{\sqrt{x^2+(3-\frac{3}{2}x)^2-1}}\dif x \\
+			&=\left.-\sqrt{x^2+\left(3-\frac{3}{2}x\right)^2-1}\right|_0^2
+			=2\sqrt{2}-\sqrt{3} \qedhere
+		\end{align*}		
+	\end{solution}
+\end{example}
+
+\di[平面单连通开区域上第二类曲线积分仅依赖始末点的充要条件]{
+	假设$\varOmega\subset\mathbb{R}^2$为\tbome{单连通}开区域，而函数
+	$\v{F}=(F_1，F_2)\tp$在$\varOmega$上连续可导，则下列结论等价：
+
+	（1）$\forall (x，y)\in \varOmega$，均有$\dfrac{\partial F_1}{\partial y}(x，y)=\dfrac{\partial F_2}{\partial x}(x，y)$；
+	
+	（2）$\forall A，B\in \varOmega$，$\displaystyle\int_{L(\wideparen{AB})}\v{F}\cdot \dif \v{\ell}$仅与$A，B$有关，而与$\varOmega$中连接$A，B$的分段光滑曲线$L$无关；
+	
+	（3）存在函数$U:\varOmega\rightarrow\mathbb{R}$，使得$\forall (x，y)\in \varOmega$，
+	\(\dif U(x，y)=F_1(x，y)\dif x+F_2(x，y)\dif y\)。
+}
+\begin{proofs}
+	\textbf{（1）\(\Rightarrow\)（2）\quad}对于$\varOmega$中过$A，B$的分段光滑闭曲线$L$，设其所围区域为$\varOmega_1$，由Green公式知
+	\begin{equation*}
+	\oint_{L^{+}}\v{F}\cdot \dif \v{\ell}
+	=\oint_{L^{+}} F_1\dif x+F_2\dif y
+	=\iint_{\varOmega_1}\left(\frac{\partial F_2}{\partial x}-\frac{\partial F_1}{\partial y}\right)\dif x\dif y
+	=0
+	\end{equation*}
+	进而由前面定理~\ref{平面上第二类曲线积分仅依赖始末点的充要条件}~可知（2）成立。
+	
+	\textbf{（2）\(\Rightarrow\)（3）\quad}固定$A\in \varOmega$，$\forall B=(x_0，y_0)\in \varOmega$，  构造
+	\(U(x_0，y_0)=\dint_{L(AB)}F_1\dif x+F_2\dif y\)，
+	下面证明$\dif U=F_1\dif x+F_2\dif y$。
+
+	给\(B\)加上一个增量\((h，k)\)，当$(h，k)\rightarrow (0，0)$时，  我们有
+	\begin{align*}
+	U(x_0+h，y_0+k)-U(x_0，y_0)
+	&=\int_{(A)}^{(x_0+h，y_0+k)}\v{F}\cdot \dif \v{\ell}-\int_{(A)}^{(x_0，y_0)}\v{F}\cdot \dif \v{\ell}
+	=\int_{(x_0，y_0)}^{(x_0+h，y_0+k)}\v{F}\cdot \dif \v{\ell} \\
+	&=\int_{(x_0，y_0)}^{(x_0+h，y_0)}\v{F}\cdot \dif \v{\ell}+\int_{(x_0+h，y_0)}^{(x_0+h，y_0+k)}\v{F}\cdot \dif \v{\ell} \\
+	&=\int_{x_0}^{x_0+h}F_1(x，y_0)\dif x+\int_{y_0}^{y_0+k}F_2(x_0+h，y)\dif y \\
+	&=F_1(x_0+\theta_1 h，y_0)h+F_2(x_0+h，y_0+\theta_2 k)k\ \big(\theta_1，\theta_2\in (0，1)\big) \\
+	&=F_1(x_0，y_0)h+F_2(x_0，y_0)k+o(1)h+o(1)k \\
+	&=F_1(x_0，y_0)h+F_2(x_0，y_0)k+o(1)\sqrt{h^2+k^2}
+	\end{align*}
+	即$\dif U(x_0，y_0)=F_1(x_0，y_0)\dif x+F_2(x_0，y_0)\dif y$，（3）成立。
+
+	\textbf{（3）\(\Rightarrow\)（1）\quad}由于$\dif U=F_1\dif x+F_2\dif y$，
+	\(F_1=\dfrac{\partial U}{\partial x}，F_2=\dfrac{\partial U}{\partial y}\)，
+	于是$\dfrac{\partial^2U}{\partial y\partial x}=\dfrac{\partial F_1}{\partial y}，
+	\dfrac{\partial^2U}{\partial x\partial y}=\dfrac{\partial F_2}{\partial x}$。
+	又$F_1，F_2$连续可导，  因此$\dfrac{\partial^2U}{\partial y\partial x}，\dfrac{\partial^2U}{\partial x\partial y}$ 均连续，
+	即$\dfrac{\partial^2U}{\partial y\partial x}=\dfrac{\partial^2U}{\partial x\partial y}$，也即$\frac{\partial F_1}{\partial y}=\frac{\partial F_2}{\partial x}$，故（1）成立。
+\end{proofs}
+
+这个定理是说，单连通区域$\varOmega\subset\mathbb{R}^2$上的微分形式$F_1\dif x + F_2\dif y$ 具有原函数，当且仅当$\dfrac{\partial F_1}{\partial y}=\dfrac{\partial F_2}{\partial x}$。此外，显然若$U$为$F_1\dif x+F_2\dif y$的一个原函数，那么$U+C$也是上述微分形式的原函数，
+其中$C$为任意的常数。
+
+\begin{theorem}
+	假设$\varOmega\subset\mathbb{R}^2$为单连通开区域，而函数 $\v{F}=(F_1，F_2)\tp$ 在$\varOmega$ 上连续且使得$F_1\dif x+F_2\dif y$在$\varOmega$上有原函数$U$，则$\forall A=(x_1，y_1)，B=(x_2，y_2)\in \varOmega$，
+	\begin{equation*}
+	\int_{L(AB)}F_1\dif x+F_2\dif y=U(x_2，y_2)-U(x_1，y_1)
+	=U(B)-U(A)=U\Big|_{(x_1，y_1)}^{(x_2，y_2)}
+	\end{equation*}
+\end{theorem}
+
+\begin{example}
+	求解$\left(\ln y-\dfrac{y}{x}\right)\dif x+\left(\dfrac{x}{y}-\ln x\right)\dif y=0$。
+	\begin{proofs}
+		\adjline
+		注意到
+		\begin{equation*}
+		\dfrac{\partial}{\partial y}\left(\ln y-\dfrac{y}{x}\right)=\dfrac{1}{y}-\dfrac{1}{x}，\qquad
+		\dfrac{\partial}{\partial x}\left(\dfrac{x}{y}-\ln x\right)=\dfrac{1}{y}-\dfrac{1}{x}
+		\end{equation*}
+		故原方程为全微分方程， 从而该方程的解满足
+		\begin{align*}
+			C&=\int_{(1，1)}^{(x，y)}\left(\ln v-\frac{v}{u}\right)\dif u+\left(\frac{u}{v}-\ln u\right)\dif v\\
+			&=\int_{(1，1)}^{(x，1)}\left(\ln v-\frac{v}{u}\right)\dif u+\left(\frac{u}{v}-\ln u\right)\dif v
+			+\int_{(x，1)}^{(x，y)}\left(\ln v-\frac{v}{u}\right)\dif u+\left(\frac{u}{v}-\ln u\right)\dif v\\
+			&=-\int_{1}^{x}\dfrac{1}{u}\dif u+\int_{1}^{y}\left(\frac{x}{v}-\ln x\right)\dif v
+			=x\ln y-y\ln x
+		\end{align*}
+		其中$C\in\mathbb{R}$为任意常数。
+	\end{proofs}
+\end{example}
+
+\subsubsection{有势场和势函数}
+
+\de[有势场、势函数]{
+	设有定义在区域 $D\subset \mathbb{R}^3$ 上的向量场 $\v{F}=(P，Q，R)$。
+	如果存在 $D$ 上的数量场 $\phi$ ，满足 $\forall \v{p}=(x，y，z)\in D$，
+	$ \nabla \phi (p)= \mathop{\mathrm{grad}}\phi (p)=\v{F}(\v{p})$，
+	那么就称 $\v{F}$ 是\tboba{有势场}，$\phi$ 成为 $\v{F}$ 的一个\tboba{势函数}。
+	
+	等价地，势函数满足
+	$\dfrac{\partial \phi}{\partial x}=P，\dfrac{\partial \phi}{\partial y}=Q，\dfrac{\partial \phi}{\partial z}=R$。
+}
+
+\di[有势场保守无旋]{
+	设有定义在区域 $D\subset \mathbb{R}^3$ 上的向量场 $\v{F}=(P，Q，R)$。
+	以下三个结论等价：
+
+	（1）\(\v{F}\)是有势场；
+	
+	（2）\(\v{F}\)是无旋场；
+	\begin{definition}
+		如果 
+		$ \mathop{\mathrm{rot}}\v{F}=\v{\nabla} \times \v{F}=\begin{pmatrix}
+			\dfrac{\partial R}{\partial y} - \dfrac{\partial Q}{\partial z} &
+			\dfrac{\partial P}{\partial z} - \dfrac{\partial R}{\partial x} &
+			\dfrac{\partial Q}{\partial x} - \dfrac{\partial P}{\partial y}
+		\end{pmatrix}\tp=\v{0}$
+		在$D$ 上处处成立，则称$\v{F}$ 为 $D$ 上的一个\textbf{无旋场}。
+	\end{definition}
+	
+	（3）\(\v{F}\)是保守场。
+	\begin{definition}
+		如果对含于 $D$ 中的任何一条封闭曲线 $\Gamma$，都有 $ \dint_{\Gamma} \v{F}\cdot \dif \v{p}=0$，
+		则称 $\v{F}$ 为 $D$ 上的一个\textbf{保守场}。
+	\end{definition}
+}
+\begin{proofs}
+	\adjline
+	\textbf{（1）\(\Rightarrow\)（2）\quad}假设 $\v{F}=(P，Q，R)$ 是有势场，$\phi$ 是 $\v{F}$ 的一个势函数，即知$\dfrac{\partial \phi}{\partial x}=P，\dfrac{\partial \phi}{\partial y}=Q，\dfrac{\partial \phi}{\partial z}=R$，于是
+	\begin{align*}
+		\frac{\partial R}{\partial y}=\frac{\partial^2\phi}{\partial y \partial z}=\frac{\partial^2\phi}{\partial z \partial y}=\frac{\partial Q}{\partial z}，\qquad
+		\frac{\partial P}{\partial z}=\frac{\partial^2\phi}{\partial z\partial x}=\frac{\partial^2\phi}{\partial x\partial z}=\frac{\partial R}{\partial x}，\qquad
+		\frac{\partial Q}{\partial x}=\frac{\partial^2\phi}{\partial x \partial y}=\frac{\partial^2\phi}{\partial y \partial z}=\frac{\partial P}{\partial y}
+	\end{align*}
+	即可直接计算得
+	\[
+		\mathop{\mathrm{rot}}\v{F}=\v{\nabla}\times \v{F}=\begin{vmatrix}
+			\hat{\boldsymbol{x}} & \hat{\boldsymbol{y}} & \hat{\boldsymbol{z}} \\
+			\dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\
+			P & Q & R
+		\end{vmatrix} = \v{0}
+	\]
+	
+	\textbf{（2）\(\Rightarrow\)（3）\quad}在$D$中任取一条封闭曲线$\Gamma$，并且 在 $D$ 内作一个以$\Gamma$
+	为边界的曲面$\varSigma$，由 Stokes 公式就有
+	$$ \int_\Gamma \v{F}\cdot \dif{\v\ell}= \int_{\varSigma} \mathop{\rm rot} \v{F}\cdot \dif {\v{\sigma}}=0$$
+	从而  $\v{F}$ 是 $D$ 上的保守场。
+
+	\textbf{（3）\(\Rightarrow\)（1）\quad}$\v{F}$ 的曲线积分与路径无关，即若 $\Gamma_1，\Gamma_2$ 是两条有向曲线，它们都以 $A$ 为起点，$B$ 为终点.  则
+	$ \dint_{\Gamma_1} \v{F} \cdot \dif \v{\ell}= \int_{\Gamma_2} \v{F} \cdot \dif \v{\ell}$。固定 $A=(a，b，c)$，而 $B=(x，y，z) $ 是 $D$中的任意一（变化）点，定义函数
+	$$\phi(x，y，z)=\int_A^B  \v{F}\cdot \dif  \v{\ell}=\int_{(a，b，c)}^{(x，y，z)}  \v{F}\cdot \dif \v{\ell}$$
+	取\(h\)使得$(x+h，y，z)$ 仍然在$D$ 内，令 $B'=(x+h，y，z)$ ，则 
+	$\phi(x+h，y，z)=\dint_A^{B'}  \v{F}\cdot \dif \v{\ell}$，
+	于是有积分中值定理
+	\begin{equation*}
+		\phi(x+h，y，z)-\phi(x，y，z)
+		= \int_B^{B'}  \v{F}\cdot \dif \v{\ell} 
+		=\int_x^{x+h} P(t，y，z) \dif t \xlongequal{\exists x^\ast \in (x，x+h)} hP(x^\ast，y，z)
+	\end{equation*}
+	故\(\dfrac{\partial \phi(x，y，z)}{\partial x}= \lim\limits_{h \to 0} \dfrac{\phi(x+h，y，z)-\phi(x，y，z)}{h} = P(x，y，z)\)，类似有$\dfrac{\partial \phi(x，y，z)}{\partial y}=Q(x，y，z)$，$\dfrac{\partial \phi(x，y，z)}{\partial z}=R(x，y，z)$，故\(\phi\)是\(\v{F}\)的势函数，即\(\v{F}\)是有势场。
+\end{proofs}
 
 \subsection{含参积分}
 
@@ -4874,6 +5092,23 @@ $\left|\dint_{A'}^{A''}f(x，y)\dif x\right|<\varepsilon$。
 	（4）\(\ln \varGamma(s)\)是\((0，+\infty)\)上的凸函数。
 \end{theorem}
 
+\begin{proofs}[\yan （\textbf{1}）的证明]
+	把$\Gamma(s)$分成两部分：
+	$$\Gamma(s)=\int_0^1t^{s-1}\mathrm{e}^{-t}\dif t+\int_1^{+\infty}t^{s-1}\mathrm{e}^{-t}\dif t$$
+	对于任意$\beta>\alpha>0$，让$s\in[\alpha，\beta]$，则当$0<t<1$时，
+	$0<t^{s-1}\mathrm{e}^{-t}\le t^{\alpha-1}\mathrm{e}^{-t}$，
+	因为$\dint_0^1t^{a-1}\mathrm{e}^{-t}\dif t$收敛，所以$\dint_0^1t^{s-1}\mathrm{e}^{-t}\dif t$关于$s$在$[\alpha，\beta]$上一致收敛，因而
+	$\int_0^1t^{s-1}e^{-t}\dif t$ 是$[\alpha，\beta]$上的连续函数。
+	
+	当$t>1$时，
+	$t^{s-1}\mathrm{e}^{-t}\le t^{\beta-1}\mathrm{e}^{-t}$，
+	因为$\dint_1^+\infty i^{\beta-1}\mathrm{e}^{-t}\dif t$ 收敛，所以积分$\dint_1^+\infty t^{s-1}\mathrm{e}^{-t}\dif t$ 关于$s$ 在$[\alpha，\beta]$上一致收敛，因而$\dint_1^{+\infty}t^{s-1}e^{-t}\dif t$是$[\alpha，\beta]$上的连续函数。
+	
+	由$\beta>\alpha>0$的任意性，即知$\Gamma(s)$在$(0，+\infty)$上连续。
+	
+	同理，可知积分$\int_0^{+\infty}t^{s-1}\mathrm{e}^{-t}\ln t\dif t$也在\([\alpha，\beta]\)上一致收敛，则\(\varGamma'(s)\)存在且连续。以此类推，即知\(\varGamma \in \mathscr{C}^{(\infty)}(0，+\infty)\)。
+\end{proofs}
+
 \di[Bohr-Mollerup 定理]{
 	如果一个定义在\((0，+\infty)\)上的函数\(f(x)\)有以下性质：
 
@@ -4885,6 +5120,13 @@ $\left|\dint_{A'}^{A''}f(x，y)\dif x\right|<\varepsilon$。
 
 	那么\(f(x) = \varGamma(x) = \lim\limits_{n \to \infty} \dfrac{n^x n!}{x(x+1)\cdots(x+n)}\)。
 }
+
+\begin{theorem}
+	对任意\(s>0\)，\(\varGamma(2s) = \dfrac{2^{2s-1}}{\sqrt{\pi}} \varGamma(s) \varGamma\left( s+\dfrac{1}{2} \right)\)。
+\end{theorem}
+\begin{theorem}
+	\textbf{\textup{余元公式\quad}}对任意\(p\in(0，1)\)，有\(\varGamma(p)\varGamma(1-p) = \dfrac{\pi}{\sin p\pi}\)。
+\end{theorem}
 
 \de[Beta函数]{
 	Beta函数定义为\(B(p，q) = \dint_0^1 x^{p-1}(1-x)^{q-1} \dif x\)。
@@ -4903,14 +5145,18 @@ $\left|\dint_{A'}^{A''}f(x，y)\dif x\right|<\varepsilon$。
 	\end{solution}
 \end{example}
 
+\begin{theorem}
+	\textup{Beta函数}也可表示为\(B(p，q) = \dint_0^{+\infty} \dfrac{x^{q-1}}{(1+x)^{p+q}} \dif x\)。
+\end{theorem}
+
 \di[Gamma函数与Beta函数的关系]{
-	\(\forall p，q>0\)，
+	对任意\(p，q>0\)，
 	\begin{equation}
 		B(p，q) = \dfrac{\varGamma(p)\varGamma(q)}{\varGamma(p+q)}
 	\end{equation}
 }
 \begin{proofs}
-	可证\(f(p) = \dfrac{B(p，q)\varGamma(p+q)}{\varGamma(q)}\)满足定理~\ref{Bohr-Mollerup 定理}的三条性质。
+	可证\(f(p) = \dfrac{B(p，q)\varGamma(p+q)}{\varGamma(q)}\)满足定理~\ref{Bohr-Mollerup 定理}~的三条性质。
 \end{proofs}
 
 \begin{theorem}
@@ -4922,5 +5168,16 @@ $\left|\dint_{A'}^{A''}f(x，y)\dif x\right|<\varepsilon$。
 
 	（3）\(\forall p，q>0，B(p+1，q+1) = \dfrac{pq}{(p+q+1)(p+q)}B(q，p)\)。
 \end{theorem}
+
+\begin{example}
+	计算\(\dint_0^\frac{\pi}{2} \cos^\alpha x \sin^\beta x \dif x\)，其中\(\alpha，\beta>-1\)。
+	\begin{solution}
+		令\(t = \sin^2 x\)，则\(\dif t = 2 \sin x \cos x \dif x\)，有
+		\begin{equation*}
+			\dint_0^\frac{\pi}{2} \cos^\alpha x \sin^\beta x \dif x = \dfrac{1}{2} \dint_0^1 (1-t)^\frac{\alpha-1}{2} t^\frac{\beta-1}{2}\dif t = \dfrac{1}{2} B\left(\dfrac{\beta+1}{2}，\dfrac{\alpha+1}{2}\right) = \dfrac{\varGamma\left( \dfrac{\beta+1}{2} \right) \varGamma\left( \dfrac{\alpha+1}{2} \right)}{2\varGamma\left( \dfrac{\alpha+\beta}{2}+1 \right)} \qedhere
+		\end{equation*}
+	\end{solution}
+	此处若取\(\alpha=\beta=0\)，则立得\(\varGamma\left( \dfrac{1}{2} \right) = \sqrt{\pi}\)。
+\end{example}
 %----------------------------------------------------------
 \end{document}

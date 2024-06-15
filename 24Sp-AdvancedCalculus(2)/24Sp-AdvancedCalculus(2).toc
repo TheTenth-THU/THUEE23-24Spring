@@ -64,12 +64,14 @@
 \contentsline {subsubsection}{\numberline {11.5.3}第二类曲线积分}{73}{subsubsection.11.5.3}%
 \contentsline {paragraph}{\numberline {A)}第二类曲线积分的计算}{73}{paragraph.11.5.3.1}%
 \contentsline {paragraph}{\numberline {B)}Green公式}{74}{paragraph.11.5.3.2}%
-\contentsline {paragraph}{\numberline {C)}平面上第二类曲线积分与路径的无关性}{76}{paragraph.11.5.3.3}%
-\contentsline {subsubsection}{\numberline {11.5.4}第二类曲面积分}{77}{subsubsection.11.5.4}%
+\contentsline {subsubsection}{\numberline {11.5.4}第二类曲面积分}{76}{subsubsection.11.5.4}%
 \contentsline {paragraph}{\numberline {A)}第二类曲面积分的计算}{77}{paragraph.11.5.4.1}%
-\contentsline {paragraph}{\numberline {B)}Gauss公式}{79}{paragraph.11.5.4.2}%
-\contentsline {paragraph}{\numberline {C)}Stokes公式}{80}{paragraph.11.5.4.3}%
-\contentsline {subsection}{\numberline {11.6}含参积分}{81}{subsection.11.6}%
-\contentsline {subsubsection}{\numberline {11.6.1}运算次序可交换性}{81}{subsubsection.11.6.1}%
-\contentsline {subsubsection}{\makebox [0pt][r]{*}11.6.2\ \ 广义含参积分}{83}{subsubsection*.15}%
-\contentsline {subsubsection}{\numberline {11.6.3}Gamma 函数 和 Beta 函数}{85}{subsubsection.11.6.3}%
+\contentsline {paragraph}{\numberline {B)}Gauss公式}{78}{paragraph.11.5.4.2}%
+\contentsline {paragraph}{\numberline {C)}Stokes公式}{79}{paragraph.11.5.4.3}%
+\contentsline {subsection}{\numberline {11.6}场论}{81}{subsection.11.6}%
+\contentsline {subsubsection}{\numberline {11.6.1}平面上第二类曲线积分与路径的无关性}{81}{subsubsection.11.6.1}%
+\contentsline {subsubsection}{\numberline {11.6.2}有势场和势函数}{83}{subsubsection.11.6.2}%
+\contentsline {subsection}{\numberline {11.7}含参积分}{84}{subsection.11.7}%
+\contentsline {subsubsection}{\numberline {11.7.1}运算次序可交换性}{84}{subsubsection.11.7.1}%
+\contentsline {subsubsection}{\makebox [0pt][r]{*}11.7.2\ \ 广义含参积分}{87}{subsubsection*.15}%
+\contentsline {subsubsection}{\numberline {11.7.3}Gamma 函数 和 Beta 函数}{89}{subsubsection.11.7.3}%
