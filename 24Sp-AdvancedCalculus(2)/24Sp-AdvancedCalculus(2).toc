@@ -1,0 +1,75 @@
+\contentsline {section}{\numberline {7}常数项级数}{3}{section.7}%
+\contentsline {subsection}{\numberline {7.1}无穷级数的基本性质}{3}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}数项级数的判敛法则}{4}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}数列衍生的判敛法则}{4}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}比较、比率、根值判别法}{5}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.3}一般数项级数的判敛法则}{7}{subsubsection.7.2.3}%
+\contentsline {section}{\numberline {8}函数项级数}{11}{section.8}%
+\contentsline {subsection}{\numberline {8.1}函数列与函数项级数的收敛性}{11}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}一致收敛的函数项级数的和函数的性质}{14}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}幂级数}{16}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}幂级数的收敛半径}{16}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}幂级数的性质}{19}{subsubsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3}幂级数展开}{21}{subsubsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.4}Fourier级数}{24}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}形式Fourier级数}{24}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.2}Fourier级数的性质及收敛性}{26}{subsubsection.8.4.2}%
+\contentsline {subsubsection}{\numberline {8.4.3}Fourier级数的平方平均收敛}{29}{subsubsection.8.4.3}%
+\contentsline {section}{\numberline {9}多元函数及其连续性}{32}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Euclid 空间}{32}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}$\mathbb {R}^n$的拓扑性质}{32}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}$\mathbb {R}^n$中点列的收敛}{33}{subsubsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.2}$n$元函数与$n$元向量值函数}{34}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}多元函数的极限}{35}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}多元函数的连续性}{37}{subsubsection.9.2.2}%
+\contentsline {section}{\numberline {10}多元函数微分学}{39}{section.10}%
+\contentsline {subsection}{\numberline {10.1}偏导数与全微分}{39}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}多元函数的可微性}{39}{subsubsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.2}多元函数的可导性}{41}{subsubsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.3}多元函数的连续可导性}{42}{subsubsection.10.1.3}%
+\contentsline {subsubsection}{\numberline {10.1.4}向量值函数的微分}{43}{subsubsection.10.1.4}%
+\contentsline {subsection}{\numberline {10.2}特殊导数的计算}{44}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}方向导数}{44}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}高阶偏导数}{46}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}复合函数的偏导数}{47}{subsubsection.10.2.3}%
+\contentsline {subsubsection}{\numberline {10.2.4}隐函数的导数}{48}{subsubsection.10.2.4}%
+\contentsline {subsubsection}{\numberline {10.2.5}反函数的导数}{50}{subsubsection.10.2.5}%
+\contentsline {subsection}{\numberline {10.3}多元函数的Taylor展式}{51}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}多元函数的极值与条件极值}{52}{subsection.10.4}%
+\contentsline {subsubsection}{\numberline {10.4.1}极值与 Hessian矩阵的正定性}{52}{subsubsection.10.4.1}%
+\contentsline {subsubsection}{\numberline {10.4.2}条件极值与 Lagrange乘数法}{55}{subsubsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.5}曲面与曲线}{58}{subsection.10.5}%
+\contentsline {subsubsection}{\numberline {10.5.1}曲面的表示}{59}{subsubsection.10.5.1}%
+\contentsline {paragraph}{\numberline {A)}曲面的显函数表示法}{59}{paragraph.10.5.1.1}%
+\contentsline {paragraph}{\numberline {B)}曲面的参数表示法}{59}{paragraph.10.5.1.2}%
+\contentsline {paragraph}{\numberline {C)}曲面的隐函数表示法}{60}{paragraph.10.5.1.3}%
+\contentsline {subsubsection}{\numberline {10.5.2}空间曲线的表示}{61}{subsubsection.10.5.2}%
+\contentsline {paragraph}{\numberline {A)}空间曲线的参数表示法}{61}{paragraph.10.5.2.1}%
+\contentsline {paragraph}{\numberline {B)}空间曲线的隐函数表示法}{61}{paragraph.10.5.2.2}%
+\contentsline {section}{\numberline {11}多元函数积分学}{62}{section.11}%
+\contentsline {subsection}{\numberline {11.1}$n$重积分}{62}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}二重积分的计算}{64}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}直角坐标系下的二重积分}{64}{subsubsection.11.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.2}极坐标系下的二重积分}{65}{subsubsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.3}三重积分的计算}{66}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}空间直角坐标系下的三重积分}{66}{subsubsection.11.3.1}%
+\contentsline {subsubsection}{\numberline {11.3.2}柱坐标系下的三重积分}{67}{subsubsection.11.3.2}%
+\contentsline {subsubsection}{\numberline {11.3.3}球坐标系下的三重积分}{68}{subsubsection.11.3.3}%
+\contentsline {subsection}{\numberline {11.4}重积分的物理与几何应用}{68}{subsection.11.4}%
+\contentsline {subsubsection}{\numberline {11.4.1}物体的重心（质心）与形心问题}{68}{subsubsection.11.4.1}%
+\contentsline {subsubsection}{\numberline {11.4.2}空间曲面的面积问题}{69}{subsubsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.5}曲线曲面积分}{70}{subsection.11.5}%
+\contentsline {subsubsection}{\numberline {11.5.1}第一类曲线积分}{70}{subsubsection.11.5.1}%
+\contentsline {subsubsection}{\numberline {11.5.2}第一类曲面积分}{72}{subsubsection.11.5.2}%
+\contentsline {subsubsection}{\numberline {11.5.3}第二类曲线积分}{73}{subsubsection.11.5.3}%
+\contentsline {paragraph}{\numberline {A)}第二类曲线积分的计算}{73}{paragraph.11.5.3.1}%
+\contentsline {paragraph}{\numberline {B)}Green公式}{74}{paragraph.11.5.3.2}%
+\contentsline {paragraph}{\numberline {C)}平面上第二类曲线积分与路径的无关性}{76}{paragraph.11.5.3.3}%
+\contentsline {subsubsection}{\numberline {11.5.4}第二类曲面积分}{77}{subsubsection.11.5.4}%
+\contentsline {paragraph}{\numberline {A)}第二类曲面积分的计算}{77}{paragraph.11.5.4.1}%
+\contentsline {paragraph}{\numberline {B)}Gauss公式}{79}{paragraph.11.5.4.2}%
+\contentsline {paragraph}{\numberline {C)}Stokes公式}{80}{paragraph.11.5.4.3}%
+\contentsline {subsection}{\numberline {11.6}含参积分}{81}{subsection.11.6}%
+\contentsline {subsubsection}{\numberline {11.6.1}运算次序可交换性}{81}{subsubsection.11.6.1}%
+\contentsline {subsubsection}{\makebox [0pt][r]{*}11.6.2\ \ 广义含参积分}{83}{subsubsection*.15}%
+\contentsline {subsubsection}{\numberline {11.6.3}Gamma 函数 和 Beta 函数}{85}{subsubsection.11.6.3}%
