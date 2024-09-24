@@ -20,7 +20,7 @@
 \usepackage{esint}
 \usepackage{enumitem}
 \usepackage{dashrule}% 虚线分割线
-\usepackage[text=\includegraphics{C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png},angle=0]{draftwatermark}%水印
+\usepackage[text=\includegraphics{C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png},angle=0]{draftwatermark}%水印
 %\usepackage{tikz}
 %-------------基本字体设置--------------
 \catcode`\，=\active
@@ -47,7 +47,7 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{4}
 \linespread{1.4}
-\numberwithin{equation}{section}
+\numberwithin{equation}{subsection}
 \renewcommand{\theparagraph}{\Alph{paragraph})}
 \newcommand{\Section}[1]{ \refstepcounter{section} \section*{*\thesection\texorpdfstring{\quad}{}#1} \addcontentsline{toc}{section}{\makebox[0pt][r]{*}\thesection\texorpdfstring{\quad}{}#1} }
 \newcommand{\Subsection}[1]{ \refstepcounter{subsection} \subsection*{*\thesubsection\texorpdfstring{\quad}{}#1} \addcontentsline{toc}{subsection}{\makebox[0pt][r]{*}\thesubsection\texorpdfstring{\quad}{}#1} }
@@ -1647,7 +1647,7 @@ $$ \frac{E}{c^2} \sim t ，\qquad \v{p} \sim \vr$$
 \normalfont
 \newpage
 %----------------------------------------------------------
-\section{电磁学}
+\section{电磁学：电的规律}
 
 \subsection{真空中的静电场}
 
@@ -1657,36 +1657,70 @@ $$ \frac{E}{c^2} \sim t ，\qquad \v{p} \sim \vr$$
 	其中\textbf{真空介电常数}$\varepsilon_0 \approx 8.85 \cp 10^{-12} \,\mathrm{C^2/(N\cdot m^2)}$。
 	
 	\item[常见电荷系的电场强度分布] 记电荷量为$q$，电荷线密度为$\lambda$，电荷面密度为$\sigma$，以下各电荷系产生的场强$\v{E}$与距离$r$的关系为：
-	\begin{itemize}[leftmargin=1em]
-		\item \textbf{点电荷电场：}$\v{E}=\dfrac{q}{4\pi\varepsilon_0r^2}\ur \propto r^{-2}$。
+	\begin{center}
+		\begin{tabular}{lll}
+			\toprule
+			\multicolumn{2}{l}{\textbf{点电荷电场}}& $\v{E}=\dfrac{q}{4\pi\varepsilon_0r^2}\ur \propto r^{-2}$ \\[7pt]
+			\hline
+			\textbf{电偶极场} & 中垂线上$r \gg l$处 & $\v{E}= -\dfrac{\v{p}}{4\pi\varepsilon_0r^3} \propto r^{-3}$ \\[7pt]
+			& 轴线延长线上（$+q$一侧）$r \gg l$处 & $\v{E}= \dfrac{\v{p}}{2\pi\varepsilon_0r^3} \propto r^{-3}$ \\[7pt]
+			\multicolumn{3}{l}{其中$\v{p}=q\v{l}_{+-}$为这对电偶极子的电偶极矩，$\v{l}_{+-}$是自$-q$指向$+q$的位矢。}\\[7pt]
+			\hline
+			\multicolumn{2}{l}{\textbf{均匀带电细棒的电场}} & $E_x = \dfrac{q}{4\pi\varepsilon_0Lx} \sin\theta \Big|_{\theta_\mathrm{i}}^{\theta_\mathrm{f}}$，$E_y = \dfrac{q}{4\pi\varepsilon_0Lx} \cos\theta \Big|_{\theta_\mathrm{f}}^{\theta_\mathrm{i}}$ \\[7pt]
+			特别地，& 细棒中垂线上 & $E = E_x = \dfrac{q}{4\pi\varepsilon_0x^2} \dfrac{1}{\sqrt{1+\dfrac{L^2}{4x^2}}}$\\[15pt]
+			& \textbf{无限长直线} & $E=\dfrac{q}{2\pi\varepsilon_0Lx}=\dfrac{\lambda}{2\pi\varepsilon_0x} \propto x^{-1}$ \\[7pt]
+			\hline
+			\multicolumn{2}{l}{\textbf{均匀带电圆环轴线上的电场}} & $E = \dfrac{\sigma x}{2\varepsilon_0} \left(\dfrac{1}{\sqrt{{x}^{2}+{R}_1^{2}}}-\dfrac{1}{\sqrt{{x}^{2}+{R}_2^{2}}}\right)$\\[10pt]
+			特别地，& 半径为$R$的\textbf{圆盘} & $E = \dfrac{\sigma}{2\varepsilon_0} \left(1-\dfrac{x}{\sqrt{{x}^{2}+{R}^{2}}}\right)$；\\[7pt]
+			& \textbf{无限大平面} & $E = \dfrac{\sigma}{2\varepsilon_0}$为常量\\[7pt]
+			\hline
+			\multicolumn{2}{l}{\textbf{均匀球壳的电场}} & $E=\begin{cases}[ll]
+				0，& r<R_1， \\
+				\dfrac{\rho}{3\varepsilon_0}\dfrac{r^3-R_1^3}{r^2}，& R_1<r<R_2，\\
+				\dfrac{q}{4\pi\varepsilon_0r^2}，& r>R_2
+			\end{cases}$\\[25pt]
+			特别地，& 半径为$R$的\textbf{均匀带电球面} & $E=\begin{cases}[ll]
+				0，& r<R， \\
+				\dfrac{q}{4\pi\varepsilon_0r^2}=\dfrac{\sigma}{\varepsilon_0}\dfrac{R^2}{r^2}，& r>R
+			\end{cases}$\\[20pt]
+			& 半径为$R$的\textbf{均匀带电球体} & $E=\begin{cases}[ll]
+				\dfrac{\rho}{3\varepsilon_0}r，& r<R，\\
+				\dfrac{q}{4\pi\varepsilon_0r^2}=\dfrac{\rho R^3}{3\varepsilon_0r^2}，& r>R
+			\end{cases}$\\[20pt]
+			& \textbf{无限大带电体} & $E=\dfrac{\rho}{3\varepsilon_0}r$\\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+	% \begin{itemize}[leftmargin=1em]
+		% \item \textbf{点电荷电场：}$\v{E}=\dfrac{q}{4\pi\varepsilon_0r^2}\ur \propto r^{-2}$。
 		
-		\item \textbf{电偶极场：}中垂线上$r \gg l$处$\v{E}= -\dfrac{\v{p}}{4\pi\varepsilon_0r^3} \propto r^{-3}$，\\
-		　　　　　轴线延长线上（$+q$一侧）$r \gg l$处$\v{E}= \dfrac{\v{p}}{2\pi\varepsilon_0r^3} \propto r^{-3}$，\\
-		其中$\v{p}=q\v{l}_{+-}$为这对电偶极子的电偶极矩，$\v{l}_{+-}$是自$-q$指向$+q$的位矢。
+		% \item \textbf{电偶极场：}中垂线上$r \gg l$处$\v{E}= -\dfrac{\v{p}}{4\pi\varepsilon_0r^3} \propto r^{-3}$，\\
+		% 　　　　　轴线延长线上（$+q$一侧）$r \gg l$处$\v{E}= \dfrac{\v{p}}{2\pi\varepsilon_0r^3} \propto r^{-3}$，\\
+		% 其中$\v{p}=q\v{l}_{+-}$为这对电偶极子的电偶极矩，$\v{l}_{+-}$是自$-q$指向$+q$的位矢。
 
-		\item \textbf{均匀带电细棒的电场：}$E_x = \dfrac{q}{4\pi\varepsilon_0Lx} \sin\theta \Big|_{\theta_\mathrm{i}}^{\theta_\mathrm{f}}$，$E_y = \dfrac{q}{4\pi\varepsilon_0Lx} \cos\theta \Big|_{\theta_\mathrm{f}}^{\theta_\mathrm{i}}$。\\
-		特别地，在细棒中垂线上，$y$向场强抵消，$E = E_x = \dfrac{q}{4\pi\varepsilon_0x^2} \dfrac{1}{\sqrt{1+\dfrac{L^2}{4x^2}}}$；\\
-		　　　\hskip0.8em$x \ll L$时，成为\textbf{无限长直线}，有$E=\dfrac{q}{2\pi\varepsilon_0Lx}=\dfrac{\lambda}{2\pi\varepsilon_0x} \propto x^{-1}$。
+		% \item \textbf{均匀带电细棒的电场：}$E_x = \dfrac{q}{4\pi\varepsilon_0Lx} \sin\theta \Big|_{\theta_\mathrm{i}}^{\theta_\mathrm{f}}$，$E_y = \dfrac{q}{4\pi\varepsilon_0Lx} \cos\theta \Big|_{\theta_\mathrm{f}}^{\theta_\mathrm{i}}$。\\
+		% 特别地，在细棒中垂线上，$y$向场强抵消，$E = E_x = \dfrac{q}{4\pi\varepsilon_0x^2} \dfrac{1}{\sqrt{1+\dfrac{L^2}{4x^2}}}$；\\
+		% 　　　\hskip0.8em$x \ll L$时，成为\textbf{无限长直线}，有$E=\dfrac{q}{2\pi\varepsilon_0Lx}=\dfrac{\lambda}{2\pi\varepsilon_0x} \propto x^{-1}$。
 
-		\item \textbf{均匀带电圆环轴线上的电场：}$E = \dfrac{\sigma x}{2\varepsilon_0} \left(\dfrac{1}{\sqrt{{x}^{2}+{R}_1^{2}}}-\dfrac{1}{\sqrt{{x}^{2}+{R}_2^{2}}}\right)$。\\
-		特别地，$R_1=0，R_2=R$时，成为半径为$R$的\textbf{圆盘}，有$E = \dfrac{\sigma}{2\varepsilon_0} \left(1-\dfrac{x}{\sqrt{{x}^{2}+{R}^{2}}}\right)$；\\
-		　　　\hskip0.8em$R_1=0，R_2 \to +\infty$时，成为\textbf{无限大平面}，有$E = \dfrac{\sigma}{2\varepsilon_0}$为常量。
+		% \item \textbf{均匀带电圆环轴线上的电场：}$E = \dfrac{\sigma x}{2\varepsilon_0} \left(\dfrac{1}{\sqrt{{x}^{2}+{R}_1^{2}}}-\dfrac{1}{\sqrt{{x}^{2}+{R}_2^{2}}}\right)$。\\
+		% 特别地，$R_1=0，R_2=R$时，成为半径为$R$的\textbf{圆盘}，有$E = \dfrac{\sigma}{2\varepsilon_0} \left(1-\dfrac{x}{\sqrt{{x}^{2}+{R}^{2}}}\right)$；\\
+		% 　　　\hskip0.8em$R_1=0，R_2 \to +\infty$时，成为\textbf{无限大平面}，有$E = \dfrac{\sigma}{2\varepsilon_0}$为常量。
 
-		\item \textbf{均匀球壳的电场：}$E=\begin{cases}[ll]
-			0，& r<R_1， \\
-			\dfrac{\rho}{3\varepsilon_0}\dfrac{r^3-R_1^3}{r^2}，& R_1<r<R_2，\\
-			\dfrac{q}{4\pi\varepsilon_0r^2}，& r>R_2 \text{。}
-		\end{cases}$\\
-		特别地，$R_1=R_2=R$，成为半径为$R$的\textbf{均匀带电球面}，有$E=\begin{cases}[ll]
-			0，& r<R， \\
-			\dfrac{q}{4\pi\varepsilon_0r^2}=\dfrac{\sigma}{\varepsilon_0}\dfrac{R^2}{r^2}，& r>R\text{；}
-		\end{cases}$\\
-		　　　\hskip0.8em$R_1=0，R_2=R$，成为半径为$R$的\textbf{均匀带电球体}，有$E=\begin{cases}[ll]
-			\dfrac{\rho}{3\varepsilon_0}r，& r<R，\\
-			\dfrac{q}{4\pi\varepsilon_0r^2}=\dfrac{\rho R^3}{3\varepsilon_0r^2}，& r>R \text{；}
-		\end{cases}$\\
-		　　　\hskip0.8em$R_1=0，R_2\to +\infty$，成为\textbf{无限大带电体}，有$E=\dfrac{\rho}{3\varepsilon_0}r$。
-	\end{itemize}
+		% \item \textbf{均匀球壳的电场：}$E=\begin{cases}[ll]
+		% 	0，& r<R_1， \\
+		% 	\dfrac{\rho}{3\varepsilon_0}\dfrac{r^3-R_1^3}{r^2}，& R_1<r<R_2，\\
+		% 	\dfrac{q}{4\pi\varepsilon_0r^2}，& r>R_2 \text{。}
+		% \end{cases}$\\
+		% 特别地，$R_1=R_2=R$，成为半径为$R$的\textbf{均匀带电球面}，有$E=\begin{cases}[ll]
+		% 	0，& r<R， \\
+		% 	\dfrac{q}{4\pi\varepsilon_0r^2}=\dfrac{\sigma}{\varepsilon_0}\dfrac{R^2}{r^2}，& r>R\text{；}
+		% \end{cases}$\\
+		% 　　　\hskip0.8em$R_1=0，R_2=R$，成为半径为$R$的\textbf{均匀带电球体}，有$E=\begin{cases}[ll]
+		% 	\dfrac{\rho}{3\varepsilon_0}r，& r<R，\\
+		% 	\dfrac{q}{4\pi\varepsilon_0r^2}=\dfrac{\rho R^3}{3\varepsilon_0r^2}，& r>R \text{；}
+		% \end{cases}$\\
+		% 　　　\hskip0.8em$R_1=0，R_2\to +\infty$，成为\textbf{无限大带电体}，有$E=\dfrac{\rho}{3\varepsilon_0}r$。
+	% \end{itemize}
 
 	\item[$\v{E}$\,的高斯定理] 在真空中的静电场内，通过任意封闭曲面的电通量等于该封闭面所包围的电荷的电量的代数和的$\dfrac{1}{\varepsilon_0}$，即$\varPhi_\mathrm{e} = \displaystyle \varoiint \v{E} \cdot \dif\v{S} = \dfrac{\sum q_\text{内}}{\varepsilon_0}$。
 \end{abstract}
@@ -1883,14 +1917,31 @@ $$\varPhi_\mathrm{e} = \iint \v{E} \cdot \dif\v{S}$$
 
 赋值$\begin{cases}
 	R_1=R，\\[-3pt] R_2=R，
-\end{cases}$~即得半径为$R$的均匀带电球面的电场分布；赋值$\begin{cases}
+\end{cases}$~即得半径为$R$的均匀带电球面的电场分布
+\begin{equation}
+	\v{E} = \begin{cases}[ll]
+		\dfrac{q}{4\pi\varepsilon_0r^2}\ur，& r>R，\\
+		0，& r<R
+	\end{cases}
+\end{equation}
+赋值$\begin{cases}
 	R_1=0，\\[-3pt] R_2=R，
-\end{cases}$~即得半径为$R$的均匀带电球体的电场分布。特别地，赋值$\begin{cases}
+\end{cases}$~即得半径为$R$的均匀带电球体的电场分布
+\begin{equation}
+	\v{E} = \begin{cases}[ll]
+		\dfrac{q}{4\pi\varepsilon_0r^2}\ur，& r>R，\\[7pt]
+		\dfrac{qr}{4\pi\varepsilon_0R^3}\ur，& r<R
+	\end{cases}
+\end{equation}
+特别地，赋值$\begin{cases}
 	R_1=0，\\[-3pt] R_2\to+\infty，
-\end{cases}$~可得无限大三维带电体的电场$\v{E}=\dfrac{\rho}{3\varepsilon_0}\vr$。
+\end{cases}$~可得无限大三维带电体的电场
+\begin{equation}
+	\v{E}=\dfrac{\rho}{3\varepsilon_0}\vr
+\end{equation}
 \end{example}
 
-由此，注意到
+由此，注意到各个维度的无限大带电体的场强分布满足
 \begin{equation*}
 	E_\text{0 D} \propto \dfrac{1}{r^2}，\qquad
 	E_\text{1 D} \propto \dfrac{1}{r}，\qquad
@@ -1937,8 +1988,11 @@ $$\varPhi_\mathrm{e} = \iint \v{E} \cdot \dif\v{S}$$
 
 \subsubsection{静电场的保守性}
 
-\di[静电场的环路定理]{
-	在真空中的静电场内，电场强度沿任意闭合路径的线积分（称为静电场的\tbome{环流}）为0，即$\displaystyle\oint \v{E}\cdot \dif \v{l} = 0$。
+\din[\(\v{E}\)的环路定理]{
+	在真空中的静电场内，电场强度沿任意闭合路径的线积分（称为静电场的\tbome{环流}）为0，即
+	\begin{equation}
+		\displaystyle\oint \v{E}\cdot \dif \v{l} = 0
+	\end{equation}
 }
 \begin{proofs}
 	点电荷的静电场中，从$P_1$处到$P_2$处移动一个试探电荷$q_0$，电场力作功为
@@ -1957,9 +2011,13 @@ $$\varPhi_\mathrm{e} = \iint \v{E} \cdot \dif\v{S}$$
 环路定理是静电场保守性的直接结果。由静电场保守性，说明静电场存在一个势函数。
 \de[电势差、电势]{
 	在一个单位正电荷从静电场中$P_1$点移到$P_2$点的过程中电场力作的功，定义为$P_1$点到$P_2$点电势的减量，或称为$P_1$点到$P_2$点的\tboba{电势差}，记作
-	$$ \phi_{12} = \phi_1 - \phi_2 := \dfrac{A_{12}(q)}{q} = \int_{\widetilde{P_1P_2} } \v{E} \cdot \dif\v{l} $$
+	\begin{equation}
+		\phi_{12} = \phi_1 - \phi_2 := \dfrac{A_{12}(q)}{q} = \int_{\widetilde{P_1P_2} } \v{E} \cdot \dif\v{l}
+	\end{equation}
 	取参考点$P_0$处电势为$\phi_0=0$，则静电场中任一点$P$处\tboba{电势}定义为一个单位正电荷从静电场中$P$点移到$P_0$点的过程中电场力作的功，即
-	$$ \phi := \phi - \phi_0 = \phi_{PP_0} = \int_{\widetilde{PP_0} } \v{E} \cdot \dif\v{l} $$
+	\begin{equation}
+		\phi := \phi - \phi_0 = \phi_{PP_0} = \int_{\widetilde{PP_0} } \v{E} \cdot \dif\v{l}
+	\end{equation}
 }
 电场强度是从电场力的角度来描述电场的物理量。电势是从电场力作功的角度来描述电场的物理量。
 
@@ -1982,7 +2040,10 @@ $$\varPhi_\mathrm{e} = \iint \v{E} \cdot \dif\v{S}$$
 	\vspace{-0.5em}
 \end{figure}
 \di[电势与电场强度的微分关系]{
-	电场强度等于电势梯度的负值，即$\v{E} = - \nabla \phi$。
+	电场强度等于电势梯度的负值，即
+	\begin{equation}
+		\v{E} = - \v{\nabla} \phi = - \dfrac{\partial \phi}{\partial x}\ux - \dfrac{\partial \phi}{\partial y}\uy - \dfrac{\partial \phi}{\partial z}\uz
+	\end{equation}
 }
 
 \subsubsection{电荷与电场的能量}
@@ -1995,7 +2056,9 @@ $$\varPhi_\mathrm{e} = \iint \v{E} \cdot \dif\v{S}$$
 	在电荷$q$从静电场中$P_1$点移到$P_2$点的过程中电场力作的功，定义为电荷$q$从$P_1$点到$P_2$点\tboba{静电势能}的减量。
 	
 	规定电势零参考点$P_0$处的静电势能为0，则在电荷$q$从静电场中$P$点移到$P_0$点的过程中电场力作的功，定义为电荷$q$在$P$点处的\tboba{静电势能}，记作
-	$$ W = A_{PP_0} = \int_{\widetilde{PP_0}} q\v{E} \cdot \dif \v{l} = q \int_{\widetilde{PP_0}} \v{E} \cdot \dif \v{l} = q \phi $$
+	\begin{equation}
+		W = A_{PP_0} = \int_{\widetilde{PP_0}} q\v{E} \cdot \dif \v{l} = q \int_{\widetilde{PP_0}} \v{E} \cdot \dif \v{l} = q \phi
+	\end{equation}
 }
 静电势能是属于电荷 $q_0$ 和场源所共有的，也叫电荷之间的相互作用能。
 
@@ -2016,7 +2079,9 @@ $$\varPhi_\mathrm{e} = \iint \v{E} \cdot \dif\v{S}$$
 
 \di[离散点电荷系的自能公式]{
 	离散点电荷系的自能为
-	$$W_\text{自}=\dfrac{1}{2}\sum\limits_i q_i \phi_i$$
+	\begin{equation}
+		W_\text{自}=\dfrac{1}{2}\sum\limits_i q_i \phi_i
+	\end{equation}
 	\tcblower
 	\hang[3]\textbf{式中\quad}%
 	$q_i$——离散点电荷系$i$点电荷的电荷量；\\
@@ -2024,7 +2089,9 @@ $$\varPhi_\mathrm{e} = \iint \v{E} \cdot \dif\v{S}$$
 }
 \di[连续点电荷系的自能公式]{
 	连续点电荷系的自能为
-	$$W_\text{自}=\dfrac{1}{2}\dint_\mathcal{O} \phi \dif q$$
+	\begin{equation}
+		W_\text{自}=\dfrac{1}{2}\dint_\mathcal{O} \phi \dif q
+	\end{equation}
 	\tcblower
 	\hang[3]\textbf{式中\quad}%
 	$\phi$——连续点电荷系$\mathcal{O}$在其微元$\dif q$处产生的电势。
@@ -2054,7 +2121,9 @@ $$
 }
 \di[电场能量与电场强度的关系]{
 	电场能量密度$w_e$与该处电场强度$E$的平方成正比，比例系数为真空介电常数$\varepsilon_0$的一半，即
-	$$w_e = \dfrac{\varepsilon_0 E^2}{2}$$
+	\begin{equation}
+		w_e = \dfrac{\varepsilon_0 E^2}{2}
+	\end{equation}
 }
 藉由此，任何一个带电系统的静电场的总能量为$W = \dint_{\R^3} \dfrac{\varepsilon_0E^2}{2}\dif V$。
 \zhu[\(\boldsymbol{\dint_{\R^3}\dfrac{\varepsilon_0E^2}{2}\dif{V}}\)（1）与\(\boldsymbol{\dfrac{1}{2}\dint_\mathcal{O}\phi\dif{q}}\)（2）的区别]{
@@ -2070,6 +2139,28 @@ $$
 }
 
 \subsection{静电场中的导体与绝缘体}
+
+\begin{abstract}
+	\item[导体的静电平衡] 特征为：
+	\begin{itemize}
+		\item 内部各处场强为零，净电荷为零，电势处处相等；
+		\item 表面上各处场强与表面垂直，场强大小与面电荷密度成正比，\(\sigma = \varepsilon_0 E\)；
+		\item 孤立导体表面各处的面电荷密度与各处表面的曲率有关，曲率越大（越尖）的地方，面电荷密度也越大。
+	\end{itemize}
+
+	\item[唯一性定理] 在给定的以导体为边界的区域中，若区域内电荷分布确定，且其边界按下列条件之一给定时，区域内的静电场的解必唯一：
+	\begin{itemize}[topsep=0pt, leftmargin=1em]
+		\item 给定每个导体的电量；
+		\item 给定每个导体的电势；
+		\item 给定一部分导体的电量和另一部分导体的电势。
+	\end{itemize}
+
+	\item[电极化强度] 各向同性电介质内，电极化强度$\v{P}= \varepsilon_0(\varepsilon_\mathrm{r} - 1) \v{E}= \varepsilon_0\chi_e\v{E}$，电极化率$\chi_e = \varepsilon_\mathrm{r} - 1$，表面极化电荷的面密度$\sigma' = \v{P} \cdot \vu*{n}$，内部极化电荷$q' = - \displaystyle \varoiint_S \v{P} \cdot \dif\v{S}$。
+	\item[电位移矢量] 各向同性电介质内，电位移矢量$\v{D} = \varepsilon_0\v{E} + \v{P} = \varepsilon_0\v{E} + \varepsilon_0(\varepsilon_\mathrm{r}-1)\v{E} = \varepsilon\v{E}$。
+	\item[\(\v{D}\)的高斯定理] 通过任意封闭面的电位移的通量，等于该封闭面所包围的自由电荷的代数和，即
+		\(\displaystyle \varoiint_S \v{D} \cdot \dif\v{S} = \textstyle \sum q_\text{0\,内}\)。
+	\item[静电场的界面关系] 切向上\(E_{1\uptau}=E_{2\uptau}，\dfrac{D_{1\uptau}}{D_{2\uptau}} = \dfrac{\varepsilon_1}{\varepsilon_2}\)，法向上\(D_{1\mathrm{n}} = D_{2\mathrm{n}}，\dfrac{E_{1\mathrm{n}}}{E_{2\mathrm{n}}} = \dfrac{\varepsilon_2}{\varepsilon_1}\)。
+\end{abstract}
 
 \subsubsection{导体的静电平衡与静电屏蔽}
 
@@ -2122,7 +2213,7 @@ $$
 		（1）由于静电平衡时导体内部无净电荷，所以电荷只能分布在两金属板的表面上。不考虑边缘效应，这些电荷都可当作是均匀分布的。设 4 个表面上的面电荷密度分别为$\sigma_1，\sigma_2，\sigma_3，\sigma_4$，则由电荷守恒可知
 		$$\sigma_1+\sigma_2=\dfrac QS，\qquad \sigma_3+\sigma_4=0$$
 		由于板间电场与板面垂直，且板内的电场为零，所以选一个两底分别在两个金属板内而侧面垂直于板面的封闭面作为高斯面，由高斯定理即有
-		$$\dfrac{(\sigma_2+\sigma_3)S_\text{底}}{\varepsilon_0} = \oiint \v{E}\cdot\dif\v{s} = 0
+		$$\dfrac{(\sigma_2+\sigma_3)S_\text{底}}{\varepsilon_0} = \varoiint \v{E}\cdot\dif\v{s} = 0
 		\quad\Longrightarrow\quad 
 		\sigma_2+\sigma_3=0$$
 		在第二块金属板内任取一点$P$，此处场强$E_P=0$应该是4个带电面的电场的叠加，因而有
@@ -2176,7 +2267,7 @@ $$
 		$$\v{E}(\vr)=\frac{q}{4\pi\varepsilon_0 \|\vr-\v{h}\|^3}(\vr-\v{h})-\frac{q}{4\pi\varepsilon_0 \|\vr+\v{h}\|^3}(\vr+\v{h})$$
 		式中，$\vr$表示从电荷$q$在平板上的投影点到$P$点的径矢，\(\v{h}\)表示该投影点到电荷$q$的径矢。由此，对于平板上任一点$P_0$，则
 		$$\v{E}_0(r)=\frac{q \cdot (-2\v{h})}{4\pi\varepsilon_0(r^2+h^2)^{\frac32}}=-\frac{q\v{h}}{2\pi\varepsilon_0(r^2+h^2)^{\frac32}}$$
-		由式~\ref{equ: 3.10}，\(\sigma(r) = \varepsilon_0 E_0(r) = -\dfrac{qh}{2\pi(r^2+h^2)^{\frac32}}\)。
+		由式~(\ref{equ: 3.10})，\(\sigma(r) = \varepsilon_0 E_0(r) = -\dfrac{qh}{2\pi(r^2+h^2)^{\frac32}}\)。
 	\end{solution}
 \end{example}
 
@@ -2293,7 +2384,7 @@ $$
 
 $\v{E}$不太强时，我们有$\v{D} = \varepsilon_0\v{E} + \varepsilon_0(\varepsilon_\mathrm{r}-1)\v{E} = \varepsilon\v{E}$。
 
-\din[$\v{D}$的高斯定理]{
+\din[$\v{D}$的高斯定理,label=D的高斯定理]{
 	通过任意封闭面的电位移的通量，等于该封闭面所包围的自由电荷的代数和，即\begin{equation}
 		\varoiint_S \v{D} \cdot \dif\v{S} = \sum q_\text{0\,内}
 	\end{equation}
@@ -2305,7 +2396,7 @@ $\v{D}$的高斯定理比真空中的$\v{E}$的高斯定理更普遍。当没有
 
 在介质分界面上，作一扁筒式封闭面为高斯面\(\varSigma\)，面积为\(\Dif S\)的两底面分别在两介质内并平行于界面，则由\(\v{D}\)的高斯定律可得
 \begin{align*}
-	\oiint_{\varSigma} \v{D} \cdot \dif \v{s} &= \v{D}_1 \cdot \Dif S\vu*{n} + \v{D}_2 \cdot \Dif S (-\vu*{n}) \\[-10pt] 
+	\varoiint_{\varSigma} \v{D} \cdot \dif \v{s} &= \v{D}_1 \cdot \Dif S\vu*{n} + \v{D}_2 \cdot \Dif S (-\vu*{n}) \\[-10pt] 
 	&= \bigl(\v{D}_1 \cdot \vu*{n} - \v{D}_2 \cdot \vu*{n}\bigr) \Dif S
 	= (D_{1\mathrm{n}}-D_{2\mathrm{n}}) \Dif S = \sigma_0 \Dif S 
 	\quad\Longrightarrow\quad D_{1\mathrm{n}}-D_{2\mathrm{n}} = \sigma_0
@@ -2328,7 +2419,17 @@ $\v{D}$的高斯定理比真空中的$\v{E}$的高斯定理更普遍。当没有
 	E_{1\uptau}=E_{2\uptau}，\qquad 
 	\dfrac{D_{1\uptau}}{D_{2\uptau}} = \dfrac{\varepsilon_1}{\varepsilon_2}
 \end{equation}
+
 \subsection{稳恒电流}
+
+\begin{abstract}
+	\item[电流的描述] 单位时间内流过某一确定横截面的电量称为\textbf{电流强度}，即\(I = \dt[q]\)；空间中一点处的电流用\textbf{电流密度}矢量描述，记作\(\v{J}\)，其大小等于单位时间通过单位垂直面积的电荷量，方向与正电荷定向运动的方向相同，即\(\v{J}=\dfrac{\dif I}{\dif S_\perp}\vu*{n}_+\)。
+	\item[电流连续性方程] 对任一闭合面，电流密度的通量满足\(\displaystyle \varoiint_S \v{J} \cdot \dif\v{S} = - \dt[Q_\text{内}]\)。
+	\item[欧姆定律的微分形式] 导体中电场强度为\(\v{E}\)处电流密度为\(\v{J} = \sigma \v{E}\)，其中\(\sigma\)是电导率。
+	\item[焦耳定律的微分形式] 导体中电场强度为\(\v{E}\)处转化处热能为\(p = \sigma E^2\)，其中\(\sigma\)是电导率。
+	\item[电动势] 电源内部单位正电荷从负极运动到正极的过程中，非静电力所作的功称为\textbf{电动势}，即 
+		\(\mathscr{E}=\dfrac{A_\text{非}(q_0)}{q_0}=\displaystyle \oint_{(-)}^{(+)} \v{E}_\text{非} \cdot \dif \v{l}\)。
+\end{abstract}
 
 \subsubsection{稳恒电流与稳恒电场}
 
@@ -2429,8 +2530,54 @@ $$\left\langle \dfrac{1}{2}m\v{u}^2 \right\rangle = \dfrac{q^2\v{E}^2}{2m} \left
 	电动势，也有电流。这一对金属即称为\textbf{热电偶}，在两个接点温度不同时所产生的接触电动势的差值称为\textbf{温差电动势}，也即是热电偶对外显现的电动势，其与两个接点的温差有关。
 \end{eg}
 
-\subsection{磁场与磁力的规律}
+\section{电磁学：磁的规律}
 
+\subsection{磁场与磁力的规律}
+\begin{abstract}
+	\item[磁感应强度] 有三种等价的定义方式：
+	\begin{itemize}
+		\item \textbf{\run 从运动电荷受力定义}\quad 空间某点的\textbf{磁感应强度}，数值上等于单位电荷以单位速率通过该点所受的最大洛伦兹力，方向由这个最大磁力及其对应速度以右手定则确定，即\(\v{F} = q\vv \cp \v{B}\)。
+	
+		\item \textbf{\run 从电流元受力定义}\quad 空间某点的\textbf{磁感应强度}，数值上等于单位电流元在该处所受的最大安培力，方向由这个最大磁力及其对应电流元方向以右手定则确定，即\(\dif\v{F} = I\dif\v{l} \cp \v{B}\)。
+	
+		\item \textbf{\run 从磁矩受力矩定义}\quad 空间某点的\textbf{磁感应强度}，数值上等于单位磁矩（单位电流、单位面积）在该处所受的最大力矩，方向由这个最大力矩及其对应磁矩以右手定则确定，即\(\v{M} = I\v{S} \cp \v{B} = \v{m} \cp \v{B}\)。
+	\end{itemize}
+	
+	\item[\(\v{B}\)的高斯定理] 在任何磁场内，通过任意封闭曲面的磁通量恒等于0，即
+		\(\varPhi = \displaystyle \varoiint \v{B} \cdot \dif\v{S} = 0\)。
+
+	\item[Biot-Savart定律] 电流元$I\dif \v{l}$在相对于其$\vr$处产生的磁场为
+		\(\dif \v{B} = \dfrac{\mu_0 I\dif\v{l} \cp \ur}{4\pi r^2} = \dfrac{\mu_0}{4\pi}\dfrac{I\dif\v{l}\sin\left\langle I\dif\v{l}，\vr \right\rangle}{r^2}\)。
+
+	\item[常见载流路径的磁感应强度分布] 记电流强度为\(I\)，以下各载流路径产生的场强\(\v{E}\)和距离\(d\)的关系为：
+	\begin{center}
+		\begin{tabular}{lll}
+			\toprule
+			\multicolumn{2}{l}{\textbf{长直电流的磁场}} & $B = \dfrac{\mu_0I}{4\pi d}\left( \cos\theta_1 - \cos\theta_2 \right)$ \\[7pt]
+			特别地，& 无限长直电流 & \(B=\dfrac{\mu_0I}{2\pi d}\) \\[7pt]
+			& 无限半长直电流 & \(B=\dfrac{\mu_0I}{4\pi d}\) \\[7pt]
+			\hline
+			\multicolumn{2}{l}{\textbf{圆电流轴线上的磁场}} & $B = B_{\parallel} = \dfrac{\mu_{0}IR^{2}}{2(R^2+d^2)^\frac{3}{2}}$ \\[7pt]
+			特别地，& 圆电流中心处 & \(B=\dfrac{\mu_0I }{2R }\) \\[7pt]
+			\hline
+			\multicolumn{2}{l}{\textbf{磁偶极场}} & \(\v{B} = \dfrac{\mu_0 I\v{S}}{2\pi d^3} = \dfrac{\mu_0 \v{m}}{2\pi d^3}\) \\[7pt]
+			\hline
+			\multicolumn{2}{l}{\textbf{长直螺线管内轴线上的磁场}} & \(B = \dfrac{\mu_{0}nI }{2} (\cos\beta_2 - \cos\beta_1)\) \\[7pt]
+			特别地，& 无限长直螺线管内任一点处 & \(B=\mu_0nI\) \\[7pt]
+			& 无限半长直螺线管端部圆心 & \(B=\dfrac{\mu_{0}nI }{2}\) \\[7pt]
+			\hline
+			\multicolumn{2}{l}{\textbf{无限长圆柱面电流的磁场}} & \(B = \dfrac{\mu_0}{2\pi r}I_\text{内} = \begin{cases}[ll]
+				\dfrac{\mu_0I}{2\pi r}，& r>R，\\
+				0，& 0<r<R
+			\end{cases}\) \\[7pt]
+			\bottomrule
+		\end{tabular}
+
+	\end{center}
+	\item[\(\v{B}\)的环路定理] 在恒定电流的磁场中，磁感强度$\v{B}$沿任何闭合路径$L$的线积分（环量）等于路径$L$所环绕的电流强度的代数和的$\mu_0$倍，即
+		\(\displaystyle \oint_L \v{B}\cdot\dif\v{l} = \mu_0 \textstyle\sum I_\text{内}\)。
+	\item[霍尔效应] 金属窄条沿磁场方向厚度为\(b \)，沿第三方向宽度为\(h\)，则霍尔电压\(U_\text{H}=vBh=\dfrac{BI}{nbq}\xlongequal{K_\mathrm{H}:=\frac{1}{nq}}K_\mathrm{H}\dfrac{BI}{b}\)。
+\end{abstract}
 \subsubsection{磁场的规律}
 
 \de[磁感应强度]{
@@ -2457,16 +2604,18 @@ $$\left\langle \dfrac{1}{2}m\v{u}^2 \right\rangle = \dfrac{q^2\v{E}^2}{2m} \left
 $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 通过任一封闭面$S$的磁通量即写成$\varPhi = \displaystyle \varoiint \v{B} \cdot \dif\v{S}$，其中$\dif \v{S} = \dif S \vu*{n}$，$\vu*{n}$为这一面元的单位法向量。对闭合曲面，约定以向外为正方向。
 
-\din[$\v{B}$\,的高斯定理（磁通连续原理）]{
+\din[$\v{B}$的高斯定理（磁通连续原理）,label=B的高斯定理]{
 	在任何磁场内，通过任意封闭曲面的磁通量恒等于0，即
-	\begin{equation*}
+	\begin{equation}
 		\varPhi = \displaystyle \varoiint \v{B} \cdot \dif\v{S} = 0
-	\end{equation*}
+	\end{equation}
 }
 
 \di[Biot-Savart定律]{
 	电流元$I\dif \v{l}$在相对于其$\vr$处产生的磁场为
-	$$ \dif \v{B} = \dfrac{\mu_0 I\dif\v{l} \cp \ur}{4\pi r^2} = \dfrac{\mu_0}{4\pi}\dfrac{I\dif\v{l}\sin\left\langle I\dif\v{l}，\vr \right\rangle}{r^2}$$
+	\begin{equation}
+		\dif \v{B} = \dfrac{\mu_0 I\dif\v{l} \cp \ur}{4\pi r^2} = \dfrac{\mu_0}{4\pi}\dfrac{I\dif\v{l}\sin\left\langle I\dif\v{l}，\vr \right\rangle}{r^2}
+	\end{equation}
 	\tcblower
 	\textbf{式中\quad}$\mu_0$——真空磁导率，取$\dfrac{\mu_0}{4\pi} = 10^{-7}\,\mathrm{T\cdot m/A}$。
 }
@@ -2479,7 +2628,7 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 \end{example}
 
 \begin{example}
-	求长直电流$I$的磁场分布。
+	求长直电流$I$的磁场分布。\label{e.g: 长直电流的磁场}
 \begin{solution}
 	\adjline
 	假设情境及各物理量所设如图。
@@ -2493,13 +2642,16 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 	由此知所有电流元在空间同一点产生的磁场方向相同，于是对空间中一点$P$，$B = \dint \dfrac{\mu_0}{4\pi} \dfrac{I\dif l\sin\theta}{r^2}$。又由图$r=\dfrac{d }{\sin \theta}$，$l=-\dfrac{d }{\tan \theta}$，得$\dif l = \dfrac{d }{\sin^2\theta} \dif \theta$，于是 
 	\begin{equation*}
 		B = \dint \dfrac{\mu_0}{4\pi} \dfrac{I\dif l\sin\theta}{r^2} 
-		= \dint \dfrac{\mu_0}{4\pi} \dfrac{I\dfrac{d }{\sin^2\theta} \dif \theta\sin\theta}{\dfrac{d^2 }{\sin^2 \theta}}
+		= \dint \dfrac{\mu_0}{4\pi} \cfrac{I\dfrac{d }{\sin^2\theta} \dif \theta\sin\theta}{\dfrac{d^2 }{\sin^2 \theta}}
 		= \dfrac{\mu_0I}{4\pi d} \dint \sin\theta\dif \theta
 		= \dfrac{\mu_0I}{4\pi d}\left( \cos\theta_1 - \cos\theta_2 \right) 
 		\qedhere
 	\end{equation*}
 \end{solution}
-\noindent 对无限长直电流，$\theta_1=0，\theta_2=\pi$，有$B=\dfrac{\mu_0I}{2\pi d}$。
+\noindent 对无限长直电流，$\theta_1=0，\theta_2=\pi$，有
+\begin{equation}
+	B=\dfrac{\mu_0I}{2\pi d} \label{equ: 长直电流的磁场}
+\end{equation}
 \end{example}
 
 \begin{example}
@@ -2524,12 +2676,18 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 	\end{equation*}
 	方向沿轴线上右手螺旋所指向的方向。
 \end{solution}
-\noindent 在圆电流中心处，有$B=\dfrac{\mu_0I }{2R }$；当$d \gg R$时，有$B = \dfrac{\mu_0 I R^2}{2d^3} = \dfrac{\mu_0 I S}{2\pi d^3}$，其中$S$为圆电流的面积。
-
+\noindent 在圆电流中心处，有
+\begin{equation}
+	B=\dfrac{\mu_0I }{2R }
+\end{equation}
+当$d \gg R$时，有$B = \dfrac{\mu_0 I R^2}{2d^3} = \dfrac{\mu_0 I S}{2\pi d^3}$，其中$S$为圆电流的面积。
 \begin{definition}
 	一个载流闭合线圈就是一个\textbf{磁偶极子}，其\textbf{磁偶极矩}或\textbf{磁矩}定义为$\v{m} = I\v{S} = IS \vu*{n}$，$\vu*{n}$指向电流圈的正法线方向，即线圈电流右手螺旋所指向的方向。
 \end{definition}
-由此，在距离磁偶极子很远处，即当$d \gg R$时，有$\v{B} = \dfrac{\mu_0 I\v{S}}{2\pi d^3} = \dfrac{\mu_0 \v{m}}{2\pi d^3}$。
+由此，在距离磁偶极子很远处，即当$d \gg R$时，有
+\begin{equation}
+	\v{B} = \dfrac{\mu_0 I\v{S}}{2\pi d^3} = \dfrac{\mu_0 \v{m}}{2\pi d^3}
+\end{equation}
 \end{example}
 
 \begin{example}
@@ -2549,12 +2707,18 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 	\begin{equation*}
 		B = \int \dif B 
 		= \int \dfrac{\mu_{0}R^{2}nI\dif l}{2(R^2+l^2)^\frac{3}{2}} 
-		= \int_{\beta_1}^{\beta_2} \dfrac{-\mu_{0}R^{2}nI \dfrac{R \dif\beta}{\sin^2\beta}}{2\dfrac{R^3}{\sin^3\beta}} 
+		= \int_{\beta_1}^{\beta_2} \cfrac{-\mu_{0}R^{2}nI \dfrac{R \dif\beta}{\sin^2\beta}}{2\dfrac{R^3}{\sin^3\beta}} 
 		= \dfrac{\mu_{0}nI }{2} \int_{\beta_1}^{\beta_2} -\sin\beta \dif\beta 
 		= \dfrac{\mu_{0}nI }{2} (\cos\beta_2 - \cos\beta_1) \qedhere
 	\end{equation*}
 \end{solution}
-\noindent 对无限长直螺线管，$\beta_1 = \pi，\beta_2 = 0$，则其中任意一点处都有$B=\mu_0nI$；对半无限长直螺线管的端部，则有$B=\dfrac{\mu_{0}nI }{2}$。
+\noindent 对无限长直螺线管，$\beta_1 = \pi，\beta_2 = 0$，则其轴线上任意一点处（例~\ref{e.g: 长直螺线管内}~将证明内部不在轴线上也同样成立）都有\begin{equation}
+	B=\mu_0nI
+\end{equation}
+对半无限长直螺线管，在其端部圆心则有
+\begin{equation}
+	B=\dfrac{\mu_{0}nI }{2}
+\end{equation}
 \end{example}
 
 \zhu[运动电荷产生的磁场]{
@@ -2571,9 +2735,9 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 
 \di[安培环路定理]{
 	在恒定电流的磁场中，磁感强度$\v{B}$沿任何闭合路径$L$的线积分（环量）等于路径$L$所环绕的电流强度的代数和的$\mu_0$倍，即
-	\begin{equation*}
-		\displaystyle \oint_L \v{B}\cdot\dif\v{l} = \mu_0 \textstyle\sum I_\text{内}
-	\end{equation*}
+	\begin{equation}
+		\displaystyle \oint_L \v{B}\cdot\dif\v{l} = \mu_0 \sum I_\text{内}
+	\end{equation}
 }
 
 \noindent 其中所谓\textbf{「环绕」}是指，设想闭合路径$L$为一根绳子，绳子勒紧后能把电流捆住。电流正方向与$L$绕向（$\dif \v{l}$方向）遵循右手螺旋定则。
@@ -2599,7 +2763,7 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 \end{example}
 
 \begin{example}
-	求载流无限长直螺旋线圈内的磁场。设线圈上单位长匝数为$n$，线圈中电流为$I$。
+	求载流无限长直螺旋线圈内的磁场。设线圈上单位长匝数为$n$，线圈中电流为$I$。\label{e.g: 长直螺线管内}
 \begin{solution}
 	因螺旋线圈无限长，并由电流分布的对称性，可知$P$点的磁场和轴线上的磁场同向，即螺旋线圈内的磁感线是一组平行于轴线的直线；且距轴线同远的点其磁场大小相同。可选如图矩形环路$L$，其上有
 	\[	\oint_L \v{B} \cdot \dif \v{l} 
@@ -2611,7 +2775,7 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 
 \subsubsection{磁力的规律}
 
-\paragraph{洛伦兹力}
+\paragraph{磁场对运动电荷的作用}
 
 由定义~\ref{磁感应强度}，即有
 \di[洛伦兹力]{
@@ -2638,7 +2802,8 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 	其中$K_\mathrm{H}$称为\textbf{霍尔系数}。
 \end{eg}
 
-\paragraph{安培力}
+\paragraph{磁场对载流导线的作用}
+
 由定义~\ref{磁感应强度}，即有
 \di[安培力]{
 	电流元$I \dif\v{l}$在磁感应强度为$\v{B}$的磁场中受到的安培力为
@@ -2650,10 +2815,16 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 \begin{example}[1]
 	求两平行无限长载流直导线单位长度所受的作用力。
 \begin{solution}
-	电流$I_1$在$I_2$处产生的磁场为$B_1 = \dfrac{\mu_0I_1}{2\pi d}$，载有电流$I_2$的导线单位长度受此磁场的安培力即为$\dfrac{\dif F_2}{\dif l} = B_1I_2 = \dfrac{\mu_0I_1I_2}{2\pi d}$。
+	\adjline
+	电流$I_1$在$I_2$处产生的磁场为$B_1 = \dfrac{\mu_0I_1}{2\pi d}$，载有电流$I_2$的导线单位长度受此磁场的安培力即为
+	\begin{equation*}
+		\dfrac{\dif F_2}{\dif l} = B_1I_2 = \dfrac{\mu_0I_1I_2}{2\pi d}
+	\end{equation*}
 	当电流$I_1$在$I_2$方向相同时，两导线相吸；相反时，相排斥。
 \end{solution}
 \end{example}
+
+\paragraph{磁场对磁矩的作用}
 
 对圆电流圈（或任意平面电流线圈），其在均匀磁场中受的磁力矩为
 \begin{equation}
@@ -2662,6 +2833,15 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 
 
 \subsection{磁场中的磁介质}
+
+\begin{abstract}
+	\item[原子和分子的磁矩] 
+	\item[磁化强度] 在各向同性的顺磁质、抗磁质内，磁化强度\(\v{M} = (\mu_\mathrm{r}-1)\dfrac{1}{\mu_o\mu_\mathrm{r}}\v{B}\)，磁化率\(\chi_\mathrm{m} = \mu_\mathrm{r}-1\)，磁介质中磁化电流 \(I' = \oint_L \v{M} \cdot \dif \v{l}\)，表面上面束缚磁化电流密度\(\v{\jmath}' = \v{M}_\text{表} \cp \vu*{n}\)。
+	\item[磁场强度] 在各向同性的顺磁质、抗磁质内，磁场强度\(\v{H} = \dfrac{\v{B}}{\mu_0} - \v{M} = \dfrac{\v{B}}{\mu_0\mu_r} = \dfrac{\v{B}}{\mu}\)。
+	\item[\(\v{H}\)的环路定理] 沿任一闭合路径的磁场强度的环流，等于该闭合路径所套连的传导电流的代数和，即
+		\(\displaystyle \oint_L \v{H} \cdot \dif \v{l} = \textstyle \sum I_\text{0\,内}\)
+	\item[磁场的界面关系]
+\end{abstract}
 
 在考虑物质受磁场的影响或其对磁场的影响时，物质统称\tboba{磁介质}。在空间中充入各种磁介质，实验发现磁介质内的磁场有的比真空时弱，有的比真空时强。
 充入后与充入前磁感应强度的比值，定义为磁介质的\tboba{相对磁导率}，用$\mu_\mathrm{r}$表示。依据$\mu_\mathrm{r}$的大小，可将磁介质分为3类：
@@ -2676,11 +2856,16 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 \paragraph{电子的磁矩}
 
 由于电子带电，电子绕原子核作轨道运动，就相当于一个闭合载流线圈，其\tboba{轨道磁矩}为
-\[m=IS = -\dfrac{v}{2\pi r}e \cdot \pi r^2 = -\dfrac{e}{2m_e} \cdot m_evr = -\dfrac{e}{2m_e}L\]
-其中\(r\)为电子的经典轨道半径，\(L\)为电子轨道运动的角动量。
+\begin{equation}
+	m=IS = -\dfrac{v}{2\pi r}e \cdot \pi r^2 = -\dfrac{e}{2m_e} \cdot m_evr = -\dfrac{e}{2m_e}L \label{equ: 电子轨道磁矩}
+\end{equation}
+其中\(r\)为电子的经典轨道半径，\(L\)为电子轨道运动的角动量。式~(\ref{equ: 电子轨道磁矩})~对一个原子中所有电子的总轨道磁矩也成立，这时总轨道角动量\(L\)只能取约化普朗克常量\(\hbar\)的整数倍。
 
-电子还有自旋运动，\tboba{自旋磁矩}和自旋角动量 \(S\) 的关系为
-\[m = -\dfrac{e }{m_e }S\]
+电子还有自旋运动，\tboba{自旋磁矩}和自旋角动量 \(S\)的关系为
+\begin{equation}
+	m = -\dfrac{e }{m_e }S 
+\end{equation}
+代入\(S=\dfrac{\hbar}{2}\)即得\(m = -9.27 \cp 10^{-24}\mathrm{\,J/T}\)，这一磁矩称为\textbf{玻尔磁子}。
 
 \paragraph{原子核的磁矩}
 
@@ -2800,21 +2985,210 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 	\end{solution}
 \end{example}
 
+\subsubsection{磁场的界面关系}
+
+在介质分界面上，作一扁筒式封闭面为高斯面\(\varSigma\)，面积为\(\Dif S\)的两底面分别在两介质内并平行于界面，则由\(\v{B}\)的高斯定律可得
+\begin{align*}
+	\varoiint_{\varSigma} \v{B} \cdot \dif \v{s} &= \v{B}_1 \cdot \Dif S\vu*{n} + \v{B}_2 \cdot \Dif S (-\vu*{n}) \\[-10pt] 
+	&= \bigl(\v{B}_1 \cdot \vu*{n} - \v{B}_2 \cdot \vu*{n}\bigr) \Dif S
+	= (B_{1\mathrm{n}}-B_{2\mathrm{n}}) \Dif S = 0 
+	\quad\Longrightarrow\quad B_{1\mathrm{n}}-B_{2\mathrm{n}} = 0
+\end{align*}
+即 
+\begin{equation}
+	B_{1\mathrm{n}} = B_{2\mathrm{n}}，\qquad 
+	\dfrac{H_{1\mathrm{n}}}{H_{2\mathrm{n}}} = \dfrac{\mu_2}{\mu_1}
+\end{equation}
+类似地，在介质分界面上作一窄条矩形环路\(\varGamma\)，长度为\(\Dif L\)的两长边分别在两介质内并平行于界面，则由\(\v{H}\)环路定理可得
+\begin{align*}
+	\oint_\varGamma \v{H} \cdot \dif \v{l} 
+	&= \v{H}_1 \cdot \Dif L \vu*{\tau} + \v{H}_2 \cdot \Dif L (-\vu*{\tau}) \\[-10pt] 
+	&= \bigl(\v{H}_1 \cdot \vu*{\tau} - \v{H}_2 \cdot \vu*{\tau}\bigr) \Dif L
+	= (H_{1\uptau}-H_{2\uptau}) \Dif L = \sum I_\text{0\,内}
+	\quad\Longrightarrow\quad H_{1\uptau}-H_{2\uptau} = \dfrac{\sum I_\text{0\,内}}{\Dif L}
+\end{align*}
+在交界面无自由电流的情形下，即有 
+\begin{equation}
+	H_{1\uptau}=H_{2\uptau}，\qquad 
+	\dfrac{B_{1\uptau}}{B_{2\uptau}} = \dfrac{\mu_1}{\mu_2}
+\end{equation}
+
 \subsection{电磁感应}
+
+\subsubsection{法拉第电磁感应定律}
+
+\di[楞次定律]{
+	感应电流的磁通总是\tbome{阻碍}原磁通的变化；导体在磁场中运动时，导体中出现的感应电流所受到的磁场力必然\tbome{阻碍}此导体的运动。
+}
+\di[法拉第电磁感应定律]{
+	闭合回路的感应电动势\(\mathscr{E}\)和穿过回路的磁通\(\varPhi\)的时间变化率成正比，即 
+	\begin{equation}
+		\mathscr{E} = - \dt[\varPhi]
+	\end{equation}
+	其中，\(\mathscr{E }\)的正方向与回路中所选的正方向一致，\(\varPhi\)的正方向与回路正方向成右手螺旋关系。
+}
+
+进而，当\(N\)匝线圈串联时，总感应电动势应是各圈回路感应电动势之和。
+\de[全磁通、磁链]{
+	导电线圈或电流回路中，穿过各匝线圈的磁通量的总和称为\tboba{全磁通}，记作\(\varPsi\)，即 
+	\begin{equation}
+		\varPsi = \sum\limits_i \varPhi_i
+	\end{equation}
+	当穿过各匝线圈的磁通量相等时，全磁通\(\varPsi = N\varPhi_i\)称为\tboba{磁链}。
+}
+\begin{theorem}
+	\textbf{\textup{线圈的法拉第电磁感应定律\quad}}闭合线圈的感应电动势\(\mathscr{E}\)和穿过线圈的全磁通\(\varPsi\)的时间变化率成正比，即 
+	\begin{equation}
+		\mathscr{E} = - \dt[\varPsi]
+	\end{equation}
+	其中，\(\mathscr{E }\)的正方向与回路中所选的正方向一致，\(\varPsi\)的正方向与回路正方向成右手螺旋关系。
+\end{theorem}
+
+由\(\varPhi = \v{B} \cdot \v{S}\)，代入可知
+\begin{equation*}
+	\mathscr{E} = - \dt[(\v{B} \cdot \v{S})] = - \v{B} \cdot \dt[\v{S}] - \dt[\v{B}] \cdot \v{S}
+\end{equation*}
+
+\paragraph{动生电动势\(\mathscr{E}_\text{动} = - \v{B} \cdot \dt[\v{S}]\)}
+
+导体在磁场中运动时，导体中的自由电荷在洛仑兹力作用下定向移动，产生感应电动势，这就是动生电动势。
+
+对于直导线在均匀磁场中运动的情况，有
+\(\mathscr{E}_\text{动} =  - \v{B} \cdot \dt[\v{S}] = - B_\perp \cdot l \dt[x_\perp] = - B_\perp l v_\perp \)，其中\(v_\perp\)的正方向应是垂直于直导线、使回路面积增大的方向。
+
+更一般地，对规定了正方向的小段直导线\(\dif \v{l}\)，有
+\(\dif \mathscr{E}_\text{动} = \v{B} \cdot (\dif\v{l} \cp \dt[\v{x}]) = \v{B} \cdot (\dif\v{l} \cp \vv) = (\vv \cp \v{B}) \cdot \dif\v{l}\)，故
+\di[动生电动势的计算]{
+	在恒定磁场中，导线路径\(L\)的动生电动势为
+	\begin{equation}
+		\mathscr{E}_\text{动} = \int_L \left( \vv \cp \v{B} \right) \cdot \dif\v{l}
+	\end{equation}
+}
+动生电动势的本质，是通过洛仑兹力实现能量转换。
+
+\begin{eg}{交流发电机}
+	交流发电机中，线圈与磁极相对转动，有 
+	\begin{align*}
+		\mathscr{E} = - N \dt[\varPhi] = - N \dt[\big( \v{B} \cdot \v{S} \big)]
+		= - N \dt[\bigl(BS\cos(\omega t + \varphi_0)\bigr)] = \omega NBS \sin(\omega t + \varphi_0)
+	\end{align*}
+	即电动势的峰值\(\mathscr{E}_m = \omega NBS\)，其中\(N\)为线圈匝数，\(\varphi = \omega t + \varphi_0\)是线圈平面的正法向量与磁场的夹角。通常取初始夹角\(\varphi_0 = 0\)，即初始线圈平面与磁场方向垂直，有\(\mathscr{E} = \mathscr{E}_m \sin \omega t\)。
+\end{eg}
+
+\paragraph{感生电动势\(\mathscr{E}_\text{感} = - \dt[\v{B}] \cdot \v{S}\)}
+静止回路所在的磁场发生变化时，回路包围的磁通变化，在回路中会产生感应电动势，这就是感生电动势。
+
+感生电动势产生的原因，是变化的磁场激发了空间中的感生电场。感生电场的电力线是闭合的，是一种非静电场。正是这种非静电场产生了感生电动势。由电动势的普遍定义知
+\begin{equation*}
+	\oint_L \v{E}_\text{感} \cdot \dif \v{l} = \mathscr{E}_\text{感} 
+	= - \iint_S \dfrac{\partial \v{B}}{\partial t} \cdot \dif\v{s}
+	\quad\Longleftrightarrow\quad
+	\v{\nabla} \cp \v{E}_\text{感} = - \dfrac{\partial \v{B}}{\partial t}
+\end{equation*}
+\din[修正的\(\v{E}\)的环路定理,label=E的环路定理]{
+	沿任一闭合路径的电场强度的环流，等于该闭合路径包围的曲面上磁感应强度变化率的通量的相反数，即 
+	\begin{equation}
+		\oint_L \v{E} \cdot \dif \v{l} = - \iint_S \dfrac{\partial \v{B}}{\partial t} \cdot \dif\v{s}
+	\end{equation}
+}
+
+\begin{example}
+	电子感应加速器是利用感生电场来加速电子的一种设备，它的柱形电磁铁在两极间产生磁场，在磁场中安置一个环形真空管道作为电子运行的轨道。当磁场发生变化时，就会沿管道方向产生感生电场，射入其中的电子就受到这感生电场的持续作用而被不断加速。
+	
+	设环形真空管的轴线半径为\(a\)，求磁场变化时沿环形真空管轴线的感生电场。
+	\begin{solution}
+		\adjline
+		由磁场分布的轴对称性可知，感生电场的分布也具有轴对称性。沿环管轴线上各处的电场强度大小应相等，而方向都沿轴线的切线方向。因而沿此轴线的感生电场的环路积分为
+		$$\oint_L E_\mathrm{i}\cdot\dif r=E_\mathrm{i} \cdot 2\pi a$$
+		以$\overline{B}$ 表示环管轴线所围绕的面积上的平均磁感应强度，则通过此面积的磁通量为
+		$$\varPhi=\overline{B}S=\overline{B} \cdot \pi a^2$$
+		于是
+		$$E_\mathrm{i} \cdot 2\pi a=-\frac{\dif \varPhi}{\dif t}=-\pi a^2\frac{\dif \overline{B}}{\dif t}$$
+		由此
+		\begin{equation*}
+			E_\mathrm{i}=-\frac{a}{2}\frac{\dif \overline{B}}{\dif t} \qedhere
+		\end{equation*}
+	\end{solution}
+
+	感应加速器中，随时间变化的磁场\(\v{B}(t)\)身兼双职：
+	\begin{itemize}
+		\item \(\v{B}(t)\)对电子施加的洛仑兹力作为圆周轨道的向心力；
+		\item 时变磁场所激发的感生电场\(\v{E}_\mathrm{i}\)使电子在做圆周运动时不断被加速。
+	\end{itemize}
+	要保证电子做加速圆周运动，则磁场不是均匀磁场，且需要满足\(B_\text{轨道}(t) = \dfrac{1}{2} \overline{B}(t)\)。
+\end{example}
+
+\subsubsection{互感与自感}
+
+\begin{definition}
+    一个回路中的电流变化时，其所产生的磁场在它附近的另一回路中产生的感生电动势称为\textbf{互感电动势}。
+\end{definition}
+
+对两个固定线圈，假设线圈1 中的电流 \(i_1\) 随时间 \(t\) 变化，在线圈2中产生的互感电动势为\(\mathscr{E}_{21}\)。由 Biot-Savart定律，知\(i_1\)的磁场\(B_1 \propto i_1\)，从而\(i_1\)在线圈2中的全磁通\(\psi_{21} \propto i_1\)，即可定义其比例系数\(M_{21} := \dfrac{\psi_{21}}{i_1}\)，称为\textbf{线圈1对线圈2的互感（系数）}。这样，线圈1中的电流在线圈2中产生的感应电动势就为\(\mathscr{E}_{21} = - \dt[\varPsi_{21}] = - M_{21} \dt[i_1]\)。同理，也会有定义\(M_{12} := \dfrac{\psi_{12}}{i_2}\)，有结论\(\mathscr{E}_{12} = - \dt[\varPsi_{12}] = - M_{12} \dt[i_2]\)。可以证明，\(M_{12} = M_{21}\)。
+
+\de[互感（系数）]{
+	两个固定线圈中，任意一个上单位电流在另一线圈中产生的全磁通，称为这两个线圈之间的\tboba{互感（系数）}\!\!，记作\(M\)，即
+	\begin{equation}
+		M = \dfrac{\psi_{21}}{i_1}= \dfrac{\psi_{12}}{i_2}
+	\end{equation}
+}
+\di[线圈的互感]{
+	给定两个固定线圈，则其任意一个线圈中的电流在另一线圈中产生的互感电动势，大小上等于该电流变化率与互感系数的乘积，即 
+	\begin{equation}
+		\mathscr{E}_{21} = - M_{21} \dt[i_1]，\qquad \mathscr{E}_{12} = - M_{12} \dt[i_2]
+	\end{equation}
+}
+
+\begin{definition}
+	一个线圈的电流发生变化时，通过线圈自身的全磁通也会发生变化，线圈内产生的感生电动势称为\textbf{自感电动势}。
+\end{definition}
+
+\de[自感（系数）]{
+	线圈中通有单位电流强度时，通过线圈自身的全磁通的大小，称为这个线圈的\tboba{自感（系数）}\!\!，记作\(L\)，即
+	\begin{equation}
+		L = \dfrac{\psi}{i}
+	\end{equation}
+}
+则可知，\(\mathscr{E}_\text{自} = - \dt[\psi] = - L \dt[i]\)。自感电动势总是阻碍回路电流的变化。
+
+两个线圈的自感与它们的互感之间的关系为
+\begin{equation}
+	M=k\sqrt{L_1L_2}
+\end{equation}
+其中\(k\)为\textbf{耦合系数}，\(0 \le k \le 1\)。
+
+\subsubsection{磁场的能量}
+
+自感为$L$ 的线圈中通有电流$I$ 时所储存的磁能应该等于这电流消失时自感电动势所做的功。这个功可如下计算。以$i\dif t$表示在短路后某一时间 $\dif t$内通过负载的电量，则在这段时间内自感电动势做的功为
+$$\dif A=\mathscr{E}_L i\dif t=-L\frac{\dif i}{\dif t}i\dif t=-Li\dif i$$
+电流由起始值减小到零时，自感电动势所做的总功就是
+$$A=\int\dif A=\int_I^0-Li\dif i=\frac{1}{2}LI^2$$
+这也就是自感为$L$ 的线圈中通有电流$I$ 时的磁能\(W_\mathrm{m}\)。电感能量储存在磁场中，那么对一个长直螺线管来说，\(L = \dfrac{\psi}{i} = \cufrac{N \cdot B \cdot \dfrac{\pi d^2}{4}}{i} = \cufrac{N \cdot \dfrac{\mu N i}{l} \cdot \dfrac{\pi d^2}{4}}{i} = \dfrac{\pi\mu N^2d^2}{4l} = \mu n^2 Sl = \mu n^2 V\)，即\(W_\mathrm{m} = \dfrac{1}{2} \mu n^2 V I^2 = \dfrac{B^2}{2\mu} V\)。
+
+\de[磁场能量密度]{
+	单位体积磁场所具有的能量，称为\tboba{磁场能量}（的体积）\tboba{密度}，记作$w_\mathrm{m}$。
+}
+\di[磁场能量与磁场强度的关系]{
+	磁场能量密度$w_\mathrm{m}$与该处磁场强度$H$的平方成正比，比例系数为磁导率$\mu$的一半，即
+	\begin{equation}
+		w_\mathrm{m} = \dfrac{\mu H^2}{2} = \dfrac{B^2}{2\mu}
+	\end{equation}
+}
+
 
 \subsection{Maxwell电磁理论}
 
-\subsubsection{Maxwell方程组}
+\subsubsection{全电流假说}
 
 对于非稳恒电流的情况，Maxwell 提出了一个重要假设：电容器充电时其内存在\textbf{位移电流}，它和传导电流总体是连续的。
 
-由电荷守恒式\(\displaystyle \oiint_S \v{J}_\text{传} \cdot \dif\v{s} = - \dfrac{\dif Q_\text{内}}{\dif t}\)，
-而\(Q_\text{内}=\displaystyle \oiint_S \v{D} \cdot \dif \v{s}\)，
-即得\(\displaystyle \oiint_S \v{J}_\text{传} \cdot \dif\v{s} = - \oiint_S \dfrac{\partial \v{D}}{\partial t} \cdot \dif \v{s}\)，
-也即\(\displaystyle \oiint_S \left( \v{J}_\text{传} + \dfrac{\partial \v{D}}{\partial t} \right) \cdot \dif\v{s} = 0\)。
-相应地，\(\dfrac{\partial \v{D}}{\partial t}\)称为\textbf{位移电流密度}。
+由电流连续性方程\(\displaystyle \varoiint_S \v{J}_\text{传} \cdot \dif\v{s} = - \dfrac{\dif Q_\text{内}}{\dif t}\)（定理~\ref{电流连续性方程}），
+而\(Q_\text{内}=\displaystyle \varoiint_S \v{D} \cdot \dif \v{s}\)（高斯定理），
+即得\(\displaystyle \varoiint_S \v{J}_\text{传} \cdot \dif\v{s} = - \varoiint_S \dfrac{\partial \v{D}}{\partial t} \cdot \dif \v{s}\)，
+也即\(\displaystyle \varoiint_S \left( \v{J}_\text{传} + \dfrac{\partial \v{D}}{\partial t} \right) \cdot \dif\v{s} = 0\)。
+相应地，\(\dfrac{\partial \v{D}}{\partial t}\)称为\textbf{位移电流密度}，记作\(\v{J}_\text{位}\)。
 
-\din[修正的\(\v{H}\)的环路定理]{
+\din[修正的\(\v{H}\)的环路定理, label=H的环路定理]{
 	沿任一闭合路径的磁场强度的环流，等于该闭合路径所套连的传导电流和位移电流的代数和，即
 	\begin{equation}
 		\oint_L \v{H} \cdot \dif \v{l} = I_\text{传内} + I_\text{位内}
@@ -2824,9 +3198,60 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 	\(I_\text{位内}\)——与\(L\)套连的位移电流的代数和，\(I_\text{位内} = \dt[\varPhi_D] = \displaystyle \dt \iint_S \v{D} \cdot \dif\v{s} = \iint_S \dfrac{\partial \v{D}}{\partial t} \cdot \dif\v{s}\)。
 }
 
+\begin{example}
+	半径为 \(R = 0.1\mathrm{\,m}\) 的两块圆形平板电容器，
+	两板间距为\(d \ll R\)，充电过程中某时刻两板
+	之间电场的时间变化率为\(\dt[E] = 10^{13}\mathrm{\,V/m}\)。求此时刻：
 
+	（1）两板间的位移电流；
 
+	（2）两板间距中心轴线\(r_1 = 0.02\mathrm{\,m }\)处、\(r_2 = 0.12\mathrm{\,m }\)处的磁感应强度。
 
+	\begin{solution}
+		\adjline
+		（1）由\(d \ll R\)，忽略边缘效应，板间电场均匀。
+		\begin{equation*}
+			I_\text{位} = \dt[\varPhi_D] = \pi R^2 \cdot \dt[D] = \pi R^2 \varepsilon_0 \dt[E] = 2.78\mathrm{\,A}
+		\end{equation*}
+
+		（2）全电流对中心轴是对称的，它产生的磁场对中心轴也是对称的。作半径为\(r_1\)、\(r_2\)的回路\(L_1\)、\(L_2\)，方向与电场方向成右手螺旋，显然前者在两板所成柱体之内，后者在柱外。
+		
+		对\(L_1\)由\(\v{H}\)的环路定理，
+		\begin{equation*}
+			\oint_{L_1} \v{H}_1 \cdot \dif \v{l} = I_\text{位1} = \iint_{S_1} \dfrac{\partial \v{D}}{\partial t} \cdot \dif\v{s} = \iint_{S_1} \dfrac{\partial D}{\partial t} \cdot \dif s
+		\end{equation*}
+		即
+		\begin{equation*}
+			H_1 \cdot 2\pi r_1 = \varepsilon_0 \dt[E] \pi r_1^2
+			\quad\Longleftrightarrow\quad 
+			H_1 = \dfrac{\varepsilon_0 r_1}{2} \dt[E]
+		\end{equation*}
+		于是\(B_1 = \mu_0 H_1 = \dfrac{\mu_0\varepsilon_0 r_1}{2} \dt[E] = 1.11 \cp 10^{-6} \mathrm{\,T}\)。
+
+		同理，对\(L_2\)由\(\v{H}\)的环路定理，
+		\begin{equation*}
+			\oint_{L_2} \v{H}_2 \cdot \dif \v{l} = I_\text{位2} = \iint_{S_2} \dfrac{\partial \v{D}}{\partial t} \cdot \dif\v{s} = \iint_{S_2} \dfrac{\partial D}{\partial t} \cdot \dif s
+		\end{equation*}
+		即
+		\begin{equation*}
+			H_2 \cdot 2\pi r_2 = \varepsilon_0 \dt[E] \pi R^2
+			\quad\Longleftrightarrow\quad 
+			H_2 = \dfrac{\varepsilon_0 R^2}{2r_2} \dt[E]
+		\end{equation*}
+		于是\(B_2 = \mu_0 H_2 = \dfrac{\mu_0\varepsilon_0 R^2}{2r_2} \dt[E] = 4.64 \cp 10^{-6} \mathrm{\,T}\)。
+	\end{solution}
+	注意到 
+	\begin{equation*}
+		B_\text{外} = \mu_0 H_\text{外} = \dfrac{\mu_0\varepsilon_0 R^2}{2r} \dt[E]
+		= \dfrac{\mu_0}{2\pi r} \pi R^2 \dt[(\varepsilon_0E)]
+		= \dfrac{\mu_0}{2\pi r} I_\text{位}
+	\end{equation*}
+	这与例~\ref{e.g: 长直电流的磁场}~的集中于轴线上的长直电流\( I_\text{传} \)的磁场（式~(\ref{equ: 长直电流的磁场})）是一样的规律。
+\end{example}
+
+\subsubsection{Maxwell方程组}
+
+定理~\ref{D的高斯定理}、定理~\ref{E的环路定理}、定理~\ref{B的高斯定理}~和定理~\ref{H的环路定理}~组成 Maxwell方程组。
 
 \di[Maxwell方程组]{
 	空间中的电磁场满足
@@ -2841,15 +3266,32 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 		\qq{或}
 		\text{\tbome{积分形式}}
 		\begin{cases}
-			\oiint_S \v{D} \cdot \dif\v{s} = \iiint \rho_0 \dif\mu \\
-			\v{\nabla} \cp \v{E} = -\dfrac{\partial \v{B}}{\partial t} \\
-			\v{\nabla} \cdot \v{B} = 0 \\
-			\v{\nabla} \cp \v{H} = \v{\jmath}_0 + \dfrac{\partial \v{D}}{\partial t}
+			\displaystyle \varoiint_S \v{D} \cdot \dif\v{s} = \iiint \rho_0 \dif\mu \\[5pt]
+			\displaystyle \oint_L \v{E} \cdot \dif\v{l} = -\iint_S \dfrac{\partial \v{B}}{\partial t} \cdot \dif\v{s}\\[8pt]
+			\displaystyle \varoiint_S \v{B} \cdot \dif\v{s} = 0 \\[5pt]
+			\displaystyle \oint_L \v{H} \cdot \dif\v{l} = \iint_S \bigg( \v{\jmath}_0 + \dfrac{\partial \v{D}}{\partial t} \bigg) \cdot \dif\v{s}
 		\end{cases}
 	\end{equation}
 }
 
-\subsubsection{电磁波}
+由方程组出发，Maxwell预言：变化的电磁场将以波的形式传播。
+
+\paragraph{电磁波的速度}
+
+令\(j_0=0，\rho_0=0\)，对沿\(x\)方向传播的电磁场可导出
+\[\dfrac{\partial^2 E_y}{\partial x^2} = \mu\varepsilon \dfrac{\partial^2 E_y}{\partial t^2}，\qquad \dfrac{\partial^2 H_z}{\partial x^2} = \mu\varepsilon \dfrac{\partial^2 H_z}{\partial t^2}\]
+与标准波动方程\(\dfrac{\partial^2 \xi}{\partial x^2} = \dfrac{1}{v^2} \dfrac{\partial^2 \xi}{\partial t^2}\)比较，即知电磁波的波速\(v=\dfrac{1}{\sqrt{\mu\varepsilon}}\)。真空中，此式即为
+\begin{equation}
+	c = \dfrac{1}{\sqrt{\mu_0\varepsilon_0}}
+\end{equation}
+\begin{theorem}
+	真空中的一列电磁波中，电场成分\(\v{E}\)、磁场成分\(\v{B}\)与波速\(\v{c}\)的关系为
+	\begin{equation}
+		\v{E} = \v{B} \cp \v{c} \qq{或} \v{B} = \dfrac{\v{c} \cp \v{E}}{c^2}
+	\end{equation}
+\end{theorem}
+
+\paragraph{电磁场的能量}
 
 在空间某点处，电磁场的能量密度（单位体积内电磁场的能量）为
 \begin{equation*}
@@ -2863,7 +3305,7 @@ $$\varPhi = \iint \v{B} \cdot \dif\v{S}$$
 \end{definition}
 由定义，知
 \begin{align*}
-	\v{S} = \dfrac{w\cdot \v{c}\dif t \cdot \dif A}{\dif A \cdot \dif t} = w\v{c} = \varepsilon \v{E}^2 \v{c} = \varepsilon \v{E} \cdot (\v{B} \cp \v{c}) \cdot \v{c} = \varepsilon (\v{E} \cdot \v{B}) \v{c}^2 =  \varepsilon (\v{E} \cdot \v{B}) \dfrac{1}{\mu\varepsilon} = \v{E} \cp \v{H}
+	\v{S} = \dfrac{w\cdot \v{c}\dif t \cdot \dif A}{\dif A \cdot \dif t} = w\v{c} = \varepsilon \v{E}^2 \v{c} = \varepsilon \v{E} \cdot (\v{B} \cp \v{c}) \cdot \v{c} = \varepsilon (\v{E} \cp \v{B}) \v{c}^2 =  \varepsilon (\v{E} \cp \v{B}) \dfrac{1}{\mu\varepsilon} = \v{E} \cp \v{H}
 \end{align*}
 
 

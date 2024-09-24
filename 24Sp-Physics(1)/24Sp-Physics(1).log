@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.16)  13 JUN 2024 15:19
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.16)  18 JUN 2024 21:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/16870/.vscode/LaTeX_Application/tex/24Sp/24Sp-Physics(1)/24Sp-Physics(1)
-(c:/Users/16870/.vscode/LaTeX_Application/tex/24Sp/24Sp-Physics(1)/24Sp-Physics(1).tex
+**c:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-24Spring/24Sp-Physics(1)/24Sp-Physics(1)
+(c:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-24Spring/24Sp-Physics(1)/24Sp-Physics(1).tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (d:/Program Files (x86)/texlive/2023/texmf-dist/tex/latex/ctex/ctexart.cls (d:/Program Files (x86)/texlive/2023/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
 File: ctexbackend.cfg 2022/07/14 v2.5.10 Backend configuration file (CTEX)
@@ -1289,8 +1289,8 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
 (Font)              size <10.95> substituted on input line 237.
 
 (./24Sp-Physics(1).toc
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [1
 
 ])
@@ -1299,8 +1299,8 @@ File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic
 
 LaTeX Font Info:    Font shape `TU/FZXSSK.TTF(0)/m/sl' in size <10> not available
 (Font)              Font shape `TU/FZXSSK.TTF(0)/m/it' tried instead on input line 243.
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [2]
 
 Package fontspec Info: Font family '汉仪文黑-45W.ttf(0)' created for font
@@ -1356,8 +1356,8 @@ Package fontspec Info: Font family '方正宋刻本秀楷_GBK.TTF(0)' created fo
 (fontspec)             <->"[方正宋刻本秀楷_GBK.TTF]/OT:script=hani;language=dflt;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [3]
 File: 图片1.png Graphic file (type bmp)
 <图片1.png>
@@ -1384,8 +1384,8 @@ File: 图片1.png Graphic file (type bmp)
 \l__nicematrix_initial_j_int=\count444
 \l__nicematrix_final_i_int=\count445
 \l__nicematrix_final_j_int=\count446
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [4]
 
 Package fontspec Info: Font family '汉仪润圆-45W.ttf(0)' created for font
@@ -1405,16 +1405,16 @@ Package fontspec Info: Font family '汉仪润圆-45W.ttf(0)' created for font
 (fontspec)             <->"[汉仪润圆-45W.ttf]/OT:script=hani;language=dflt;"
 (fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [5]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 444.
 See the caption package documentation for explanation.
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
 [6]
 File: 图片2.png Graphic file (type bmp)
 <图片2.png>
@@ -1437,8 +1437,8 @@ File: 图片3.png Graphic file (type bmp)
 <图片3.png>
 File: 图片4.png Graphic file (type bmp)
 <图片4.png>
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [7]
 File: 图片7.png Graphic file (type bmp)
 <图片7.png>
@@ -1450,8 +1450,8 @@ See the caption package documentation for explanation.
 
 File: 图片8.png Graphic file (type bmp)
 <图片8.png>
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
 [8]
 File: 科里奥利力的方向.png Graphic file (type bmp)
 <科里奥利力的方向.png>
@@ -1463,53 +1463,53 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 598.
 See the caption package documentation for explanation.
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
 [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 602.
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
 [10]
 File: 逆风行舟.png Graphic file (type bmp)
 <逆风行舟.png>
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [11]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [12]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [13]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [14]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [15]
 File: 图片12.png Graphic file (type bmp)
 <图片12.png>
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [16]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [17]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [18]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [19]
 File: 质点在球外.png Graphic file (type bmp)
 <质点在球外.png>
 File: 质点在球内.png Graphic file (type bmp)
 <质点在球内.png>
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [20]
 Overfull \hbox (6.12396pt too wide) in paragraph at lines 1088--1101
 [][]
@@ -1520,47 +1520,47 @@ Overfull \hbox (4.48338pt too wide) in paragraph at lines 1088--1101
 [] 
  []
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
 [21]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [22]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [23]
 Overfull \hbox (2.36078pt too wide) in paragraph at lines 1223--1242
  [] 
  []
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
 [24]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [25]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 1304.
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
 [26]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [27]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [28]
 Underfull \hbox (badness 1622) in paragraph at lines 1439--1439
 \OT1/cmr/m/n/10 0$ \TU/汉仪润圆-45W.ttf(0)/m/n/10 时 刻 其 原 点 $\OML/cmm/m/it/10 O[] O[]$ \TU/汉仪润圆-45W.ttf(0)/m/n/10 重 合\TU/lmr/m/n/10 , \TU/汉仪润圆-45W.ttf(0)/m/n/10 则 两 事 件 在 两 个 参 考 系 中 的 时 空 坐 标 之 差  |（$\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 y[] \OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 z[] \OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 t\OMS/cmsy/m/n/10 g$ \TU/汉仪润圆-45W.ttf(0)/m/n/10 与
  []
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
 [29]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [30]
 File: 钟慢效应的相对性.png Graphic file (type bmp)
 <钟慢效应的相对性.png>
@@ -1570,220 +1570,241 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 1505.
 See the caption package documentation for explanation.
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
 [31]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [32]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [33]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [34]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 1617.
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
 [35]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [36]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [37]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [38]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [39]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\(' on input line 1834.
+(hyperref)                removing `\(' on input line 1868.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\va' on input line 1834.
+(hyperref)                removing `\va' on input line 1868.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\)' on input line 1834.
+(hyperref)                removing `\)' on input line 1868.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 1834.
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1868.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.66702pt
-(hyperref)                removed on input line 1834.
+(hyperref)                removed on input line 1868.
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
 [40]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [41]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [42]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [43]
 File: 电势微分.png Graphic file (type bmp)
 <电势微分.png>
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [44]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [45]
-Overfull \hbox (0.52058pt too wide) in paragraph at lines 2086--2087
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [46]
+Overfull \hbox (0.52058pt too wide) in paragraph at lines 2177--2178
 []\TU/FZXSSK.TTF(0)/m/n/10 导 体 表 面 上 各 处 的 面 电 荷 密 度 与 当 地 表 面 紧 邻 处 的 电 场 强 度 的 大 小 成 正 比\TU/lmr/m/n/10 , \TU/FZXSSK.TTF(0)/m/n/10 比 例 系 数 为 真 空 介 电 常 数\TU/lmr/m/n/10 ,
  []
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
-[46]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [47]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+[47]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [48]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 2150.
+(hyperref)                removing `\@ifnextchar' on input line 2241.
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
-[48]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [49]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2278.
-
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+[49]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [50]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\va' on input line 2278.
+(hyperref)                removing `math shift' on input line 2369.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2278.
+(hyperref)                removing `\va' on input line 2369.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 2278.
+(hyperref)                removing `math shift' on input line 2369.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 2369.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.66702pt
-(hyperref)                removed on input line 2278.
+(hyperref)                removed on input line 2369.
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
-[50]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [51]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+[51]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [52]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [53]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
  [54]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [55]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [56]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [57]
 File: 长直电流磁场.png Graphic file (type bmp)
 <长直电流磁场.png>
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [55]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [58]
 File: 圆电流磁场.png Graphic file (type bmp)
 <圆电流磁场.png>
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [56]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [59]
 File: 螺线管磁场.png Graphic file (type bmp)
 <螺线管磁场.png>
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [57]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [58]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [59]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [60]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [61]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [62]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [63]
 File: 顺磁质.png Graphic file (type bmp)
 <顺磁质.png>
 File: 抗磁质.png Graphic file (type bmp)
 <抗磁质.png>
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [60]
 File: 感生磁矩.png Graphic file (type bmp)
 <感生磁矩.png>
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [61]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [64]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\(' on input line 2770.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\va' on input line 2770.
+(hyperref)                removing `\(' on input line 2955.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\)' on input line 2770.
+(hyperref)                removing `\va' on input line 2955.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 2770.
+(hyperref)                removing `\)' on input line 2955.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 2955.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 1.66702pt
-(hyperref)                removed on input line 2770.
+(hyperref)                removed on input line 2955.
 
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
-[62]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [63]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [64]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [65]
-File: C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png Graphic file (type bmp)
-<C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png>
- [66] (./24Sp-Physics(1).aux)
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+[65]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [66]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [67]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [68]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [69]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [70]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [71]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [72]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [73]
+File: C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png Graphic file (type bmp)
+<C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png>
+ [74] (./24Sp-Physics(1).aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `24Sp-Physics(1).out' has not changed.
-(rerunfilecheck)             Checksum: BBF9AC4916258FFFAE55FBCC75480DC7;8442.
+(rerunfilecheck)             Checksum: 84C5D7F223FA1F5943C883BF7D451985;9086.
  ) 
 Here is how much of TeX's memory you used:
- 63063 strings out of 476683
- 1620007 string characters out of 5798754
- 2127947 words of memory out of 5000000
- 82482 multiletter control sequences out of 15000+600000
- 534707 words of font info for 226 fonts, out of 8000000 for 9000
+ 63549 strings out of 476683
+ 1631767 string characters out of 5798754
+ 2133631 words of memory out of 5000000
+ 82966 multiletter control sequences out of 15000+600000
+ 534723 words of font info for 228 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,22n,97p,670b,1305s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,23n,97p,682b,1305s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 24Sp-Physics(1).pdf (66 pages).
+Output written on 24Sp-Physics(1).pdf (74 pages).

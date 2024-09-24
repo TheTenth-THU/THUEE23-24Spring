@@ -1,41 +1,87 @@
-\contentsline {section}{\numberline {1}电路基本概念}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}电路与电源}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}集总约束原则}{4}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}阻性电路}{4}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Kirchhoff 定律}{4}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}基本电路结构}{5}{subsubsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.4}电路分析方法}{6}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {1.4.1}节点分析法}{6}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.2}环路分析法}{7}{subsubsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.5}线性电路的叠加与等效}{9}{subsection.1.5}%
-\contentsline {subsubsection}{\numberline {1.5.1}线性叠加}{9}{subsubsection.1.5.1}%
-\contentsline {subsubsection}{\numberline {1.5.2}线性等效}{9}{subsubsection.1.5.2}%
-\contentsline {section}{\numberline {2}电容、电感}{11}{section.2}%
-\contentsline {subsection}{\numberline {2.1}电容器与电感器}{11}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}电容}{11}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}电感}{13}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}磁耦合网络}{15}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}互感器}{15}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}理想变压器}{17}{subsubsection.2.2.2}%
-\contentsline {section}{\numberline {3}线性电路综合分析}{18}{section.3}%
-\contentsline {subsection}{\numberline {3.1}瞬态电路分析}{18}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}一阶电路}{18}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}二阶电路}{20}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}交流稳态电路分析}{22}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}复激励函数与阻抗}{23}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}频域电路分析}{25}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Bode图}{27}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}双端口网络}{28}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}双端口网络的参数与变量}{29}{subsubsection.3.3.1}%
-\contentsline {paragraph}{\numberline {A)}\textit {Z}参数与\textit {Y}参数}{29}{paragraph.3.3.1.1}%
-\contentsline {paragraph}{\numberline {B)}$T$参数与$T'$参数}{31}{paragraph.3.3.1.2}%
-\contentsline {paragraph}{\numberline {C)}\textit {h}参数与\textit {g}参数}{31}{paragraph.3.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.3.2}双端口网络的连接}{31}{subsubsection.3.3.2}%
-\contentsline {section}{\numberline {A}常见词汇中英文对照表}{33}{appendix.A}%
-\contentsline {section}{\numberline {B}Cadence Virtuoso电路仿真基本用法}{37}{appendix.B}%
-\contentsline {subsection}{\numberline {B.1}启动}{37}{subsection.B.1}%
-\contentsline {subsubsection}{\numberline {B.1.1}连接MobaXterm服务器}{37}{subsubsection.B.1.1}%
-\contentsline {subsubsection}{\numberline {B.1.2}新建Virtuoso库}{37}{subsubsection.B.1.2}%
-\contentsline {subsubsection}{\numberline {B.1.3}新建Cell图}{37}{subsubsection.B.1.3}%
-\contentsline {subsection}{\numberline {B.2}绘图}{37}{subsection.B.2}%
-\contentsline {subsubsection}{\numberline {B.2.1}开关}{37}{subsubsection.B.2.1}%
+\contentsline {section}{\numberline {1}电路基本概念}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}电路与电源}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}集总约束原则}{5}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}阻性电路}{5}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Kirchhoff 定律}{5}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}基本电路结构}{6}{subsubsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.4}电路分析方法}{7}{subsection.1.4}%
+\contentsline {subsubsection}{\numberline {1.4.1}节点分析法}{7}{subsubsection.1.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.2}环路分析法}{8}{subsubsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.5}线性电路的叠加与等效}{10}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}线性叠加}{10}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}线性等效}{10}{subsubsection.1.5.2}%
+\contentsline {section}{\numberline {2}电容、电感}{12}{section.2}%
+\contentsline {subsection}{\numberline {2.1}电容器与电感器}{12}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}电容}{12}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}电感}{14}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}磁耦合网络}{16}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}互感器}{16}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}理想变压器}{18}{subsubsection.2.2.2}%
+\contentsline {section}{\numberline {3}线性电路综合分析}{19}{section.3}%
+\contentsline {subsection}{\numberline {3.1}瞬态电路分析}{19}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}一阶电路}{19}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}二阶电路}{21}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}交流稳态电路分析}{23}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}复激励函数与阻抗}{24}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}频域电路分析}{26}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Bode图}{28}{subsubsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.3}双端口网络}{29}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}双端口网络的参数与变量}{30}{subsubsection.3.3.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}\textit {Z}参数与\textit {Y}参数}{30}{paragraph.3.3.1.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}$T$参数与$T'$参数}{32}{paragraph.3.3.1.2}%
+\contentsline {paragraph}{\numberline {\hskip 2emC)}\textit {h}参数与\textit {g}参数}{32}{paragraph.3.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.3.2}双端口网络的连接}{32}{subsubsection.3.3.2}%
+\contentsline {section}{\numberline {4}非线性器件}{33}{section.4}%
+\contentsline {subsection}{\numberline {4.1}\textsl {pn}结与二极管}{33}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}\textsl {p}型半导体与\textsl {n}型半导体}{33}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}\textsl {pn}结}{34}{subsubsection.4.1.2}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}正向偏置电压}{35}{paragraph.4.1.2.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}反向偏置电压}{35}{paragraph.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}\textsl {pn}结二极管}{35}{subsubsection.4.1.3}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}恒压降模型}{35}{paragraph.4.1.3.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}小信号模型}{35}{paragraph.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.4}特殊的二极管}{35}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.2}双极结式晶体管（BJT）}{36}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}BJT的结构与原理}{36}{subsubsection.4.2.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}正激活Active模式}{36}{paragraph.4.2.1.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}反激活Reverse active模式}{37}{paragraph.4.2.1.2}%
+\contentsline {paragraph}{\numberline {\hskip 2emC)}饱和Saturation模式}{37}{paragraph.4.2.1.3}%
+\contentsline {subsubsection}{\numberline {4.2.2}BJT的端口特性}{37}{subsubsection.4.2.2}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}BJT的伏安特性}{37}{paragraph.4.2.2.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}BJT的传递特性}{38}{paragraph.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}BJT直流分析}{39}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}BJT交流分析}{39}{subsubsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.3}金属—氧化物—半导体场效应晶体管（MOSFET）}{40}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}MOSFET的结构与原理}{40}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}MOSFET的端口特性}{40}{subsubsection.4.3.2}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}$\symbf {i_D-v_{DS}}$特性}{40}{paragraph.4.3.2.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}$\symbf {i_D-v_{GS}}$特性}{41}{paragraph.4.3.2.2}%
+\contentsline {paragraph}{\numberline {\hskip 2emC)}$\symbf {v_{DS}-v_{GS}}$特性}{41}{paragraph.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.3}MOSFET的交流增益}{41}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}MOSFET的频率响应}{42}{subsubsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.4}晶体管模块实例}{44}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}电流镜}{44}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}差分对}{44}{subsubsection.4.4.2}%
+\contentsline {section}{\numberline {5}运算放大器与反馈设计}{45}{section.5}%
+\contentsline {subsection}{\numberline {5.1}运算放大器}{45}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}运算放大器上的反馈回路}{46}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}反相闭环组态}{47}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}同相闭环组态}{48}{subsubsection.5.2.2}%
+\contentsline {section}{\numberline {6}电路应用衔接}{48}{section.6}%
+\contentsline {subsection}{\numberline {6.1}CMOS数字逻辑电路}{48}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}CMOS反相器}{48}{subsubsection.6.1.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emA)}传播延迟}{49}{paragraph.6.1.1.1}%
+\contentsline {paragraph}{\numberline {\hskip 2emB)}能量消耗}{50}{paragraph.6.1.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2}CMOS逻辑门电路}{50}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}数字开关与动态逻辑电路}{52}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.4}反馈回路与存储电路}{54}{subsubsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.2}振荡电路}{55}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}负阻值与振荡器}{55}{subsubsection.6.2.1}%
+\contentsline {section}{\numberline {A}常见词汇中英文对照表}{56}{appendix.A}%
+\contentsline {section}{\numberline {B}Cadence Virtuoso电路仿真基本用法}{60}{appendix.B}%
+\contentsline {subsection}{\numberline {B.1}启动}{60}{subsection.B.1}%
+\contentsline {subsubsection}{\numberline {B.1.1}连接MobaXterm服务器}{60}{subsubsection.B.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.2}新建Virtuoso库}{60}{subsubsection.B.1.2}%
+\contentsline {subsubsection}{\numberline {B.1.3}新建Cell图}{60}{subsubsection.B.1.3}%
+\contentsline {subsection}{\numberline {B.2}绘图}{60}{subsection.B.2}%
+\contentsline {subsubsection}{\numberline {B.2.1}开关}{60}{subsubsection.B.2.1}%

@@ -20,7 +20,8 @@
 \usepackage{siunitx}
 \usepackage{enumitem}
 \usepackage{listings}
-\usepackage[text=\includegraphics{C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png},angle=0]{draftwatermark}%水印
+\usepackage{dashrule}
+\usepackage[text=\includegraphics{C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png},angle=0]{draftwatermark}%水印
 %\usepackage{tikz}
 %基本字体设置
 \usepackage[math-style=ISO, bold-style=ISO]{unicode-math}
@@ -31,16 +32,17 @@
 \setmathfont{KpMath-Regular.otf}%NewCMMath-Regular
 %\setmathfont[range=bb]{TeXGyrePagellaMath-Regular}
 %\setmathsfont(Digits,Latin){Garamond MT Pro}
-\setCJKmainfont{方正书宋_GBK}[BoldFont={思源宋体 CN Bold}, ItalicFont=方正楷体_GBK, BoldItalicFont={汉仪颜楷W}]
-\setCJKsansfont{汉仪文黑-45W ExtraLight}[BoldFont={汉仪文黑-75W Bold}, ItalicFont={方正颜真卿楷书 简繁}]
+\setmathfont[range={\int}]{NewCMMath-Regular}
+\setCJKmainfont{FZXSSK.TTF}[BoldFont={SourceHanSerifCN-Bold.otf}, ItalicFont={FZXKTK.TTF}, BoldItalicFont={汉仪颜楷W.ttf}]
+\setCJKsansfont{汉仪文黑-45W.ttf}[BoldFont={汉仪文黑-75W.ttf}, ItalicFont={FZYanZQKSJF.TTF}]
 \setCJKmonofont{LXGWNeoXiHei.ttf}
 %附加字体设置
-\newCJKfontfamily{\kaico}{可口可乐在乎体 楷体}
-\newCJKfontfamily{\kai}{方正楷体_GBK}[BoldFont={汉仪颜楷W}, ItalicFont={方正清刻本悦宋 简繁}, BoldItalicFont={方正颜真卿楷书 简繁}]
-\newCJKfontfamily{\yan}{方正清刻本悦宋 简繁}[ItalicFont={方正颜真卿楷书 简繁}]
-\newCJKfontfamily{\xiu}{方正宋刻本秀楷_GBK}[ItalicFont={方正宋刻本秀楷_GBK}, BoldFont={方正颜真卿楷书 简繁}]
-\newCJKfontfamily{\run}{汉仪润圆-45W}[BoldFont=汉仪润圆-75W, ItalicFont={汉仪润圆-45W}]
-\newCJKfontfamily{\wen}{汉仪文黑-45W ExtraLight}[BoldFont={汉仪文黑-75W Bold}, ItalicFont={汉仪文黑-85W Heavy}]
+\newCJKfontfamily{\kaico}{可口可乐在乎体 楷体Coca-ColaCareFontKaiTi.TTF}
+\newCJKfontfamily{\kai}{FZXKTK.TTF}[BoldFont={汉仪颜楷W.ttf}, ItalicFont={方正清刻本悦宋 简繁.TTF}, BoldItalicFont={FZYanZQKSJF.TTF}]
+\newCJKfontfamily{\yan}{方正清刻本悦宋 简繁.TTF}[ItalicFont={FZYanZQKSJF.TTF}]
+\newCJKfontfamily{\xiu}{方正宋刻本秀楷_GBK.TTF}[ItalicFont={方正宋刻本秀楷_GBK.TTF}, BoldFont={FZYanZQKSJF.TTF}]
+\newCJKfontfamily{\run}{汉仪润圆-45W.ttf}[BoldFont={汉仪润圆-75W.ttf}, ItalicFont={汉仪润圆-45W.ttf}]
+\newCJKfontfamily{\wen}{汉仪文黑-45W.ttf}[BoldFont={汉仪文黑-75W.ttf}, ItalicFont={hk4e_zh-cn.ttf}]
 %文档格式
 \geometry{left=2.24cm, right=2.24cm, top=3.18cm, bottom=3.18cm}
 \linespread{1.4}
@@ -123,8 +125,35 @@
 \newtheorem{proposition}[theorem]{命题}
 
 \theoremstyle{definition}
-\newtheorem{example}[theorem]{例}
+\newtheorem{examplein}[theorem]{\run 例题}
 \newtheorem{circum}[theorem]{情形}
+
+\newcommand{\exampleparameter}{0}
+\newenvironment{example}[1][0]{% 0/1: no space; 2/3: 5pt space
+	\renewcommand{\exampleparameter}{#1}
+	\ifnum \exampleparameter>1
+		\vspace{10pt}
+	\fi
+	\hrule
+	\vspace{3pt}
+	\noindent\hdashrule{\linewidth}{0.5pt}{2pt}
+	\vspace{-2em}
+	\begin{examplein}
+}{% 0/2: -0.5pt space; 1/3: 5pt space
+	\end{examplein}
+	\vspace{-1em}
+	\noindent\hdashrule{\linewidth}{0.5pt}{2pt}\vspace{3pt}
+	\hrule
+	\ifnum 1=\exampleparameter
+		\vspace{10pt}
+	\else
+		\ifnum 3=\exampleparameter
+			\vspace{10pt}
+		\else
+			\vspace{-0.5pt}
+		\fi
+	\fi
+}
 
 \newenvironment{proofs}[1][\small\proofname]{\begin{pf}[breakable, enhanced jigsaw]\begin{proof}[#1]\small\kai
 	\abovedisplayskip=2pt
@@ -167,30 +196,6 @@ colback=meihong!5!white,colframe=meihong!75!black,fonttitle=\sffamily\wen\bfseri
 colframe=meihong!85!black,#1, boxrule=0.4pt, leftrule=10pt, arc=0pt, before skip=7pt, after skip=7pt}
 %\newcommand{\mybox}[1]{\tikz[baseline=(MeNode.base)]{\node[rounded corners, fill=gray!20](MeNode){#1};}}
 
-\lstset{
-	xleftmargin=3em, xrightmargin=1em, 
-	breaklines,                                 % 自动将长的代码行换行排版
-	extendedchars=false,                        % 解决代码跨页时，章节标题，页眉等汉字不显示的问题
-	rulecolor=\color[rgb]{0.8,0.8,0.8},         % 设置代码框颜色
-	backgroundcolor=\color[rgb]{0.96,0.96,0.96},% 背景颜色
-	keywordstyle=\colors{bali}\bfseries,        % 关键字颜色
-	identifierstyle=\color{black},              % 普通标识符颜色
-	commentstyle=\rm\kai\color{gray},          	% 注释颜色
-	stringstyle=\colors{meihong},      			% 字符串颜色
-	showstringspaces=false,                     % 不显示字符串内的空格
-	numbers=left,                               % 显示行号
-	numberstyle=\tiny,              			% 设置数字字体
-	basicstyle=\linespread{1}\tt,               % 设置基本字体
-	captionpos=t,                               % title在上方(在bottom即为b)
-	frame=single,                               % 设置代码框形式
-	showtabs=false, 
-	numbersep=15pt, 
-	framesep=1em, 
-	language=C++, 
-	columns=flexible, 
-	tabsize=4, 
-}
-
 \catcode`\，=\active
 \def ，{\textup{,}\hskip0.5em }
 \newcommand{\hang}[1][1]{\hangafter 1 \hangindent #1em \noindent}
@@ -223,9 +228,9 @@ colframe=meihong!85!black,#1, boxrule=0.4pt, leftrule=10pt, arc=0pt, before skip
 \newcommand{\zhu}[2][]{\begin{note}{#1}\adjline
 	\xiu #2\end{note}}
 \newcommand{\bu}[3][]{\begin{compl}{#1}	\paratitle{记号}#2 \tcblower\paratitle{特性}#3\end{compl}}
-\newcommand{\trans}[2][注]{\begin{wrapfigure}{r}{8.7em}
+\newcommand{\trans}[3][2]{\begin{wrapfigure}[#1]{R}{8.7em}
 		\vspace{-1.5em}
-		\prenote[#1]{\makebox[8em][l]{#2}}
+		\prenote[#2]{\parbox[l]{8em}{\raggedright #3}}
 	\end{wrapfigure}}
 % \newcommand{\tranS}[3][-1]{\marginnote{
 % 		\begin{prenote}{#2}
@@ -277,11 +282,12 @@ colframe=meihong!85!black,#1, boxrule=0.4pt, leftrule=10pt, arc=0pt, before skip
 }
 \newcommand{\equ}[1]{\begin{eq}
 %	\setmathfont{GFSNeohellenicMath.otf}
-	\setmathfont{FiraMath-Regular.otf}\sffamily
+%	\setmathfont{FiraMath-Regular.otf}\sffamily
 	\begin{equation}
 		{\color{meihong!85!black} #1}
 	\end{equation}\end{eq}
-\setmathfont{KpMath-Regular.otf}
+%\setmathfont{KpMath-Regular.otf}
+%\setmathfont[range={\int}]{NewCMMath-Regular}
 }
 \newcommand{\mrm}[1]{{\symup{#1}}}
 \newcommand{\uni}[1]{{\symup{\,#1}}}
@@ -330,7 +336,7 @@ colframe=meihong!85!black,#1, boxrule=0.4pt, leftrule=10pt, arc=0pt, before skip
 	\item 引入3价原子（如B），每个杂质原子可从临近原子接受一个电子，从而额外产生一个空穴，形成~\tboba{\textsl{p}型半导体}。\textsl{p}型半导体中，多子为空穴，少子为自由电子。
 \end{itemize}
 
-\trans[漂移电流]{drift current}
+\trans{漂移电流}{drift current}
 半导体中载流子（自由电子和空穴）的运动产生电流。由电场作用产生的电流称为\tboba{漂移电流}，其电流密度与载流子的电荷量、浓度、迁移率成正比，即有 
 $$J_\textsl{p}=q_ep\mu_\textsl{p}E，\qquad J_\textsl{n}=q_en\mu_\textsl{n}E$$
 其中$p$和$n$就分别是空穴和自由电子的浓度，$\mu_\textsl{p}$和$\mu_\textsl{n}$分别是空穴和自由电子的迁移率，而总电流密度就是

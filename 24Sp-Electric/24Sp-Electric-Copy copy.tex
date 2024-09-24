@@ -20,7 +20,8 @@
 \usepackage{siunitx}
 \usepackage{enumitem}
 \usepackage{listings}
-\usepackage[text=\includegraphics{C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png},angle=0]{draftwatermark}%水印
+\usepackage{dashrule}
+\usepackage[text=\includegraphics{C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png},angle=0]{draftwatermark}%水印
 %\usepackage{tikz}
 %基本字体设置
 \usepackage[math-style=ISO, bold-style=ISO]{unicode-math}
@@ -227,9 +228,9 @@ colframe=meihong!85!black,#1, boxrule=0.4pt, leftrule=10pt, arc=0pt, before skip
 \newcommand{\zhu}[2][]{\begin{note}{#1}\adjline
 	\xiu #2\end{note}}
 \newcommand{\bu}[3][]{\begin{compl}{#1}	\paratitle{记号}#2 \tcblower\paratitle{特性}#3\end{compl}}
-\newcommand{\trans}[2][注]{\begin{wrapfigure}{r}{8.7em}
+\newcommand{\trans}[3][2]{\begin{wrapfigure}[#1]{R}{8.7em}
 		\vspace{-1.5em}
-		\prenote[#1]{\makebox[8em][l]{#2}}
+		\prenote[#2]{\parbox[l]{8em}{\raggedright #3}}
 	\end{wrapfigure}}
 % \newcommand{\tranS}[3][-1]{\marginnote{
 % 		\begin{prenote}{#2}
@@ -398,21 +399,24 @@ colframe=meihong!85!black,#1, boxrule=0.4pt, leftrule=10pt, arc=0pt, before skip
 \end{wrapfigure}
 实际的运算放大器一般有较大的$A_v$值（$10^4 \sim 10^8$）和$R_i$（$10^6 \sim 10^{13} \,\mrm{\Omega}$）以及较小的$R_o$（$1 \sim 100 \,\mrm{\Omega}$）。因此，可以假设$A_v=\infty，R_i=\infty，R_o=0$，这样的运算放大器称为\tboba{理想运算放大器}，如图~\ref{Pic: Ideal op amp}~所示。当理想运放工作在 Linear区 时，有
 $$i_p=i_n=0，\qquad v_p=v_n$$
-因此，只要$v_p \neq v_n$，理想运放的输出电平就只能为$\pm V_{dd}$，于是可用于比较两个信号的大小，称为\textbf{过零检测器}。反相过零检测器和同相过零检测器分别记为%
+因此，只要$v_p \neq v_n$，理想运放的输出电平就只能为$\pm V_{dd}$。
+
+\trans{过零检测器}{zero-crossing detector}
+理想运放的一个直接应用是比较输入端两个信号（通常是输入信号\(v_\mrm{in}\)和参照信号\(v_\mrm{ref}\)）的大小，称为\tboba{过零检测器}，记为\!\!%
 \cbox{
 	\pzcdetector{pzcd}
-	\draw (pzcd-in) to[short, -o] ++(-0.5,0) node[left]{$v_\mrm{in}$}
-	(pzcd-ref) to[short, -o] ++(-0.5,0) node[left]{$v_\mrm{ref}$}
-	(pzcd-out) to[short, -o] ++(0.5,0) node[right]{$v_o$}
+	\draw (pzcd-in) to[short, -o] ++(-0.25,0) node[left]{$v_\mrm{in}$}
+	(pzcd-ref) to[short, -o] ++(-0.25,0) node[left]{$v_\mrm{ref}$}
+	(pzcd-out) to[short, -o] ++(0.25,0) node[right]{$v_o$}
 	;
-}和%
+}\!\!或\!\!%
 \cbox{
 	\nzcdetector{nzcd}
-	\draw (nzcd-in) to[short, -o] ++(-0.5,0) node[left]{$v_\mrm{in}$}
-	(nzcd-ref) to[short, -o] ++(-0.5,0) node[left]{$v_\mrm{ref}$}
-	(nzcd-out) to[short, -o] ++(0.5,0) node[right]{$v_o$}
+	\draw (nzcd-in) to[short, -o] ++(-0.25,0) node[left]{$v_\mrm{in}$}
+	(nzcd-ref) to[short, -o] ++(-0.25,0) node[left]{$v_\mrm{ref}$}
+	(nzcd-out) to[short, -o] ++(0.25,0) node[right]{$v_o$}
 	;
-}。基于过零检测器可以构建简单的\textbf{模数转换器（ADC）}。
+}\!\!，前者在\(v_\mrm{in} > v_\mrm{ref}\)时输出高电平，后者在\(v_\mrm{in} < v_\mrm{ref}\)时输出高电平。基于过零检测器可以构建简单的\textbf{模数转换器（ADC）}。
 
 \zhu[模拟信号与数字信号]{
 	与实际物理量变化形式类似的电信号称为\tboqi{模拟信号}%\trans[模拟/数字信号]{analog/digital signal}
@@ -439,10 +443,48 @@ $$i_p=i_n=0，\qquad v_p=v_n$$
 	\captionof{figure}{模数转换器}\label{Pic: ADC}
 }
 
+\begin{example}
+	求电路输出\(\overline{D_2D_1D_0}_{(2)}\)与输入信号\(v_\mrm{in}\)的关系。
+	\begin{center}
+		\cbox{
+			\draw (0,0) node[vcc](Ref){\(v_\mrm{ref}\)}
+			(1,0) node[vcc](In){\(v_\mrm{in}\)} 
+				-- ++(0,-0.5) -- +(0.5,0) coordinate(In2)
+				(In2 -| In) -- ++(0,-1.5) -- +(0.5,0) coordinate(In1)
+				(In1 -| In) -- ++(0,-1.5) -- +(0.5,0) coordinate(In0);
+			\pzcdetector[(In2)]{D2}\pzcdetector[(In1)]{D1}\pzcdetector[(In0)]{D0}
+			\node at (D2-ref -| In) [jump crossing](D2J){};
+			\draw (D2-out) to[short, -o] ++(0.5,0) node[right]{\(D_2\)}
+			(D2-ref) -- (D2J.east)
+			(D2J.west) to[short, -*] (D2-ref -| Ref) node[left]{\(v_2\)};
+			\node at (D1-ref -| In) [jump crossing](D1J){};
+			\draw (D1-out) to[short, -o] ++(0.5,0) node[right]{\(D_1\)}
+			(D1-ref) -- (D1J.east)
+			(D1J.west) to[short, -*] (D1-ref -| Ref) node[left]{\(v_1\)};
+			\draw (D0-out) to[short, -o] ++(0.5,0) node[right]{\(D_0\)}
+			(D0-ref) to[short, -*] (D0-ref -| Ref) node[left]{\(v_0\)};
+			\draw (Ref) to[R, l_=\(1.5R\)] (D2-ref -| Ref)
+				to[R, l_=\(R\)] (D1-ref -| Ref)
+				to[R, l_=\(R\)] (D0-ref -| Ref)
+				to[R, l_=\(0.5R\)] ++(0,-1) node[ground]{};
+		}
+	\end{center}
+	\begin{solution}
+		由KVL，知\(v_0 = \dfrac{1}{8}v_\mrm{ref}，v_1 = \dfrac{3}{8}v_\mrm{ref}，v_2 = \dfrac{5}{8}v_\mrm{ref}\)，则 
+		\begin{equation*}
+			\overline{D_2D_1D_0}=\begin{cases}[ll]
+				000，& v_\mrm{in} < \dfrac{1}{8}v_\mrm{ref}， \\
+				001，& \dfrac{1}{8}v_\mrm{ref} < v_\mrm{in} < \dfrac{3}{8}v_\mrm{ref}， \\[3pt]
+				011，& \dfrac{3}{8}v_\mrm{ref} < v_\mrm{in} < \dfrac{5}{8}v_\mrm{ref}， \\
+				111，& v_\mrm{in} > \dfrac{5}{8}v_\mrm{ref}
+			\end{cases}
+			\qedhere
+		\end{equation*}
+	\end{solution}
+\end{example}
 \subsection{运算放大器上的反馈回路}
 
-\begin{example}
-	\vspace{7pt}
+\begin{example}[2]
 	已知\textbf{单位增益缓冲器}的电路结构如图~\ref{Pic: Circuit - unity gain buffer}~所示，图~\ref{Pic: Model - unity gain buffer}~是其特性模型。若$A_o \gg 1，R_o \ll R_i$，由此考虑$\dfrac{V_o }{V_S }$的值。
 	%\trans[单位增益缓冲器]{unity gain buffer}
 
@@ -543,7 +585,6 @@ $$A_f=\dfrac{x_o }{x_s } = \dfrac{Ax_i }{ x_i+x_f} = \dfrac{A }{1+A\beta} \xlong
 		\bf{xf}
 	}
 	\caption{负反馈模型}\label{Pic: Neg fb model}
-	\vspace{-2em}
 \end{figure}
 
 \begin{example}
@@ -653,8 +694,7 @@ CMOS数字逻辑反相器如图~\ref{Pic: CMOS Inverter}~所示。在其电压�
 
 \begin{figure}[ht!]
 	\centering
-	\vspace{-1.5em}
-	\subfloat[阶跃响应]{\label{Pic: CMOS Inverter delay}\includegraphics[width=6.33cm]{CMOS_vtf.png}}
+	\subfloat[阶跃响应]{\label{Pic: CMOS Inverter delay}\includegraphics[width=6.33cm]{CMOS_Pd.png}}
 	\quad
 	\subfloat[等效电路]{\label{Pic: CMOS Inverter C}
 		\begin{circuitikz}
@@ -700,7 +740,7 @@ CMOS数字逻辑反相器如图~\ref{Pic: CMOS Inverter}~所示。在其电压�
 
 CMOS逻辑门电路是CMOS反相器的扩展或推广：逆变器由NMOS下拉晶体管和PMOS上拉晶体管组成，以输入电压与期望输出相反的方式工作。CMOS逻辑门将这两个晶体管扩展为如图~\ref{Pic: CMOS Gate Mode}~所示的两个网络：由NMOS晶体管构成的\tboba{下拉网络（PDN）}和由PMOS晶体管构成的\tboba{上拉网络（PUN）\hskip-0.5em}。
 
-这两个网络由一组输入变量以互补的方式控制。在所有期望低输出（\(Y \eqcirc 0\)）的输入组合下，PDN将导通，将输出节点接通到地，使得输出端\(v_Y = 0\)，同时PUN关断，\(V_{dd}\)和地面之间不存在直流路径；在所有期望高输出（\(Y \eqcirc 1\)）的输入组合下，PUN将导通，将输出节点拉到\(V_{dd}\)，使得输出电压\(v_Y = V_{dd}\)，同时PDN关断，电路中同样不存在\(V_{dd}\)和地之间的直流路径。
+这两个网络由一组输入变量以互补的方式控制。在所有期望低输出（\(Y \eqcirc 0\)\footnote{在本文档中，为区分电压值和逻辑值两种情况，逻辑值的相等使用「\(\eqcirc\)」（\texttt{\backslash eqcirc}）表示。}）的输入组合下，PDN将导通，将输出节点接通到地，使得输出端\(v_Y = 0\)，同时PUN关断，\(V_{dd}\)和地面之间不存在直流路径；在所有期望高输出（\(Y \eqcirc 1\)）的输入组合下，PUN将导通，将输出节点拉到\(V_{dd}\)，使得输出电压\(v_Y = V_{dd}\)，同时PDN关断，电路中同样不存在\(V_{dd}\)和地之间的直流路径。
 
 \begin{figure}[!ht]
 	\centering
@@ -932,7 +972,7 @@ CMOS传输门电路的缺点在于使用的晶体管数目较多，不利于节�
 		(Nin#1.S) -- ++(0,-0.1) coordinate(Nin#1-S)
 	;
 }
-\begin{example}
+\begin{example}[3]
 	讨论下面电路中，控制信号\(\phi\)不同时，输出信号\(Y \)与信号\(A，B\)的关系。
 	\begin{center}
 		\cbox{
@@ -956,7 +996,7 @@ CMOS传输门电路的缺点在于使用的晶体管数目较多，不利于节�
 
 前面所研究的逻辑电路被称为\tboba{组合电路}，它们的输出只取决于输入的现值。因此，这些电路没有存储能力。存储电路是数字系统的重要组成部分，包含存储的逻辑电路称为\tboba{顺序电路}；也就是说，它们的输出不仅取决于输入的现值，还取决于输入的先前值。
 
-\begin{example}
+\begin{example}[3]
 	用时钟信号\(\phi\)控制如图~\ref{Pic: D Flip Flop}~所示的电路，分析输出信号\(Q\)。\label{e.g: D Flip Flop}
 	\begin{figure}[!ht]
 		\centering
@@ -1089,6 +1129,7 @@ CMOS传输门电路的缺点在于使用的晶体管数目较多，不利于节�
 
 \newpage
 x
+$\symbfup{XtRee}$
 %----------------------------------------------------------
 \end{document}
 

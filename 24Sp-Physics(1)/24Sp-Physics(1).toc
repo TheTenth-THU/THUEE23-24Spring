@@ -39,7 +39,7 @@
 \contentsline {subsubsection}{\numberline {2.3.1}狭义相对论动力学}{34}{subsubsection.2.3.1}%
 \contentsline {subsubsection}{\numberline {2.3.2}相对论性能量}{35}{subsubsection.2.3.2}%
 \contentsline {subsubsection}{\makebox [0pt][r]{*}2.3.3\hskip 1em\relax 相对论的动量与能量变换}{35}{subsubsection*.14}%
-\contentsline {section}{\numberline {3}电磁学}{37}{section.3}%
+\contentsline {section}{\numberline {3}电磁学：电的规律}{37}{section.3}%
 \contentsline {subsection}{\numberline {3.1}真空中的静电场}{37}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}电荷相互作用与电场的引入}{38}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}静止的点电荷的电场及其叠加}{39}{subsubsection.3.1.2}%
@@ -52,38 +52,48 @@
 \contentsline {subsubsection}{\numberline {3.2.1}静电场的保守性}{43}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}电荷与电场的能量}{44}{subsubsection.3.2.2}%
 \contentsline {paragraph}{\numberline {A)}电荷（系）在外电场中的静电势能}{44}{paragraph.3.2.2.1}%
-\contentsline {paragraph}{\numberline {B)}电荷系的自身静电势能}{44}{paragraph.3.2.2.2}%
+\contentsline {paragraph}{\numberline {B)}电荷系的自身静电势能}{45}{paragraph.3.2.2.2}%
 \contentsline {paragraph}{\numberline {C)}静电场的能量}{45}{paragraph.3.2.2.3}%
-\contentsline {subsection}{\numberline {3.3}静电场中的导体与绝缘体}{46}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}导体的静电平衡与静电屏蔽}{46}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\makebox [0pt][r]{*}3.3.2\hskip 1em\relax 唯一性定理}{48}{subsubsection*.16}%
-\contentsline {subsubsection}{\numberline {3.3.3}电介质的极化}{49}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4}${\va *{D}}$\,的高斯定理}{51}{subsubsection.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.5}静电场的界面关系}{51}{subsubsection.3.3.5}%
-\contentsline {subsection}{\numberline {3.4}稳恒电流}{52}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}稳恒电流与稳恒电场}{52}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}欧姆定律与焦耳定律}{53}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}电动势}{53}{subsubsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.5}磁场与磁力的规律}{54}{subsection.3.5}%
-\contentsline {subsubsection}{\numberline {3.5.1}磁场的规律}{54}{subsubsection.3.5.1}%
-\contentsline {paragraph}{\numberline {A)}${\va *{B}}$的高斯定理}{55}{paragraph.3.5.1.1}%
-\contentsline {paragraph}{\numberline {B)}安培环路定理}{58}{paragraph.3.5.1.2}%
-\contentsline {subsubsection}{\numberline {3.5.2}磁力的规律}{58}{subsubsection.3.5.2}%
-\contentsline {paragraph}{\numberline {A)}洛伦兹力}{58}{paragraph.3.5.2.1}%
-\contentsline {paragraph}{\numberline {B)}安培力}{59}{paragraph.3.5.2.2}%
-\contentsline {subsection}{\numberline {3.6}磁场中的磁介质}{60}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}原子和分子的磁矩}{60}{subsubsection.3.6.1}%
-\contentsline {paragraph}{\numberline {A)}电子的磁矩}{60}{paragraph.3.6.1.1}%
-\contentsline {paragraph}{\numberline {B)}原子核的磁矩}{60}{paragraph.3.6.1.2}%
-\contentsline {paragraph}{\numberline {A)}顺磁质的分子磁矩}{60}{paragraph.3.6.1.1}%
-\contentsline {paragraph}{\numberline {B)}抗磁质的分子磁矩}{61}{paragraph.3.6.1.2}%
-\contentsline {subsubsection}{\numberline {3.6.2}磁介质的磁化}{61}{subsubsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.3}\({\va *{H}}\)\,的环路定理}{62}{subsubsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.7}电磁感应}{63}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Maxwell电磁理论}{63}{subsection.3.8}%
-\contentsline {subsubsection}{\numberline {3.8.1}Maxwell方程组}{63}{subsubsection.3.8.1}%
-\contentsline {subsubsection}{\numberline {3.8.2}电磁波}{64}{subsubsection.3.8.2}%
-\contentsline {section}{\numberline {A}必要的数学准备}{65}{appendix.A}%
-\contentsline {subsection}{\numberline {A.1}矢量运算}{65}{subsection.A.1}%
-\contentsline {subsubsection}{\numberline {A.1.1}矢量乘法}{65}{subsubsection.A.1.1}%
-\contentsline {subsubsection}{\numberline {A.1.2}矢量微分}{65}{subsubsection.A.1.2}%
+\contentsline {subsection}{\numberline {3.3}静电场中的导体与绝缘体}{47}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}导体的静电平衡与静电屏蔽}{47}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\makebox [0pt][r]{*}3.3.2\hskip 1em\relax 唯一性定理}{49}{subsubsection*.16}%
+\contentsline {subsubsection}{\numberline {3.3.3}电介质的极化}{50}{subsubsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.4}${\va *{D}}$\,的高斯定理}{52}{subsubsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.5}静电场的界面关系}{52}{subsubsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.4}稳恒电流}{53}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}稳恒电流与稳恒电场}{53}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}欧姆定律与焦耳定律}{54}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}电动势}{55}{subsubsection.3.4.3}%
+\contentsline {section}{\numberline {4}电磁学：磁的规律}{56}{section.4}%
+\contentsline {subsection}{\numberline {4.1}磁场与磁力的规律}{56}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}磁场的规律}{57}{subsubsection.4.1.1}%
+\contentsline {paragraph}{\numberline {A)}${\va *{B}}$的高斯定理}{57}{paragraph.4.1.1.1}%
+\contentsline {paragraph}{\numberline {B)}安培环路定理}{61}{paragraph.4.1.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2}磁力的规律}{62}{subsubsection.4.1.2}%
+\contentsline {paragraph}{\numberline {A)}磁场对运动电荷的作用}{62}{paragraph.4.1.2.1}%
+\contentsline {paragraph}{\numberline {B)}磁场对载流导线的作用}{62}{paragraph.4.1.2.2}%
+\contentsline {paragraph}{\numberline {C)}磁场对磁矩的作用}{63}{paragraph.4.1.2.3}%
+\contentsline {subsection}{\numberline {4.2}磁场中的磁介质}{63}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}原子和分子的磁矩}{63}{subsubsection.4.2.1}%
+\contentsline {paragraph}{\numberline {A)}电子的磁矩}{63}{paragraph.4.2.1.1}%
+\contentsline {paragraph}{\numberline {B)}原子核的磁矩}{64}{paragraph.4.2.1.2}%
+\contentsline {paragraph}{\numberline {A)}顺磁质的分子磁矩}{64}{paragraph.4.2.1.1}%
+\contentsline {paragraph}{\numberline {B)}抗磁质的分子磁矩}{64}{paragraph.4.2.1.2}%
+\contentsline {subsubsection}{\numberline {4.2.2}磁介质的磁化}{65}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}\({\va *{H}}\)\,的环路定理}{66}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}磁场的界面关系}{66}{subsubsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.3}电磁感应}{67}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}法拉第电磁感应定律}{67}{subsubsection.4.3.1}%
+\contentsline {paragraph}{\numberline {A)}动生电动势\(\mathscr {E}_\text {动} = - {\va *{B}} \cdot \dt [{\va *{S}}]\)}{68}{paragraph.4.3.1.1}%
+\contentsline {paragraph}{\numberline {B)}感生电动势\(\mathscr {E}_\text {感} = - \dt [{\va *{B}}] \cdot {\va *{S}}\)}{68}{paragraph.4.3.1.2}%
+\contentsline {subsubsection}{\numberline {4.3.2}互感与自感}{69}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}磁场的能量}{70}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Maxwell电磁理论}{70}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}全电流假说}{70}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Maxwell方程组}{72}{subsubsection.4.4.2}%
+\contentsline {paragraph}{\numberline {A)}电磁波的速度}{72}{paragraph.4.4.2.1}%
+\contentsline {paragraph}{\numberline {B)}电磁场的能量}{72}{paragraph.4.4.2.2}%
+\contentsline {section}{\numberline {A}必要的数学准备}{73}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}矢量运算}{73}{subsection.A.1}%
+\contentsline {subsubsection}{\numberline {A.1.1}矢量乘法}{73}{subsubsection.A.1.1}%
+\contentsline {subsubsection}{\numberline {A.1.2}矢量微分}{73}{subsubsection.A.1.2}%

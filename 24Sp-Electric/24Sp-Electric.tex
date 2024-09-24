@@ -20,37 +20,41 @@
 \usepackage{siunitx}
 \usepackage{enumitem}
 \usepackage{listings}
-\usepackage[text=\includegraphics{C:/Users/16870/.vscode/LaTeX_Application/tex/23Au/图标简稿.png},angle=0]{draftwatermark}%水印
+\usepackage{dashrule}
+\usepackage[text=\includegraphics{C:/Users/16870/.vscode/LaTeX_Application/tex/THUEE23-23Autumn/图标简稿.png},angle=0]{draftwatermark}%水印
 %\usepackage{tikz}
 %基本字体设置
 \usepackage[math-style=ISO, bold-style=ISO]{unicode-math}
+\setmainfont{KpRoman}
 %\setmainfont{EB Garamond}
 %\setmathfont{Garamond-Math.otf}[StylisticSet={7,9}]
 \setmonofont{Iosevka}
-\setmathfont{latinmodern-math.otf}
+\setmathfont{KpMath-Regular.otf}%NewCMMath-Regular
 %\setmathfont[range=bb]{TeXGyrePagellaMath-Regular}
 %\setmathsfont(Digits,Latin){Garamond MT Pro}
-\setCJKmainfont{方正书宋_GBK}[BoldFont={思源宋体 CN Bold}, ItalicFont=方正楷体_GBK, BoldItalicFont={汉仪颜楷W}]
-\setCJKsansfont{汉仪文黑-45W ExtraLight}[BoldFont={汉仪文黑-75W Bold}, ItalicFont={方正颜真卿楷书 简繁}]
+\setmathfont[range={\int}]{NewCMMath-Regular}
+\setCJKmainfont{FZXSSK.TTF}[BoldFont={SourceHanSerifCN-Bold.otf}, ItalicFont={FZXKTK.TTF}, BoldItalicFont={汉仪颜楷W.ttf}]
+\setCJKsansfont{汉仪文黑-45W.ttf}[BoldFont={汉仪文黑-75W.ttf}, ItalicFont={FZYanZQKSJF.TTF}]
 \setCJKmonofont{LXGWNeoXiHei.ttf}
 %附加字体设置
-\newCJKfontfamily{\kaico}{可口可乐在乎体 楷体}
-\newCJKfontfamily{\kai}{方正楷体_GBK}[BoldFont={汉仪颜楷W}, ItalicFont={方正清刻本悦宋 简繁}, BoldItalicFont={方正颜真卿楷书 简繁}]
-\newCJKfontfamily{\yan}{方正清刻本悦宋 简繁}[ItalicFont={方正颜真卿楷书 简繁}]
-\newCJKfontfamily{\xiu}{方正宋刻本秀楷_GBK}[ItalicFont={方正宋刻本秀楷_GBK}, BoldFont={方正颜真卿楷书 简繁}]
-\newCJKfontfamily{\run}{汉仪润圆-45W}[BoldFont=汉仪润圆-75W, ItalicFont={汉仪润圆-45W}]
-\newCJKfontfamily{\wen}{汉仪文黑-45W ExtraLight}[BoldFont={汉仪文黑-75W Bold}, ItalicFont={汉仪文黑-85W Heavy}]
+\newCJKfontfamily{\kaico}{可口可乐在乎体 楷体Coca-ColaCareFontKaiTi.TTF}
+\newCJKfontfamily{\kai}{FZXKTK.TTF}[BoldFont={汉仪颜楷W.ttf}, ItalicFont={方正清刻本悦宋 简繁.TTF}, BoldItalicFont={FZYanZQKSJF.TTF}]
+\newCJKfontfamily{\yan}{方正清刻本悦宋 简繁.TTF}[ItalicFont={FZYanZQKSJF.TTF}]
+\newCJKfontfamily{\xiu}{方正宋刻本秀楷_GBK.TTF}[ItalicFont={方正宋刻本秀楷_GBK.TTF}, BoldFont={FZYanZQKSJF.TTF}]
+\newCJKfontfamily{\run}{汉仪润圆-45W.ttf}[BoldFont={汉仪润圆-75W.ttf}, ItalicFont={汉仪润圆-45W.ttf}]
+\newCJKfontfamily{\wen}{汉仪文黑-45W.ttf}[BoldFont={汉仪文黑-75W.ttf}, ItalicFont={hk4e_zh-cn.ttf}]
 %文档格式
 \geometry{left=2.24cm, right=2.24cm, top=3.18cm, bottom=3.18cm}
 \linespread{1.4}
 \numberwithin{equation}{section}
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{4}
-\renewcommand{\theparagraph}{\Alph{paragraph})}
+\renewcommand{\theparagraph}{\hskip2em\Alph{paragraph})}
 \newcommand{\Section}[1]{ \refstepcounter{section} \section*{*\thesection\texorpdfstring{\quad}{} #1} \addcontentsline{toc}{section}{\makebox[0pt][r]{*}\thesection\texorpdfstring{\quad}{} #1} }
 \newcommand{\Subsection}[1]{ \refstepcounter{subsection} \subsection*{*\thesubsection\texorpdfstring{\quad}{} #1} \addcontentsline{toc}{subsection}{\makebox[0pt][r]{*}\thesubsection\texorpdfstring{\quad}{} #1} }
 \newcommand{\Subsubsection}[1]{ \refstepcounter{subsubsection} \subsubsection*{*\thesubsubsection\texorpdfstring{\quad}{} #1} \addcontentsline{toc}{subsubsection}{\makebox[0pt][r]{*}\thesubsubsection\texorpdfstring{\quad}{} #1} }
 \setlist[itemize]{leftmargin=3em, labelsep=0.25em, itemindent=0em, itemsep=0pt, parsep=0pt, topsep=3pt, partopsep=0pt}
+\setlist[description]{align=left, leftmargin=2em, itemindent=-1em, labelsep=1em, parsep=0pt, topsep=3pt, partopsep=0pt}
 \setlength{\marginparwidth}{8em}
 \setlength{\lineskip}{5pt}
 \setlength{\lineskiplimit}{5pt}
@@ -69,18 +73,48 @@
 \ctikzset{resistors/thickness=2.5}
 \ctikzset{voltage=raised}
 \ctikzset{bipoles/cuteswitch/thickness=0.4}
-\tikzset{
+\tikzset{ %元件着色
     R/.append style={color=balib},
     C/.append style={color=balib},
     L/.append style={color=balib},
-    battery1/.append style={color=meihongb},
-    battery2/.append style={color=meihongb},
-    battery/.append style={color=meihongb},
+    Do/.append style={color=balib},
+    zDo/.append style={color=balib},
+    leDo/.append style={color=balib},
+    pDo/.append style={color=balib},
+    battery1/.append style={color=meihong!75!black},
+    battery2/.append style={color=meihong!75!black},
+    battery/.append style={color=meihong!75!black},
+    cI/.append style={color=meihong!75!black},
+    I/.append style={color=meihong!75!black},
+    cV/.append style={color=meihong!75!black},
+    V/.append style={color=meihong!75!black},
 }
 \tikzset{bcirc/.style={circ, color=black}}
-\ctikzset{*-*/.style = {bipole nodes={bcirc}{bcirc}}}
-\ctikzset{-*/.style = {bipole nodes={none}{bcirc}}}
-\ctikzset{*-/.style = {bipole nodes={bcirc}{none}}}
+\tikzset{wcirc/.style={ocirc, color=black, fill=white}}
+\ctikzset{
+	*-*/.style = {bipole nodes={bcirc}{bcirc}},
+	-*/.style = {bipole nodes={none}{bcirc}},
+	*-/.style = {bipole nodes={bcirc}{none}},
+	o-o/.style = {bipole nodes={wcirc}{wcirc}},
+	-o/.style = {bipole nodes={none}{wcirc}},
+	o-/.style = {bipole nodes={wcirc}{none}},
+	o-*/.style = {bipole nodes={wcirc}{bcirc}},
+	*-o/.style = {bipole nodes={bcirc}{wcirc}}
+}
+\newcommand{\bi}[1]{% name
+	\node [currarrow, color=black, anchor=center,
+	rotate=\ctikzgetdirection{#1-Iarrow}] at (#1-Ipos) {};
+}
+\newcommand{\bv}[1]{% name
+	\draw [color=black] (#1-Vfrom) .. controls (#1-Vcont1)
+	and (#1-Vcont2).. (#1-Vto) node [currarrow,
+	sloped, anchor=tip, allow upside down,pos=1]{};
+}
+\renewcommand{\bf}[1]{% name
+	\draw [color=black] (#1-Ffrom) -- (#1-Fto) node [currarrow,
+	sloped, anchor=tip, allow upside down,pos=1]{};
+}
+\ctikzset{!vi/.style={no v symbols, no i symbols, no f symbols}}
 %\punctstyle{kaiming}
 %定理环境
 \theoremstyle{plain}
@@ -91,8 +125,35 @@
 \newtheorem{proposition}[theorem]{命题}
 
 \theoremstyle{definition}
-\newtheorem{example}[theorem]{例}
+\newtheorem{examplein}[theorem]{\run 例题}
 \newtheorem{circum}[theorem]{情形}
+
+\newcommand{\exampleparameter}{0}
+\newenvironment{example}[1][0]{% 0/1: no space; 2/3: 5pt space
+	\renewcommand{\exampleparameter}{#1}
+	\ifnum \exampleparameter>1
+		\vspace{10pt}
+	\fi
+	\hrule
+	\vspace{3pt}
+	\noindent\hdashrule{\linewidth}{0.5pt}{2pt}
+	\vspace{-2em}
+	\begin{examplein}
+}{% 0/2: -0.5pt space; 1/3: 5pt space
+	\end{examplein}
+	\vspace{-1em}
+	\noindent\hdashrule{\linewidth}{0.5pt}{2pt}\vspace{3pt}
+	\hrule
+	\ifnum 1=\exampleparameter
+		\vspace{10pt}
+	\else
+		\ifnum 3=\exampleparameter
+			\vspace{10pt}
+		\else
+			\vspace{-0.5pt}
+		\fi
+	\fi
+}
 
 \newenvironment{proofs}[1][\small\proofname]{\begin{pf}[breakable, enhanced jigsaw]\begin{proof}[#1]\small\kai
 	\abovedisplayskip=2pt
@@ -135,30 +196,6 @@ colback=meihong!5!white,colframe=meihong!75!black,fonttitle=\sffamily\wen\bfseri
 colframe=meihong!85!black,#1, boxrule=0.4pt, leftrule=10pt, arc=0pt, before skip=7pt, after skip=7pt}
 %\newcommand{\mybox}[1]{\tikz[baseline=(MeNode.base)]{\node[rounded corners, fill=gray!20](MeNode){#1};}}
 
-\lstset{
-	xleftmargin=3em, xrightmargin=1em, 
-	breaklines,                                 % 自动将长的代码行换行排版
-	extendedchars=false,                        % 解决代码跨页时，章节标题，页眉等汉字不显示的问题
-	rulecolor=\color[rgb]{0.8,0.8,0.8},         % 设置代码框颜色
-	backgroundcolor=\color[rgb]{0.96,0.96,0.96},% 背景颜色
-	keywordstyle=\colors{bali}\bfseries,        % 关键字颜色
-	identifierstyle=\color{black},              % 普通标识符颜色
-	commentstyle=\rm\kai\color{gray},          	% 注释颜色
-	stringstyle=\colors{meihong},      			% 字符串颜色
-	showstringspaces=false,                     % 不显示字符串内的空格
-	numbers=left,                               % 显示行号
-	numberstyle=\tiny,              			% 设置数字字体
-	basicstyle=\linespread{1}\tt,               % 设置基本字体
-	captionpos=t,                               % title在上方(在bottom即为b)
-	frame=single,                               % 设置代码框形式
-	showtabs=false, 
-	numbersep=15pt, 
-	framesep=1em, 
-	language=C++, 
-	columns=flexible, 
-	tabsize=4, 
-}
-
 \catcode`\，=\active
 \def ，{\textup{,}\hskip0.5em }
 \newcommand{\hang}[1][1]{\hangafter 1 \hangindent #1em \noindent}
@@ -191,9 +228,9 @@ colframe=meihong!85!black,#1, boxrule=0.4pt, leftrule=10pt, arc=0pt, before skip
 \newcommand{\zhu}[2][]{\begin{note}{#1}\adjline
 	\xiu #2\end{note}}
 \newcommand{\bu}[3][]{\begin{compl}{#1}	\paratitle{记号}#2 \tcblower\paratitle{特性}#3\end{compl}}
-\newcommand{\trans}[2][注]{\begin{wrapfigure}{r}{8.7em}
+\newcommand{\trans}[3][2]{\begin{wrapfigure}[#1]{R}{8.7em}
 		\vspace{-1.5em}
-		\prenote[#1]{\makebox[8em][l]{#2}}
+		\prenote[#2]{\parbox[l]{8em}{\raggedright #3}}
 	\end{wrapfigure}}
 % \newcommand{\tranS}[3][-1]{\marginnote{
 % 		\begin{prenote}{#2}
@@ -243,14 +280,18 @@ colframe=meihong!85!black,#1, boxrule=0.4pt, leftrule=10pt, arc=0pt, before skip
 \end{tikzpicture}}}\!\!}
 \newcommand{\meshcurrent}[2]{\draw[latex-] #1 node{#2} +(0.43,0.25) arc(30:330:0.5);
 }
-\newcommand{\equ}[1]{\begin{eq}
-%	\setmathfont{GFSNeohellenicMath.otf}
-	\setmathfont{FiraMath-Regular.otf}\sffamily
+\newcommand{\equ}[1]{\begin{eq}\sffamily
+	% \setmathfont{GFSNeohellenicMath.otf}
+	% \setmathfont{FiraMath-Regular.otf}
 	\begin{equation}
 		{\color{meihong!85!black} #1}
-	\end{equation}\end{eq}
-\setmathfont{latinmodern-math.otf}
+	\end{equation}
+	\end{eq}
+	% \setmathfont{KpMath-Regular.otf}
+	% \setmathfont[range={\int}]{NewCMMath-Regular}
 }
+\newcommand{\mrm}[1]{{\symup{#1}}}
+\newcommand{\uni}[1]{{\symup{\,#1}}}
 %\setmathfont{Garamond-Math.otf}[StylisticSet={7,9}]}
 %标题、作者、日期
 \title
@@ -1887,19 +1928,1462 @@ $$ \begin{bmatrix}
 	\end{center}
 \end{figure}
 
+\section{非线性器件}
+
+\subsection{\textsl{pn}结与二极管}
+
+\subsubsection{\textsl{p}型半导体与\textsl{n}型半导体}
+
+硅晶体中，在0 K下每个硅原子周边成4根共价键，价电子全部约束在共价键内，称为\textbf{本征硅}；温度升高，电子逃逸成为\textbf{自由电子}（\textsl{n}），在其母原子周围留下\textbf{空穴}（\textsl{p}）。当加上电场时，自由电子将定向移动，空穴临近位置的约束电子也可能填补空穴，在其原位置产生新的空穴，形成空穴的「移动」。因此，在半导体中有两种\tboba{载流子}：带一个单位负电荷的自由电子，和带一个单位正电荷的空穴。其中含量多的称为\tboba{多数载流子}，简称\tboba{多子}；含量少的称为\tboba{少数载流子}，简称\tboba{少子}。
+\begin{figure}[ht!]
+	\begin{center}
+	\includegraphics[width=10cm]{半导体载流子.png}
+	\caption{半导体中的载流子}\label{Pic: Semiconductor carriers}
+	\vspace{-1.5em}
+	\end{center}
+\end{figure}
+
+但纯硅晶体中载流子的浓度太低，无法传导明显的电流。为提高载流子的浓度，往往对硅晶体\textbf{掺杂}，即引入价电子数不同的杂质原子。
+\begin{itemize}
+	\item 引入5价原子（如P），每个杂质原子可额外贡献一个自由电子，会使自由电子浓度增大，形成~\tboba{\textsl{n}型半导体}。\textsl{n}型半导体中，多子为自由电子，少子为空穴。
+	\item 引入3价原子（如B），每个杂质原子可从临近原子接受一个电子，从而额外产生一个空穴，形成~\tboba{\textsl{p}型半导体}。\textsl{p}型半导体中，多子为空穴，少子为自由电子。
+\end{itemize}
+
+\trans{漂移电流}{drift current}
+半导体中载流子（自由电子和空穴）的运动产生电流。由电场作用产生的电流称为\tboba{漂移电流}，其电流密度与载流子的电荷量、浓度、迁移率成正比，即有 
+$$J_\textsl{p}=q_ep\mu_\textsl{p}E，\qquad J_\textsl{n}=q_en\mu_\textsl{n}E$$
+其中$p$和$n$就分别是空穴和自由电子的浓度，$\mu_\textsl{p}$和$\mu_\textsl{n}$分别是空穴和自由电子的迁移率，而总电流密度就是
+$$J=J_\textsl{p}+J_\textsl{n}=q_e(p\mu_\textsl{p}+n\mu_\textsl{n})E$$
+即电导率为$\sigma=\dfrac{J}{E}=q_e(p\mu_\textsl{p}+n\mu_\textsl{n})$。
+
+由载流子顺浓度梯度的扩散产生的电流称为\tboba{扩散电流}，其电流密度与载流子的电荷量、扩散常数和浓度梯度成正比，即有
+$$J_\textsl{p}=-q_e D_\textsl{p} \nabla p，\qquad J_\textsl{n}=-q_e D_\textsl{n} \nabla n$$
+其中$D_\textsl{p}$和$D_\textsl{n}$分别是空穴和自由电子的扩散常数，满足
+$\dfrac{D_\textsl{n }}{\mu_\textsl{n }}=\dfrac{D_\textsl{p }}{\mu_\textsl{p }}=V_T$，这个比值称为\tboba{热电压}，其值为$V_T = \dfrac{kT }{q_e}$，其中$k \approx 1.3806488 \times 10^{-23} \,\symup{J/K}$为Boltzmann常数。温度取$300 \,\symup{K}$时，热电压的值为$2.585 \cp 10^{-2} \,\symup{V}$。
+
+\subsubsection{\textsl{pn}结}
+
+将\textsl{p}型半导体与\textsl{n}型半导体靠在一起，接触位置会发生两种载流子的扩散：空穴向\textsl{n}型半导体扩散，自由电子向\textsl{p}型半导体扩散，使得\textsl{n}型半导体一侧电势稍高于\textsl{p}型半导体一侧，形成\tboba{耗尽层}并建立起电场。该电场会在耗尽层产生\tboba{势垒电压}，其值为
+$$V_0 =V_T\ln\dfrac{N_AN_D}{n_i^2}$$
+其中$N_A$和$N_D$分别是\textsl{p}型半导体与\textsl{n}型半导体中的掺杂浓度。该电压会阻碍空穴和自由电子的扩散，因此需要加上直流偏压。
+
+\paragraph{正向偏置电压} 外加电场的方向与内建电场的方向相反。此时，外加电压将使得耗尽层\textsl{n}侧正电荷减少，\textsl{p}侧负电荷减少，耗尽层变薄。同时，\textsl{p}型半导体中空穴增多，\textsl{n}型半导体中自由电子增多，因而顺外加电压方向可以产生较大的扩散电流。
+
+\paragraph{反向偏置电压} 外加电场的方向与内建电场的方向相同。
+
+\subsubsection{\textsl{pn}结二极管}
+
+\bu[二极管（diode）]{
+	\shbox{Do}
+}{
+	具有单向导通性，伏安特性为$i=I_S\left(\e^\frac{v}{V_T}-1\right)$（$v \ge 0$）。
+}
+这个伏安特性近似也可以写成$v \approx V_T\ln \dfrac{i }{I_S}$（$i \ge 0$）。在基尔霍夫定律方程中出现这样的项，往往会将线性方程变为没有解析解的超越方程。因而，需要对二极管进行线性建模。
+
+\paragraph{恒压降模型}
+
+认为导通后电流随电压变化极快，各电流对应电压视作常量$v_D$。则导通后，二极管可视为一个顺导通方向恒有$v_D$压降的直流恒压源。
+
+\paragraph{小信号模型}
+
+1
+
+\bu[齐纳二极管]{
+	\shbox{zDo}
+}{
+	在反向「breakdown」区工作。
+}
+
+\subsubsection{特殊的二极管}
+
+\bu[发光二极管（LED）]{
+	\shbox{leDo}
+}{
+	具有二极管的一般特性，同时导通时将电信号转化为光信号。
+}
+\bu[光电二极管（photodiode）]{
+	\shbox{pDo}
+}{
+	
+}
+
+
+\subsection{双极结式晶体管（BJT）}
+
+\ctikzset{transistors/scale=1.3, color=balib}
+
+\bu[BJT]{
+	\textsl{npn}型BJT记为$\vcenter{\hbox{\begin{circuitikz}
+		\draw (0,0) -- (0.3,0) node[npn,anchor=B](NPN){} (NPN.C) -- ++(0.3,0) (NPN.E) -- ++(0.3,0);
+	\end{circuitikz}}}$（\texttt{npn}），\textsl{pnp}型BJT记为$\vcenter{\hbox{\begin{circuitikz}
+		\draw (0,0) -- (0.3,0) node[pnp,anchor=B](NPN){} (NPN.C) -- ++(0.3,0) (NPN.E) -- ++(0.3,0);
+	\end{circuitikz}}}$（\texttt{pnp}）。
+}{
+	见~\ref{BJT的端口特性}~节。
+}
+
+\subsubsection{BJT的结构与原理}
+
+如图~\ref{Pic: npn型BJT的横截面}，\textsl{npn}型BJT由三个半导体区域组成：\tboba{发射极}区（E，\textsl{n}型）、\tboba{基极}区（B，\textsl{p}型）和\tboba{集电极}区（C，\textsl{n}型）。\textsl{pnp}型BJT各区域的半导体材料相反。相邻两个区域相接构成\textsl{pn}结，即形成\tboba{发射结}（EBJ）和\tboba{集电结}（CBJ）。
+
+\begin{figure}[ht!]
+	\vspace{-1em}
+	\centering
+	\subfloat[]{\includegraphics[width=7.51cm]{npn结构.png}}
+	\qquad
+	\subfloat[]{\includegraphics[width=7.95cm]{npn简化结构.png}}
+	\caption{\textsl{npn}型BJT的横截面结构示意图}\label{Pic: npn型BJT的横截面}
+	\vspace{-1em}
+\end{figure}
+
+按照两个\textsl{pn}结的通断特性，BJT有如表~\ref{Tab: BJT的工作模式}~所示的四种工作模式。下面以\textsl{npn}型BJT为例，对它的各模式电路进行分析。
+
+\begin{table}[ht!]
+	\caption{BJT的工作模式}\label{Tab: BJT的工作模式}
+	\begin{tabular}{p{110pt}<{\centering}p{60pt}<{\centering}p{60pt}<{\centering}}
+		\toprule
+		\textbf{模式} & \textbf{EBJ} & \textbf{CBJ} \\
+		\midrule
+		截止Cutoff & 反偏电压 & 反偏电压 \\
+		饱和Saturation & 正偏电压 & 正偏电压 \\
+		正激活Active & 正偏电压 & 反偏电压 \\
+		反激活Reverse active & 反偏电压 & 正偏电压 \\
+		\bottomrule
+	\end{tabular}
+	\vspace{-1em}
+\end{table}
+
+\paragraph{正激活Active模式}EBJ上有正向偏压，CBJ上有反向偏压，即$v_{BE}>0，v_{BC}<0$。其集电极电流$i_C$、基极电流$i_B$、发射极电流$i_E$分别为
+\equ{
+	\begin{aligned}
+	&i_C=I_S \e^\frac{v_{BE}}{V_T}，&&\qquad \text{其中}\, I_S=\dfrac{A_EqD_nn_i^2}{N_AW}\\[-7pt]
+	&i_B=\dfrac{i_C }{\beta_F}=\dfrac{I_S}{\beta_F} \e^\frac{v_{BE}}{V_T}\\
+	&i_E=\dfrac{i_C }{\alpha_F}=\dfrac{I_S}{\alpha_F} \e^\frac{v_{BE}}{V_T} ，&&\qquad \text{其中}\, \alpha_F=\dfrac{\beta_F}{\beta_F+1}	
+	\end{aligned}
+}
+\noindent 其电路可有等效替代如下：
+\begin{center}
+	\cbox{
+		\draw (0,0) coordinate(C) to[battery, v_=$v_{CB}$, -*] ++(0,-1.5) coordinate(B) to[battery1, v_=$v_{BE}$] ++(0,-1.5) coordinate(E)
+		(B) to[short, -o] ++(1,0) node[below]{B} to[short, o-] ++(0.5,0) node[npn, anchor=B](BJT){}
+		(C) -- (C -| BJT.C) to[short, -o] ++(0,-0.5) node[right]{C} to[short, o-] (BJT.C)
+		(E) -- (E -| BJT.E) to[short, -o] ++(0,0.5) node[right]{E} to[short, o-] (BJT.E);
+	}
+	$\Longleftrightarrow$
+	\cbox{
+		\draw (0,0) coordinate(C) 
+		to[battery, v_=$v_{CB}$, -*] ++(0,-1.5) coordinate(B) 
+		to[battery1, v_=$v_{BE}$] ++(0,-1.5) coordinate(E)
+		(B) 
+		to[short, -o] ++(1,0) node[below]{B} 
+		to[short, o-, f=$i_B$] ++(0.5,0) 
+		to[short, -*] ++(0.4,0) coordinate(BJT)
+		(C) 
+		-- (C -| BJT) 
+		to[short, -o] ++(0,-0.3) node[left]{C} 
+		to[cI, o-, l=$\alpha_F i_E$, f>^=$i_C$, !vi, name=iC] (BJT)
+		(BJT) 
+		to[Do, -o, l=$D_E$, f^>=$i_E$, !vi, name=iE] ++(0,-1.2) node[left]{E} 
+		to[short, o-] (E -| BJT) -- (E);
+		\bf{iC}\bf{iE}
+	}
+\end{center}
+公式中，$\beta_F$的典型值在50～200之间，则$\alpha_F \approx 1$。
+
+\paragraph{反激活Reverse active模式}EBJ上有反向偏压，CBJ上有正向偏压，即$v_{BE}<0，v_{BC}>0$。其集电极电流$i_C$、基极电流$i_B$、发射极电流$i_E$的关系与上面类似，即
+\equ{
+	\begin{aligned}
+	&i_E=I_S \e^\frac{v_{BC}}{V_T}，&&\qquad \text{其中}\, I_S=\dfrac{A_EqD_nn_i^2}{N_AW}\\[-7pt]
+	&i_B=\dfrac{i_E }{\beta_R}=\dfrac{I_S}{\beta_R} \e^\frac{v_{BC}}{V_T}\\
+	&i_C=\dfrac{i_E }{\alpha_R}=\dfrac{I_S}{\alpha_R} \e^\frac{v_{BC}}{V_T} ，&&\qquad \text{其中}\, \alpha_R=\dfrac{\beta_R}{\beta_R+1}	
+	\end{aligned}
+}
+\noindent 不同的是，$\alpha_R$约为0.01～0.05。
+
+\paragraph{饱和Saturation模式}EBJ、CBJ上均是正向偏压，即$v_{BE}>0，v_{BC}>0$。此时有
+\equ{
+	i_C=\left(\alpha_F-\dfrac{1}{\alpha_R}\right)I_S \left(\e^\frac{v_{BC}}{V_T}-1\right)+\alpha_Fi_E
+}
+\noindent 可见当$v_{BC}$增大时，由$\alpha_F-\dfrac{1}{\alpha_R}<0$，知$i_C$减小。
+
+\subsubsection{BJT的端口特性}\label{BJT的端口特性}
+
+\paragraph{BJT的伏安特性}
+
+显见其服从基尔霍夫定律。此外，由上面分析可知三个端口电流的关系，以下即仅分析$i_C$。
+
+\begin{description}
+	\item[$\symbf{i_C-v_{BE}}$特性] 
+	由$i_C=I_S\e^{v_{BE}/V_T}$可直接得出。
+
+	\item[$\symbf{i_C-v_{CB}}$特性]
+	固定$i_E$，Active模式下，$i_C=I_S\e^{v_{BE}/V_T}$与$v_{CB}$无直接关系，$i_C-v_{CB}$曲线是一条与$i_C$轴交于$\alpha_Fi_E$处的水平线；反号后$v_{BC}$继续增大进入Saturation模式，当$v_{BC}$增大时，由$\alpha_F-\dfrac{1}{\alpha_R}<0$，知$i_C=\left(\alpha_F-\dfrac{1}{\alpha_R}\right)I_S \left(\e^{v_{BC}/V_T}-1\right)+\alpha_Fi_E$减小。此外，当$v_{CB}$过大致使反偏\textsl{pn}结击穿时，$i_C$即随$v_{CB}$增大。
+
+	\item[$\symbf{i_C-v_{CE}}$特性]
+	固定$i_E$（也即固定$v_{BE}$），由$v_{CE}=v_{BE}+v_{CE}$，容易得到$i_C-v_{CE}$特性曲线与$i_C-v_{CB}$曲线的关系。
+\end{description}
+
+\begin{figure}[ht!]
+	\vspace{-1em}
+	\centering
+	\subfloat[$i_C-v_{BE}$]{\includegraphics[width=3.87cm]{BJT_iC-vBE.png}}
+	\subfloat[$i_C-v_{CB}$]{\includegraphics[width=6.14cm]{BJT_iC-vCB.png}}
+	\subfloat[$i_C-v_{CE}$]{\includegraphics[width=6.14cm]{BJT_iC-vCE.png}}
+	\caption{\textsl{npn}型BJT的伏安特性曲线}
+	\vspace{-1em}
+\end{figure}
+
+实际上，\textsl{npn}型BJT的$i_C-v_{CE}$特性曲线没有上面那么完美，在Active模式区域其并不水平，而是有轻微的上翘，即Active模式下$i_C$仍是与$v_{CE}$有关的：
+\equ{
+	i_C=I_S\e^\frac{v_{BE}}{V_T}\left(1+\dfrac{v_{CE}}{V_A}\right)
+}
+\noindent 式中$V_A$称为\textbf{Early电压}，这个现象称为~\tbome{Early效应}。
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=7.25cm]{Early.png}
+	\caption{考虑Early效应时\textsl{npn}型BJT的$i_C-v_{CE}$特性曲线}
+	\vspace{-1em}
+\end{figure}
+
+Early效应产生自Active模式下\textbf{从集电极看去的电阻不为无穷}，即集电极的流控流源上并联有电阻$r_0$。对$i_C=I_S\e^{v_{BE}/V_T}\left(1+\dfrac{v_{CE}}{V_A}\right)$求导，有 
+$$r_0 = \left(\left.\dfrac{\partial i_C}{\partial v_{CE}}\right|_{v_{BE}}\right)^{-1} = \dfrac{V_A+V_{CE}}{I_C} \approx \dfrac{V_A}{I_C}$$
+
+\begin{figure}[ht!]
+	\begin{center}
+	\cbox{
+		\draw (0,0) node[left](B){B} to[short, o-, f=$i_B$] ++(1.1,0) to[short, -*] ++(0.4,0) coordinate(BJT);
+		\draw (1.5,1.5) node[left](C){C} to[short, o-, f>^=$i_C$] ++(0,-0.6) coordinate(r0) to[cI, l=$\alpha_F i_E$] (BJT)
+		(r0) to[short, *-] ++(1.5,0) coordinate(r1) to[R, l=$r_0$] (BJT -| r1) -- (BJT);
+		\draw (BJT) to[Do, l=$D_E$] ++(0,-0.9) to[short, -o, f^>=$i_E$] ++(0,-0.6) node[left]{E};
+	}
+	\vspace{-1em}
+	\end{center}
+	\caption{考虑Early效应的\textsl{npn}型BJT的Active模式模型}
+\end{figure}
+
+\textsl{npn}型BJT的$i_C-v_{CE}$上，Saturation 区域中更靠近$v_{CE}=0$的区域中曲线斜率会有明显的增大，这块区域称为 Deeper Saturation 区（深度饱和区）。此区域中，不同于先前的\textbf{大信号\,$\symbf{\beta}$}（$\beta_\mrm{DC}=\dfrac{I_C}{I_B}=\beta_F$），定义\textbf{小信号\,$\symbf{\beta}$}为$\beta_\mrm{AC}=\dfrac{\Dif i_C}{\Dif i_B}\bigg|_{v_{CE}}$、\textbf{强制\,$\symbf{\beta}$}为$\beta_{\symup{forced}}=\dfrac{i_C}{i_B}\bigg|_{v_{CE}}$，这两个$\beta$比大信号\,$\beta$小不少。
+
+此外，深度饱和区中，可以近似有$v_{CE\symup{sat}}=v_{CE\symup{off}}+I_{C\symup{sat}}R_{CE\symup{sat}}$，其中$R_{CE\symup{sat}}=\dfrac{\partial v_{CE}}{\partial i_C}\bigg|_{i_B=I_B \atop i_C=I_{C\symup{sat}}}$。
+
+\textbf{一般取临界饱和区$\symbf{V_{CE\symbfup{sat}}}\symbfup{=0.3\,V}$，深度饱和区$\symbf{V_{CE\symbfup{sat}}}\symbfup{=0.2\,V}$。}
+
+\paragraph{BJT的传递特性}
+
+\textsl{npn}型BJT的传递特性，一般考虑的是$v_{CE}-v_{BE}$传递特性。
+在 Cutoff 模式，$v_{BE}< v_{BE\symup{on}}$；
+在 Saturation 模式，$v_{BE} > v_{BE\symup{on}}$，$v_{BC} = v_{BE} - v_{CE} > v_{BC\symup{on}}$，$v_{CE}$电压也呈水平，电压值下降至$v_{CE\mrm{sat}}$；
+在 Active 模式下，$v_{BE} > v_{BE\symup{on}}$，$v_{BC} = v_{BE} - v_{CE} < v_{BC\symup{on}}$。
+一般取这两个阈值电压$v_{BE\symup{on}}=0.5\symup{\,V}，v_{BC\symup{on}}=0.4\symup{\,V}$。
+
+\begin{wrapfigure}{r}{2cm}
+	\vspace{-2.5em}\raggedleft
+	\cbox{
+		\draw (0,0) to[open, o-, v=$v_{\mrm{in}}$] (0,-1) coordinate(GND) node[ground]{}
+		(0,0) to[short, o-] ++(0.5,0) node[npn, anchor=B](BJT){}
+		(BJT.E) -- (GND -| BJT.E) node[ground]{}
+		(BJT.C) to[short, f<=$i_C$] ++(0,0.5)
+		to[R, l_=$R_C$] ++(0,1) node[vcc]{$V_{dd}$}
+		(BJT.C) ++(0,0.2) to[short, *-o] ++(0.5,0) coordinate(C)
+		to[open, o-, v=$v_{\mrm{out}}$] (GND -| C) node[ground]{}
+		;
+	}
+	\vspace{-2.5em}
+\end{wrapfigure}
+考虑在如右电路中进行定量分析：
+\begin{itemize}
+	\item $v_{BE}< v_{BE\symup{on}}$时，BJT工作在 Cutoff 模式，$i_C=0$，$v_{\mrm{out}}=v_{CE}=V_{dd}$；
+	\item $v_{BE} > v_{BE\symup{on}}$，$v_{BC} = v_{BE} - v_{CE} < v_{BC\symup{on}}$时，BJT工作在 Active 模式下，有$i_C=I_S\e^{v_{BE}/V_T}$，则$v_{\mrm{out}}=V_{dd}-i_CR_C=V_{dd}-R_CI_S\e^{v_{\mrm{in}}/V_T}$；
+	\item $v_{BC} = v_{BE} - v_{CE} = v_{\mrm{in}} - v_{\mrm{out}} > v_{BC\symup{on}}$时，即$v_{\mrm{out}} < v_{\mrm{in}} - v_{BC\symup{on}}$时，BJT工作在 Saturation 模式，$v_{\mrm{out}}=V_{CE\mrm{sat}}$，$I_{C\mrm{sat}}=\dfrac{V_{dd}-V_{CE\mrm{sat}}}{R_C}$。
+\end{itemize}
+
+\subsubsection{BJT直流分析}
+
+BJT工作在 Cutoff 模式下和 Saturation 模式下时，其通断行为为一个受$v_{\mrm{in}}$控制的开关。
+
+BJT工作在 Active 模式时，若直接解KVL、KCL方程，由于有$I_C=I_S\e^{\textstyle\frac{v_{BE}}{V_T}}$等超越式，方程一般没有解析解。\textbf{一般取$\symbf{|V_{BE}|}\symbfup{=0.7\,V}$}，替代超越式列方程求解。
+
+\subsubsection{BJT交流分析}
+
+在$v_{BE}-v_{CE}$传递曲线中，Active模式区域中有一段斜率变化不大的曲线。加直流偏置电压$V_{BE}$偏置到该区域中\tboba{静态工作点}~$Q$，然后加交流小信号，则输出的交流成分是交流小信号依$Q$处斜率的放大信号，增益可有估计
+$$A_v=\dfrac{\dif v_o}{\dif v_{in}}\bigg|_{v_{in}=V_{BE}}=-\dfrac{1}{V_T}R_CI_S\e^{v_{BE}/V_T}=-\dfrac{I_CR_C}{V_T}=-\dfrac{V_{dd}-V_{CE}}{V_T}>-\dfrac{V_{dd}-V_{CE\text{sat}}}{V_T}$$
+
+偏置点$Q$的选取，或者说偏置电压$V_{BE}$的取值，对上面所述的放大过程十分重要。
+
+\textbf{定量分析}\quad 设BE上输入电压$v_{in}=V_{BE}+v_{be}\sin(\omega t+\varphi)$，则由Active模式电流关系即有
+\begin{align*}
+	i_C&=I_S\e^{V_T^{-1}v_{BE}}
+	=I_S\e^{V_T^{-1}\left(V_{BE}+v_{be}\sin(\omega t+\varphi)\right)}
+	\xlongequal{I_C=I_S\e^{V_T^{-1}V_{BE}}} I_C\e^{V_T^{-1}v_{be}\sin(\omega t+\varphi)}\\[-3pt]
+	&\xlongequal{v_{be} \ll V_T} I_C\left(1+\dfrac{1}{V_T}v_{be}\sin(\omega t+\varphi)\right)
+	=I_C+\dfrac{I_C}{V_T}v_{be}\sin(\omega t+\varphi)
+\end{align*}
+定义电路的\tboba{跨导}值
+\equ{
+	g_m=\dfrac{I_C}{V_T}=\dfrac{\partial i_C}{\partial v_{BE}}\bigg|_{i_C=I_C}
+}
+\noindent 进一步，代入可求
+$$v_o=V_{dd}-i_CR_C=V_{dd}-I_CR_C-\dfrac{I_C}{V_T}R_Cv_{be}\sin(\omega t+\varphi)=V_{CE}-g_mR_Cv_{be}\sin(\omega t+\varphi)$$
+于是
+\equ{
+	A_v=\dfrac{v_o\big|_\text{AC}}{v_{in}\big|_\text{AC}}=-g_mR_C
+}
+
+考虑自输入端（基极）看去的输入阻值，其为$R_\mrm{in}=\dfrac{\symup{\Delta} v_\mrm{in}}{\symup{\Delta} i_\mrm{in}}=\dfrac{\symup{\Delta} v_{BE}}{\symup{\Delta} i_B}$。
+由$i_B=\dfrac{i_{C}}{\beta}=\dfrac{I_{C}}{\beta}+\dfrac{1}{\beta}\dfrac{I_{C}}{V_{T}}v_\mrm{in,AC}$，知$\symup{\Delta} i_{B}=\dfrac{1}{\beta}\dfrac{I_{C}}{V_{T}}v_\mrm{in,AC}=\dfrac{1}{\beta}g_{m}v_\mrm{AC}$，进而有
+\equ{
+	R_{in}=\dfrac{\symup{\Delta} v_{BE}}{\symup{\Delta} i_{B}}=\dfrac{v_\mrm{in,AC}}{\symup{\Delta} i_{B}}=\dfrac{V_{T}}{I_{B}}=\dfrac{\beta}{g_{m}}
+}
+
+
+\subsection{金属—氧化物—半导体场效应晶体管（MOSFET）}
+
+\ctikzset{tripoles/mos style/arrows}
+\ctikzset{tripoles/pmos style/nocircle}
+\bu[MOSFET]{
+	\cbox{\draw[color=balib] (0,0) node[nmos, bulk]{};}（\texttt{nmos, bulk}）
+	\cbox{\draw[color=balib] (0,0) node[pmos, bulk]{};}（\texttt{pmos, bulk}）
+}{}
+
+\subsubsection{MOSFET的结构与原理}
+
+\subsubsection{MOSFET的端口特性}
+
+\paragraph{$\symbf{i_D-v_{DS}}$特性}
+
+随$v_{DS}$增大，在沟道夹断之前$i_D$不断增大，直到$v_{GS}-v_{DS}=V_{th}$后沟道夹断，$i_D$不再变化。达到$v_{GS}-v_{DS}=V_{th}$之前，称该NMOS管工作在\textbf{Triode区}（「三极管区」）；达到$v_{GS}-v_{DS}=V_{th}$之后，称该NMOS管工作在\textbf{Saturation区}（「饱和区」）。
+
+在 Triode区，有 
+\equ{
+	i_D=\mu_\textsl{n}C_\text{ox} \dfrac{W}{L } \left[(v_{GS}-V_{th})v_{DS}-\dfrac{1}{2}v_{DS}^2\right] \label{Eq: MOS-T}
+}
+其中$\dfrac{W }{L }$即沟道的宽高比；基于这个式子，定义\textbf{过驱动电压}$v_\mrm{OV}=v_{GS}-V_{th}$，\tboba{跨导参数}~$k_\textsl{n} = \mu_\textsl{n}C_\text{ox} \dfrac{W}{L }$。当$v_{DS} \to 0$时，略去高次小项，上式变为$i_D=\mu_\textsl{n}C_\text{ox} \dfrac{W}{L } (v_{GS}-V_{th})v_{DS} = k_\textsl{n}(v_{GS}-V_{th})v_{DS}$，于是可以定义此时NMOS管的等效电阻$r_{DS}=\dfrac{1}{k_\textsl{n}(v_{GS}-V_{th})}$。
+
+在 Saturation区，$i_D$将保持两区交界处的饱和值，即向\ref{Eq: MOS-T}式代入$v_{DS} = v_{DS\mrm{sat}} = v_{GS}-V_{th}$，有 
+\equ{
+	i_D=\dfrac{1}{2}\mu_\textsl{n}C_\text{ox} \dfrac{W}{L } (v_{GS}-V_{th})^2
+}
+实际上，Saturation区沟道夹断之后还会随$v_{DS}$增大继续缩短，即会有
+\begin{align*}
+	i_D &= \dfrac{1}{2}\mu_\textsl{n}C_\text{ox} \dfrac{W}{L-\Dif L} (v_{GS}-V_{th})^2
+	= \dfrac{1}{2}\mu_\textsl{n}C_\text{ox} \dfrac{W}{L\left( 1-\dfrac{\Dif L}{L} \right)} (v_{GS}-V_{th})^2 \\
+	&\xlongequal{\Dif L \ll L} \dfrac{1}{2}\mu_\textsl{n}C_\text{ox} \dfrac{W}{L}\left( 1+\dfrac{\Dif L}{L} \right) (v_{GS}-V_{th})^2
+\end{align*}
+而$\Dif L \propto v_{DS}$，设比例系数为$\dfrac{1}{V_A}$，则
+\equ{
+	i_D=\dfrac{1}{2}\mu_\textsl{n}C_\text{ox} \dfrac{W}{L } (v_{GS}-V_{th})^2\left( 1+\dfrac{v_{DS}}{V_A} \right)
+}
+这称为\tbome{沟道长度调制效应}，也沿用BJT中的名词称为\textbf{Early效应}，其中$V_A$称为\textbf{Early电压}。考虑Early效应时，Saturation区各$v_{GS}$下的$i_D-v_{DS}$曲线（直线）相交于$v_{DS}=-V_A$处。
+
+\paragraph{$\symbf{i_D-v_{GS}}$特性}
+
+固定$v_{DS}$，则由上知$i_D-v_{GS}$关系为
+$$i_D = \begin{cases}[ll]
+	0，& v_{GS}<V_{th}，\\
+	\dfrac{1}{2}k_n (v_{GS}-V_{th})^2，& V_{th} < v_{GS} < V_{th} + v_{DS}，\\
+	k_n \left[(v_{GS}-V_{th})v_{DS}-\dfrac{1}{2}v_{DS}^2\right]，& v_{GS} > V_{th} + v_{DS}\text{。}
+\end{cases}$$
+其中，通常更重要的是$v_{GS}<V_{th}+v_{DS}$，即在 Saturation区中的部分。
+
+\paragraph{$\symbf{v_{DS}-v_{GS}}$特性}
+
+基于图~\ref{Pic: NMOS tran circuit}~所示电路，由前面的伏安特性容易得到$v_{DS}-v_{GS}$关系，其可分为 Cutoff、Saturation、Triode三个区，如图~\ref{Pic: NMOS tran}~所示。
+
+\begin{figure}[ht!]
+	\centering
+	\subfloat[电路]{\label{Pic: NMOS tran circuit}
+		\begin{circuitikz}
+			\draw (0,0) coordinate(I) 
+			to[short, o-] ++(0.5,0) node[nmos, anchor=G](T){}
+			(T.S) 
+			-- ++(0,-0.5) node[ground](GND){}
+			(T.D) 
+			to[short, i<=$i_D$, !vi, name=iD] ++(0,0.5) coordinate(O) 
+			to[R, l=$R_D$] ++(0,1) node[vcc]{$V_{dd}$}
+			(I) 
+			to[open, o-o, v=$v_{GS}$] (GND -| I) node[ground]{}
+			(O) 
+			to[short, -o] ++(0.5,0) coordinate(O1) 
+			to[open, o-o, v=$v_{DS}$] (GND -| O1) node[ground]{}
+			;
+			\bi{iD}
+		\end{circuitikz}
+	}
+	\qquad
+	\subfloat[特性曲线]{\label{Pic: NMOS tran}
+		\includegraphics[width=6.03cm]{MOS_vDS-vGS.png}
+	}
+	\caption{NMOS管的$v_{DS}-v_{GS}$特性}
+\end{figure}
+
+\subsubsection{MOSFET的交流增益}
+
+在$v_{DS}-v_{GS}$传递曲线中，Saturation区域中有一段斜率变化不大的曲线。加直流偏置电压$V_{GS}$偏置到该区域中\tboba{静态工作点}~$Q$，然后加交流小信号，则输出的交流成分是交流小信号依$Q$处斜率的放大信号。
+
+在 Saturation区内，据晶体管的特性有
+\begin{align*}
+	i_D &= \dfrac{1}{2} k_\textsl{n} (V_{GS} + v_{\mrm{in,AC}} - V_{th})^2 
+	= \dfrac{1}{2} k_\textsl{n} (V_{GS} - V_{th})^2 + k_\textsl{n} (V_{GS} - V_{th})v_{\mrm{in,AC}} + \dfrac{1}{2} k_\textsl{n} v_{\mrm{in,AC}}^2 \\
+	&\xlongequal{\frac{1}{2} v_{\mrm{in,AC}} \ll V_{GS} - V_{th}}
+	I_D + k_\textsl{n} (V_{GS} - V_{th})v_{\mrm{in,AC}}
+\end{align*}
+其中定义\tboba{跨导}参数为
+\equ{
+	g_m=k_\textsl{n}(v_\mrm{in}-V_{th})
+}
+基于图~\ref{Pic: NMOS tran circuit}~所示电路，由$v_\mrm{out}=V_{dd}-\dfrac{1}{2}k_\textsl{n}(v_\mrm{in}-V_{th})^2 R_D$，即有电压增益
+$$A_v = \dfrac{\dif v_\mrm{out}}{\dif v_\mrm{in}}\bigg|_{v_\mrm{in}=V_{GS}}
+= -k_\textsl{n}(v_\mrm{in}-V_{th})R_D = -g_mR_D$$
+
+NMOS管的小信号混合$\pi$模型如图~\ref{Pic: NMOS hybrid-pi}。
+\begin{figure}[ht!]
+	\centering
+	\subfloat[简化混合$\pi$模型]{
+		\begin{circuitikz}
+			\fill [fill=white!95!black, rounded corners] (1.2,0.3) rectangle (3.3,-1.8); 
+			\draw (0,0) node[left](G){$G$} 
+			to[short, o-o] ++(1.5,0)
+			to[open, o-o, v=$v_{gs}$] ++(0,-1.5)
+			to[short, o-] ++(0.75,0) coordinate(S)
+			to[short, -o] ++(0,-0.5) node[below]{$S$}
+			(S) -- ++(0.75,0) 
+			to[cI, l=$g_mv_{gs}$, invert] ++(0,1.5)
+			to[short, -o] ++(1.5,0) node[right]{$D$}
+			;
+		\end{circuitikz}
+	}
+	\qquad
+	\subfloat[考虑沟道长度调制效应的混合$\pi$模型]{
+		\begin{circuitikz}
+			\fill [fill=white!95!black, rounded corners] (1.2,0.3) rectangle (4.3,-1.8); 
+			\draw (0,0) node[left](G){$G$} 
+			to[short, o-o] ++(1.5,0)
+			to[open, o-o, v=$v_{gs}$] ++(0,-1.5)
+			to[short, o-] ++(0.75,0) coordinate(S)
+			to[short, -o] ++(0,-0.5) node[below]{$S$}
+			(S) -- ++(0.75,0) 
+			to[cI, l=$g_mv_{gs}$, invert] ++(0,1.5) -- ++(1,0)
+			(S) -- ++(1.75,0) to[R, l_=$r_o$] ++(0,1.5)
+			to[short, -o] ++(1.5,0) node[right]{$D$}
+			;
+		\end{circuitikz}
+	}
+	\caption{小信号混合$\pi$模型}\label{Pic: NMOS hybrid-pi}
+\end{figure}
+
+\subsubsection{MOSFET的频率响应}
+
+如图~\ref{Pic: MOS CS Amp}~所示是一个典型的CS放大电路，其中$C_1$，$C_2$称为\textbf{耦合电容}，$C_S$称为\textbf{旁路电容}，它们起到为交流输入信号「隔直」的作用。但对低频交流信号，隔直电容并不能完全看作导线，从而对低频增益造成影响。
+
+\begin{figure}[ht!]
+	\centering 
+	\cbox{
+		\draw (0,0) node[nmos, anchor=G](MOS){}
+			-- ++(-0.5,0) coordinate(G) 
+			to[R, l=$R_G$] ++(0,-2) node[ground](GND){}
+		(G)	-- ++(-0.5,0) 
+			to[C, l=$C_1$] ++(-1,0)
+			to[R, l=$R_\mrm{sig}$] ++(-1,0)
+			to[V, l_=$v_\mrm{sig}$] ++(0,-2) node[ground]{}
+		(MOS.S) to[I] (GND -| MOS.S) 
+			-- ++(0,-0.2) node[vee]{$-V_{ss}$}
+		(MOS.S) -- ++(1.5,0) coordinate(S)
+			to[C, l=$C_S$] (GND -| S) node[ground]{}
+		(MOS.D) to[short, f<=$i_D$, !vi, name=iD] ++(0,0.5)
+			to[R, l=$R_D$] ++(0,1) node[vcc]{$V_{dd}$}
+		(MOS.D) to[C, l=$C_2$] ++(1,0)
+			-- ++(1.5,0) coordinate(O)
+			to[R, l=$R_L$] ++(0,-2) node[ground]{}
+		(O) to[short, -o] ++(0.5,0) node[right]{$v_o$}
+		;
+		\bf{iD}
+	}
+	\caption{一个典型的CS放大电路}\label{Pic: MOS CS Amp}
+\end{figure}
+
+\begin{itemize}
+	\item 考虑$C_1$的作用，有 
+	$$	v_{G}=\frac{R_G}{R_{sig}+\dfrac1{sC_1}+R_G}v_{sig} 
+		=v_{sig}\frac{R_G}{R_{sig}+R_G}\mbome{\frac s{s+\dfrac1{C_1(R_{sig}+R_G)}}}
+	$$
+	其向电路传函贡献了一个高通项，零点$\omega_{L1} = \dfrac{1}{C_1(R_{sig}+R_{G})}$。
+	\item 考虑$C_2$的作用，有
+	$$	v_{out}=-i_{d}\frac{R_{D}R_{L}}{R_{D}+R_{L}+\dfrac{1}{sC_{2}}}
+		=-i_{d}R_{L}\mbome{\frac{s}{s+\dfrac{1}{C_{2}(R_{D}+R_{L})}}}
+	$$
+	其也向电路传函贡献了一个高通项，零点$\omega_{L2} = \dfrac{1}{C_2(R_{D}+R_{L})}$。
+	\item 考虑$C_S$的作用，有 
+	$$	v_G - g_m v_{gs} \dfrac{1}{sC_S} = v_{gs} \quad\Longrightarrow\quad
+		v_{gs} = v_G \mbome{\dfrac{s}{s + \dfrac{g_m}{C_S}}}
+	$$
+	其也向电路传函贡献了一个高通项，零点$\omega_{L3} = \dfrac{g_m}{C_S}$。
+\end{itemize}
+
+在高频部分，MOS管栅极和衬底极之间的氧化物电容将导通，不再有$i_G=0$，此时NMOS管的高频小信号模型如图~\ref{Pic: NMOS hybrid-pi at high-f}~所示，其中相比于一般小信号模型所多出的两个电容$C_{gs}$、$C_{gd}$将对高频增益造成影响。将图~\ref{Pic: MOS CS Amp}~改写为高频交流形式如图~\ref{Pic: MOS CS Amp AC}，注意到
+\begin{figure}[ht!]
+	\centering
+	\begin{circuitikz}[voltage shift=-0.4]
+		\fill [fill=white!95!black, rounded corners] (0.6,0.6) rectangle (4.8,-1.8); 
+		\draw (0,0) node[left](G){$G$} 
+			to[short, o-] ++(1.5,0) coordinate(g)
+			to[C, l=$C_{gs}$, v=$v_{gs}$] ++(0,-1.5)
+			-- ++(1,0) coordinate(S)
+			to[short, -o] ++(0,-0.5) node[below]{$S$}
+		(S) -- ++(1,0) 
+			to[cI, l=$g_mv_{gs}$, invert] ++(0,1.5) coordinate(d)
+			-- ++(1,0)
+		(g) to[C, l=$C_{gd}$] (d)
+		(S) -- ++(1.75,0) to[R, l_=$r_o$] ++(0,1.5)
+			to[short, -o] ++(1.2,0) node[right]{$D$}
+		;
+	\end{circuitikz}
+	\caption{高频小信号混合$\pi$模型}\label{Pic: NMOS hybrid-pi at high-f}
+\end{figure}
+\begin{figure}[ht!]
+	\centering 
+	\cbox{
+		\fill [fill=white!95!black, rounded corners] (0.6,0.6) rectangle (4.8,-1.8); 
+		\draw (0,0) coordinate(MOSG) node[above]{$G$} 
+			to[short, o-] ++(1.5,0) coordinate(g)
+			to[C, l=$C_{gs}$, v=$v_{gs}$] ++(0,-1.5)
+			-- ++(1,0) coordinate(mosS)
+			to[short, -o] ++(0,-0.5) coordinate(MOSS) node[left]{$S$}
+		(mosS) -- ++(1,0) 
+			to[cI, l=$g_mv_{gs}$, invert] ++(0,1.5) coordinate(d)
+			-- ++(1,0)
+		(g) to[C, l=$C_{gd}$] (d)
+		(mosS) -- ++(1.75,0) to[R, l_=$r_o$] ++(0,1.5)
+			to[short, -o] ++(1.2,0) coordinate(MOSD) node[below]{$D$}
+		(MOSG) -- ++(-1,0) coordinate(G) 
+			to[R, l=$R_G$] ++(0,-1.5) node[ground](GND){}
+		(G)	to[C, l=$C_1$] ++(-1,0)
+			to[R, l=$R_\mrm{sig}$] ++(-1,0) -- ++(-0.3,0)
+			to[V, l_=$v_\mrm{sig}$] ++(0,-1.5) node[ground]{}
+		(MOSS) to[I] ++(0,-1.2) node[vee]{$-V_{ss}$}
+		(MOSS) -- ++(1.5,0) coordinate(S)
+			to[C, l=$C_S$] ++(0,-1) node[ground]{}
+		(MOSD) -- ++(0,0.2) 
+			to[short, f<=$i_D$, !vi, name=iD] ++(0,0.3)
+			to[R, l=$R_D$] ++(0,1) node[vcc]{$V_{dd}$}
+		(MOSD) to[C, l=$C_2$] ++(1.5,0) coordinate(O)
+			to[R, l=$R_L$] ++(0,-1.5) node[ground]{}
+		(O) to[short, -o] ++(0.5,0) node[right]{$v_o$}
+		;
+		\bf{iD}
+		\draw[meihong!75!black, -latex, thick] (-0.5,-2.5) node[right]{$\mbome{C_{\symbfup{in}}}$} -- ++(0,3.5) -- ++(0.5,0);
+	}
+	\caption{图~\ref{Pic: MOS CS Amp}~中CS放大电路的高频交流等效形式}\label{Pic: MOS CS Amp AC}
+	\vspace{-1.5em}
+\end{figure}
+\begin{align*}
+	& v_\mrm{out} = (-g_m v_{gs} + i_{gd}) \cdot (R_L \parallel R_D \parallel r_o )
+	\xlongequal[R_L' := R_L \parallel R_D \parallel r_o]{g_m v_{gs} \gg i_{gd}} -g_m v_{gs} R_L' \\[-5pt]
+	&\Longrightarrow\quad i_{gd}=(v_{gs}-v_\mrm{out})sC_{gd}=(1+g_{m}R_{L}')sC_{gd}v_{gs}\\[-5pt]
+	&\Longrightarrow\quad i_\mrm{in}=i_{gs}+i_{gd}=\left(C_{gs}+C_{gd}(1+g_{m}R_{L}')\right)sv_{gs}
+\end{align*}
+即可定义$C_\mrm{in} = C_{gs}+C_{gd}(1+g_{m}R_{L}')$，进而 
+\begin{equation*}
+	G_{v} =\dfrac{v_{o}}{v_\mrm{sig}}=\dfrac{-g_{m}v_{gs}R_{L}'}{v_\mrm{sig}}
+	=\dfrac{-g_{m}R_{L}'}{v_\mrm{sig}}\dfrac{v_{G\_TH}}{1+sR_{G\_TH}C_\mrm{in}}
+	=-\frac{g_{m}R_{L}'R_{G}}{R_\mrm{sig}+R_{G}}\mbome{\dfrac{1}{1+sR_{G\_TH}C_\mrm{in}}}
+\end{equation*}
+其中$R_{G\_TH}=R_\mrm{sig} \parallel R_B$，$v_{G\_TH} = \dfrac{R_B}{R_\mrm{sig}+R_B} v_\mrm{sig}$，标红项$\dfrac{1}{1+sR_{G\_TH}C_\mrm{in}}$即是向电路增益贡献的低通项，极点$\omega_{H1} = \dfrac{1}{R_{G\_TH}C_\mrm{in}}$。
+
+\subsection{晶体管模块实例}
+
+\subsubsection{电流镜}
+
+最简单的电流镜形式如图~\ref{Pic: Simple C-mirror}~所示。其中，不考虑Early效应，若做到两个BJT完全相同，即$\beta_{Q_1} = \beta_{Q_2} =\beta$，就有
+$$I_\mrm{ref} = I_{C1} + I_{B1} + I_{B2} = I_{C1} + \dfrac{I_{C1}}{\beta} + \dfrac{I_{C2}}{\beta} \xlongequal{I_\mrm{out} = I_S\e^\frac{v_{BE}}{V_T}} \left( 1+ \dfrac{2}{\beta} \right) I_\mrm{out} \quad \Longrightarrow \quad \dfrac{I_\mrm{out}}{I_\mrm{ref}} = \dfrac{1}{1+ \dfrac{2}{\beta}}\xlongrightarrow{\beta \to \infty} 1$$
+若$Q_2$的发射结面积是$Q_1$的$m$倍，即$I_{S2}=mI_{S1}$，则有
+$$I_\mrm{ref} = I_{C1} + I_{B1} + I_{B2} = I_{C1} + \dfrac{I_{C1}}{\beta} + \dfrac{I_{C2}}{\beta} \xlongequal{I_\mrm{out} = I_{S2}\e^\frac{v_{BE}}{V_T}} \left(1+ \dfrac{1}{m\beta}+ \dfrac{1}{\beta}\right) I_\mrm{out} \quad \Longrightarrow \quad \dfrac{I_\mrm{out}}{I_\mrm{ref}} = \dfrac{1}{1+ \dfrac{1}{m\beta}+ \dfrac{1}{\beta}}\xlongrightarrow{\beta \to \infty} m$$
+此即一个根据$I_\mrm{ref}$和$m$确定的电流源。写出小信号模型可知，其输出等效电阻即为$r_{o2}$，不考虑Early效应时可视为$R_\mrm{out}=\infty$。事实上，即使考虑 Early效应，也可算出$\dfrac{I_\mrm{out}}{I_\mrm{ref}} = \dfrac{m}{1+\dfrac{1+m}{\beta}}\left( 1 + \dfrac{V_\mrm{out} - V_{BE}}{V_{A2}} \right)$，只需控制$V_\mrm{out}=V_{BE}$即可在电流大小上与无 Early效应时一致。
+
+\begin{figure}[ht!]
+	\centering
+	\subfloat[　　]{\label{Pic: Simple C-mirror}
+		\begin{circuitikz}
+			\draw (0,0) -- ++(0.5,0) node[npn, anchor=B](Q2){$Q_2$}
+			(0,0) -- ++(-0.5,0) node[npn, anchor=B, xscale=-1](Q1){\ctikzflipx{$Q_1$}}
+			(0,0) to[short, -o] ++(0,-0.3) 
+				to[open, o-o, v=$v_{BE}$] ++(0,-1) node[ground](GND){}
+				to[short, o-] (GND -| Q2.E) -- (Q2.E) 
+			(GND) to[short, o-] (GND -| Q1.E) 
+				-- (Q1.E) 
+			(Q1.C) -- ++(0,0.2) coordinate(cb)
+				-- (cb -| GND) -- (0,0)
+			(cb) to[short, -o, i<=$I_\mrm{ref}$, !vi, name=ref] ++(0,0.8)
+			(Q2.C) -- ++(0,0.4)
+				to[short, i<=$I_\mrm{out}$, -o, !vi, name=out] ++(0.6,0) node[right]{$V_\mrm{out}$}
+			;
+			\bi{ref}\bi{out}
+		\end{circuitikz}
+	}
+	\qquad
+	\subfloat[　　]{\label{Pic: Another C-mirror}
+		\begin{circuitikz}
+			\draw (0,0) -- ++(0.5,0) node[npn, anchor=B](Q2){$Q_2$}
+			(0,0) -- ++(-0.5,0) node[npn, anchor=B, xscale=-1](Q1){\ctikzflipx{$Q_1$}}
+			(0,0) to[short, -o] ++(0,-0.3) 
+				to[open, o-o, v=$v_{BE}$] ++(0,-1) node[ground](GND){}
+				to[short, o-] (GND -| Q2.E) -- (Q2.E) 
+			(GND) to[short, o-] (GND -| Q1.E) 
+				-- (Q1.E) 
+			(0,0) -- ++(0,0.2) node[npn, anchor=E](Q3){$Q_3$}
+			(Q3.B) -- (Q3.B -| Q1.C) 
+			(Q1.C) -- (Q3.B -| Q1.C) 
+				to[short, -o, i<=$I_\mrm{ref}$, !vi, name=ref] ++(0,0.8)
+			(Q2.C) -- ++(0,0.4)
+				to[short, i<=$I_\mrm{out}$, -o, !vi, name=out] ++(0.6,0) node[right]{$V_\mrm{out}$}
+			(Q3.C) -- ++(0,0.4) node[vcc]{$V_{dd}$}
+			;
+			\bi{ref}\bi{out}
+		\end{circuitikz}
+	}
+	\qquad
+	\subfloat[　　]{\label{Pic: New C-mirror}
+		\begin{circuitikz}
+			\draw (0,0) -- ++(0.5,0) node[npn, anchor=B](Q2){$Q_2$}
+			(0,0) -- ++(-0.5,0) node[npn, anchor=B, xscale=-1](Q1){\ctikzflipx{$Q_1$}}
+			(0,0) to[short, -o] ++(0,-0.3) 
+				to[open, o-o, v=$v_{BE}$] ++(0,-1) node[ground](GND){}
+				to[short, o-] (GND -| Q2.E) -- (Q2.E) 
+			(GND) to[short, o-] (GND -| Q1.E) 
+				-- (Q1.E) 
+			(Q2.C) -- ++(0,0.2) coordinate(cb)
+				-- (cb -| GND) -- (0,0)
+			(Q1.C) -- ++(0,1)
+				to[short, -o, i<=$I_\mrm{ref}$, !vi, name=ref] ++(0,0.8)
+			(cb) -- ++(0,0.2) node[npn, anchor=E](Q3){$Q_3$}
+			(Q3.B) -- (Q3.B -| Q1.C)
+			(Q3.C) -- ++(0,0.2)
+				to[short, i<=$I_\mrm{out}$, -o, !vi, name=out] ++(0.6,0) node[right]{$V_\mrm{out}$}
+			;
+			\bi{ref}\bi{out}
+		\end{circuitikz}
+	}
+	\caption{BJT电流镜}
+\end{figure}
+
+
+\subsubsection{差分对}
 
 
 
 
+%----------------------------------------------------------
+\newpage
+
+\section{运算放大器与反馈设计}
+
+\subsection{运算放大器}
+
+\ctikzset{amplifiers/fill=bali!25!white}
+
+\bu[运算放大器（operational amplifier）]{
+	\cbox{
+		\draw (0,0) node[left](IN){$v_p$} to[short, o-] ++(0.2,0) node[op amp, noinv input up, anchor=+](AMP){}
+		(AMP.-) to[short, -o] ++(-0.2,0) node[left]{$v_n$}
+		(AMP.out) to[short, -o] ++(0.2,0) node[right](OUT){$v_o$}
+		(AMP.up) -- ++(0,0.2) node[vcc]{$V_{CC}$} 
+		(AMP.down) -- ++(0,-0.2) node[vee]{$V_{EE}$} 
+		;
+	}（\texttt{op amp, noinv input up}）
+}{
+	在直流电压$V_{CC}，V_{EE}$驱动下，输出端点相对接地的电压$v_o=A_v(v_p-v_n)$。
+}
+我们可以用前面的组件构建运放器的简单模型，如图~\ref{Pic: A simple model for an op-amp}。
+\begin{figure}[ht!]
+	\begin{center}
+		\vspace{-1em}
+		\subfloat[Linear区的电路模型]{
+			\begin{circuitikz}
+				\draw (0,0) to[short, o-, f=$i_p$, !vi, name=ip] ++(1,0) 
+					-- ++(1,0)
+					to[R, l^=$R_i$, v_=$v_{\symup{in}}$, voltage shift=1] ++(0,-1.5) 
+					to[short, -o, f<=$i_n$, !vi, name=in] ++(-1,0) 
+					to[open, o-, v=$v_n$] ++(0,-1)
+				(0,0) to[open, o-o, v=$v_p$] ++(0,-2.5) 
+					to[short, o-*] ++(3,0) node[ground]{} 
+					to[short, *-o] ++(2,0)
+					to[open, o-o, v<=$v_o$] ++(0,2) 
+					to[R, l=$R_o$, o-, label distance=-8pt, f<_=$i_o$, !vi, name=io] ++(-2,0) 
+					to[cV, l=$A_vv_{\symup{in}}$] ++(0,-2)
+				;
+				\bf{in}\bf{ip}\bf{io}
+			\end{circuitikz}
+		}
+		\qquad
+		\subfloat[增益曲线]{\includegraphics[width=5cm]{opamp vv.png}}
+		\caption{运放器的增益特性模型}\label{Pic: A simple model for an op-amp}
+		\vspace{-1.5em}
+	\end{center}
+\end{figure}
+
+\newcommand{\pzcdetector}[2][(0,0)]{%1: position of input; %2: label
+	\draw #1 node[plain amp, anchor=in up](#2){};
+	\draw (#2.center) ++(-0.25,0) -- ++(0.1,0) 
+	(#2.center) ++(-0.25,0) -- ++(-0.1,0) 
+	(#2.center) ++(-0.25,0) -- ++(0,0.25) -- ++(0.1,0)
+	(#2.center) ++(-0.25,0) -- ++(0,-0.25) -- ++(-0.1,0)
+	(#2.in up) coordinate(#2-in)
+	(#2.in down) coordinate(#2-ref)
+	(#2.out) coordinate(#2-out)
+	;
+}
+\newcommand{\nzcdetector}[2][(0,0)]{%1: position of input; %2: label
+	\draw #1 node[plain amp, anchor=in down](#2){};
+	\draw (#2.center) ++(-0.25,0) -- ++(0.1,0) 
+	(#2.center) ++(-0.25,0) -- ++(-0.1,0) 
+	(#2.center) ++(-0.25,0) -- ++(0,0.25) -- ++(-0.1,0)
+	(#2.center) ++(-0.25,0) -- ++(0,-0.25) -- ++(0.1,0)
+	(#2.in up) coordinate(#2-ref)
+	(#2.in down) coordinate(#2-in)
+	(#2.out) coordinate(#2-out)
+	;
+}
+
+\begin{wrapfigure}{r}{4cm}
+	\vspace{-2.5em}
+	\centering
+	\begin{circuitikz}
+		\draw (0,0) node[left](G){$v_p$} to[short, o-, i=$i_p$] ++(1.2,0) node[op amp, noinv input up, anchor=+](A){$\infty$}
+		(A.- -| G) to[open] ++(0.8,0) node[left](2){$v_n$} to[short, i=$i_n$, o-] (A.-)
+		(A.down) node[ground]{}
+		(A.out) to[short, -o] ++(0.5,0) node[right]{$v_o$}
+		;
+	\end{circuitikz}
+	\captionof{figure}{理想运算放大器}\label{Pic: Ideal op amp}
+	\vspace{-2.5em}
+\end{wrapfigure}
+实际的运算放大器一般有较大的$A_v$值（$10^4 \sim 10^8$）和$R_i$（$10^6 \sim 10^{13} \,\mrm{\Omega}$）以及较小的$R_o$（$1 \sim 100 \,\mrm{\Omega}$）。因此，可以假设$A_v=\infty，R_i=\infty，R_o=0$，这样的运算放大器称为\tboba{理想运算放大器}，如图~\ref{Pic: Ideal op amp}~所示。当理想运放工作在 Linear区 时，有
+$$i_p=i_n=0，\qquad v_p=v_n$$
+因此，只要$v_p \neq v_n$，理想运放的输出电平就只能为$\pm V_{dd}$。
+
+\trans{过零检测器}{zero-crossing detector}
+理想运放的一个直接应用是比较输入端两个信号（通常是输入信号\(v_\mrm{in}\)和参照信号\(v_\mrm{ref}\)）的大小，称为\tboba{过零检测器}，记为\!\!%
+\cbox{
+	\pzcdetector{pzcd}
+	\draw (pzcd-in) to[short, -o] ++(-0.25,0) node[left]{$v_\mrm{in}$}
+	(pzcd-ref) to[short, -o] ++(-0.25,0) node[left]{$v_\mrm{ref}$}
+	(pzcd-out) to[short, -o] ++(0.25,0) node[right]{$v_o$}
+	;
+}\!\!或\!\!%
+\cbox{
+	\nzcdetector{nzcd}
+	\draw (nzcd-in) to[short, -o] ++(-0.25,0) node[left]{$v_\mrm{in}$}
+	(nzcd-ref) to[short, -o] ++(-0.25,0) node[left]{$v_\mrm{ref}$}
+	(nzcd-out) to[short, -o] ++(0.25,0) node[right]{$v_o$}
+	;
+}\!\!，前者在\(v_\mrm{in} > v_\mrm{ref}\)时输出高电平，后者在\(v_\mrm{in} < v_\mrm{ref}\)时输出高电平。基于过零检测器可以构建简单的\textbf{模数转换器（ADC）}。
+
+\zhu[模拟信号与数字信号]{
+	与实际物理量变化形式类似的电信号称为\tboqi{模拟信号}%\trans[模拟/数字信号]{analog/digital signal}
+	。在模拟信号上等时间间距地\textbf{采样}并用有限位数的数字表示采样值的大小，就得到\tboqi{数字信号}。数字信号常以二进制表示，在电信号上表现为只有\tboqi{高电平（1）}和\tboqi{低电平（0）}。%\trans[高/低电平]{high/low voltage level}
+	
+	要将模拟信号转换为数字信号，需要用到如图~\ref{Pic: ADC}~所示的\tboqi{模数转换器}%\trans[模数转换器]{analog-to-digital converter，\textbf{ADC或A/D}}
+	，其在输入端接入模拟电信号，在$N$个输出端输出$N$位二进制数表示的数字信号。
+	
+	\begin{center}
+		\ctikzset{blocks/fill=bali!25!white}
+		\begin{circuitikz}
+			\filldraw[draw=black, thick, fill=qinglv!25!white] (0,0) rectangle (4,4);
+			\node[text centered] at (2,2) {\kai ADC或A/D};
+			\draw (0,1) to[short, -o] (-1,1) to[open, o-o, v=$v_\textup{A}$] (-1, 3) to[short, o-] (0,3);
+			\draw (4,3) to[short, -o] ++(1,0) node[right]{$d_0$};
+			\draw (4,2.5) to[short, -o] ++(1,0) node[right]{$d_1$};
+			\draw[dotted, very thick] (4.5,2.35) -- (4.5,1.65);
+			\draw (4,1.5) to[short, -o] ++(1,0) node[right]{$d_{N-1}$};
+			\draw (4,1) -- ++(0.5,0) node[ground]{};
+
+			\draw (6.5,2) to[adc, o-o] ++(2,0);
+		\end{circuitikz}
+	\end{center}
+	\captionof{figure}{模数转换器}\label{Pic: ADC}
+}
+
+\begin{example}
+	求电路输出\(\overline{D_2D_1D_0}_{(2)}\)与输入信号\(v_\mrm{in}\)的关系。
+	\begin{center}
+		\cbox{
+			\draw (0,0) node[vcc](Ref){\(v_\mrm{ref}\)}
+			(1,0) node[vcc](In){\(v_\mrm{in}\)} 
+				-- ++(0,-0.5) -- +(0.5,0) coordinate(In2)
+				(In2 -| In) -- ++(0,-1.5) -- +(0.5,0) coordinate(In1)
+				(In1 -| In) -- ++(0,-1.5) -- +(0.5,0) coordinate(In0);
+			\pzcdetector[(In2)]{D2}\pzcdetector[(In1)]{D1}\pzcdetector[(In0)]{D0}
+			\node at (D2-ref -| In) [jump crossing](D2J){};
+			\draw (D2-out) to[short, -o] ++(0.5,0) node[right]{\(D_2\)}
+			(D2-ref) -- (D2J.east)
+			(D2J.west) to[short, -*] (D2-ref -| Ref) node[left]{\(v_2\)};
+			\node at (D1-ref -| In) [jump crossing](D1J){};
+			\draw (D1-out) to[short, -o] ++(0.5,0) node[right]{\(D_1\)}
+			(D1-ref) -- (D1J.east)
+			(D1J.west) to[short, -*] (D1-ref -| Ref) node[left]{\(v_1\)};
+			\draw (D0-out) to[short, -o] ++(0.5,0) node[right]{\(D_0\)}
+			(D0-ref) to[short, -*] (D0-ref -| Ref) node[left]{\(v_0\)};
+			\draw (Ref) to[R, l_=\(1.5R\)] (D2-ref -| Ref)
+				to[R, l_=\(R\)] (D1-ref -| Ref)
+				to[R, l_=\(R\)] (D0-ref -| Ref)
+				to[R, l_=\(0.5R\)] ++(0,-1) node[ground]{};
+		}
+	\end{center}
+	\begin{solution}
+		由KVL，知\(v_0 = \dfrac{1}{8}v_\mrm{ref}，v_1 = \dfrac{3}{8}v_\mrm{ref}，v_2 = \dfrac{5}{8}v_\mrm{ref}\)，则 
+		\begin{equation*}
+			\overline{D_2D_1D_0}=\begin{cases}[ll]
+				000，& v_\mrm{in} < \dfrac{1}{8}v_\mrm{ref}， \\
+				001，& \dfrac{1}{8}v_\mrm{ref} < v_\mrm{in} < \dfrac{3}{8}v_\mrm{ref}， \\[3pt]
+				011，& \dfrac{3}{8}v_\mrm{ref} < v_\mrm{in} < \dfrac{5}{8}v_\mrm{ref}， \\
+				111，& v_\mrm{in} > \dfrac{5}{8}v_\mrm{ref}
+			\end{cases}
+			\qedhere
+		\end{equation*}
+	\end{solution}
+\end{example}
+\subsection{运算放大器上的反馈回路}
+
+\begin{example}[2]
+	已知\textbf{单位增益缓冲器}的电路结构如图~\ref{Pic: Circuit - unity gain buffer}~所示，图~\ref{Pic: Model - unity gain buffer}~是其特性模型。若$A_o \gg 1，R_o \ll R_i$，由此考虑$\dfrac{V_o }{V_S }$的值。
+	%\trans[单位增益缓冲器]{unity gain buffer}
+
+	\begin{figure}[ht!]
+		\vspace{-1.5em}
+		\centering
+		\subfloat[电路]{\label{Pic: Circuit - unity gain buffer}
+			\begin{circuitikz}
+				\draw (0,0) node[ground](G){} to[V, v=$V_S$, invert] ++(0,2) 
+				-- ++(1,0) node[op amp, noinv input up, anchor=+](AMP){}
+				(AMP.-) -- (G -| AMP.-) coordinate(1) 
+				-- (1 -| AMP.out) -- (AMP.out) 
+				to[short, -o] ++(1,0) coordinate(3)
+				to[open, o-o, v=$V_o$] (G -| 3) to[short, o-] ++(-0.5,0) node[ground]{}
+				(AMP.up) -- ++(0,0.2) node[vcc]{$V_{CC}$} 
+				(AMP.down) -- ++(0,-0.2) node[vee]{$V_{EE}$} 	
+				;
+			\end{circuitikz}
+		}\qquad
+		\subfloat[模型]{\label{Pic: Model - unity gain buffer}
+			\begin{circuitikz}
+				\draw (0,0) node[ground](G){} to[V, v=$V_S$, invert] ++(0,3) 
+				-- ++(1,0) to[R, l=$R_i$, v_=$V_{\symup{in}}$, voltage=raised, voltage shift=-0.7] ++(0,-1.5) 
+				-- ++(1,0) -- ++(0,1.5) -- ++(2,0) -- ++(0,-1) coordinate(1) to[short, -o] ++(0.5,0) to[open, o-o, v=$V_o$] ++(0,-2) to[short, o-] ++(-0.5,0) node[ground]{}
+				(1) to[R, l=$R_o$, label distance=-8pt] ++(-1.5,0) to[cV, v_=$A_oV_{\symup{in}}$, voltage shift=-0.7] ++(0,-2) node[ground]{}
+				;
+				\draw[latex-] (1.25,0.25) node{$I$} +(0.43,0.25) arc(30:330:0.5);
+			\end{circuitikz}
+		}
+		\caption{单位增益缓冲器}
+		\vspace{-1em}
+	\end{figure}
+\begin{solution}
+	由图易知$V_{\symup{in}}=IR_i$，且有
+	\abovedisplayskip=0pt
+	\belowdisplayskip=2pt 
+	\begin{align*}
+		V_S &= IR_i + IR_o + A_oV_{\symup{in}}\\[-3pt]
+		V_o &= A_oV_{\symup{in}} +IR_o
+	\end{align*}
+	故
+	\begin{equation*}
+		\frac{V_o }{V_S } = \frac{A_oIR_i +IR_o}{IR_i + IR_o + A_oIR_i} = \frac{1}{1+\dfrac{R_i}{R_o + A_oR_i}} = \frac{1}{1+\dfrac{1}{A_o+\dfrac{R_o}{R_i}}} \xlongequal[A_o \gg 1]{R_o \ll R_i} 1 \qedhere
+	\end{equation*}
+\end{solution}
+\end{example}
+
+\zhu[单位增益缓冲器的作用]{
+	考虑左图电路，有$V_o=V_S-IR_S<V_S$。添加一个单位增益缓冲器后成为右图，其中$I \to 0$，运放器$+$端子处电压为$V_S$，有$V_o=V_S$。
+	\begin{center}
+		\vspace{-0.7em}
+		\cbox{
+			\draw (0,0) to[V, v=$V_S$, invert] ++(0,2) to[R, l=$R_S$] ++(1.5,0) to[short, i=$I$, -o] ++(0.5,0) to[open, o-o, v=$V_o$] ++(0,-2) coordinate(G) to[short, o-] (0,0)
+			(G) to[short, o-] ++(0,-0.1) node[ground]{}
+			(G) to[short, o-] ++(0.5,0) to[R, l_=$R_L$] ++(0,2) to[short, -o] ++(-0.5,0)
+			;
+		}
+		\quad
+		\cbox{
+			\ctikzset{amplifiers/fill=qinglv!25!white}
+			\draw (0,0) coordinate(0) to[V, v=$V_S$, invert] ++(0,2) to[R, l=$R_S$] ++(1.5,0) coordinate(5) to[short, i=$I$] ++(0.3,0) node[op amp, noinv input up, anchor=+](A){}
+			(5) to[open, v, voltage=european, name=V1] (0 -| 5)
+			(A.down) node[ground]{}
+			(A.out) to[short, -*] ++(0.2,0) coordinate(1)
+			(A.-) -- ++(-0.2,0) -- ++(0,-0.8) coordinate(2) -- (2 -| 1) -- (1)
+			(1) to[short, *-o] ++(0.5,0) coordinate(3) to[open, o-o, v=$V_o$] (0 -| 3) coordinate(G) to[short, o-] (0,0)
+			(G) to[short, o-] ++(0,-0.1) node[ground]{}
+			(G) to[short, o-] ++(0.5,0) coordinate(4) to[R, l_=$R_L$] (3 -| 4) to[short, -o] ++(-0.5,0)
+			;
+			\draw[thin, -latex, ] 
+			(V1-Vfrom) ++(0,0.2) coordinate(St)
+			(V1-Vto) ++(0,-0.2) coordinate(En)
+			(St) .. controls (V1-Vcont1) and (V1-Vcont2).. (En) node[pos=0.5, fill=qinglv!5!white]{$V_S$};
+		}
+	\end{center}
+	左图电路中，负载$R_L$的电压负载在源上，提供给$R_L$的能量只能来自源$V_S$；右图电路中，源$V_S$几乎没有能量损失，提供给$R_L$的能量几乎都来自运放器的电源。换句话说，这里的单位增益缓冲器起到了隔离电源与负载的作用，两边只有电压数值的关联而没有能量的关联。这个电路称为\tboqi{电压跟随器}。
+}
+%\tranS[-4]{电压跟随器}{voltage follower}\vspace{-1.5em}
+\subsubsection{反相闭环组态}
+
+在图~\ref{Pic: Neg fb model}~所示的回路中，$x_o=Ax_i$，$x_f=\beta x_o$，反馈回路对输入的影响为$x_i=x_s-x_f$，则有
+$$A_f=\dfrac{x_o }{x_s } = \dfrac{Ax_i }{ x_i+x_f} = \dfrac{A }{1+A\beta} \xlongequal{A\beta \gg 1} \dfrac{1}{\beta}$$
+\begin{figure}[ht]
+	\centering
+	\vspace{-1.5em}
+	\cbox{
+		\draw (0,0) node[left]{Source $x_s$\,} to[short, o-, f=$x_s$] ++(1.5,0) node[twoportshape, anchor=w, t=$\sum$](SUM){} 
+		(SUM.e) to[short, f=$x_i$] ++(1.5,0) node[twoportshape, anchor=w, t=$\mboba{A}$, balib](A){} 
+		(A.e) to[short, f=$x_o$] ++(1.5,0) coordinate(O) 
+			[-latex]-- ++(0.5,0) node[right]{Output $x_o$}
+		;
+		\draw [meihong!75!black] (O) -- ++(0,-1) 
+			-- ++(-1.5,0) node[twoportshape, anchor=e, t=$\mbome{\beta}$](B){} 
+		(B.w) to[short, f=$\color{black}x_f$, !vi, name=xf] (B.w -| SUM.s) [-latex]-- (SUM.s)
+		;
+		\node [above] at (1.3,0) {$\symbf{+}$};
+		\node [left] at (1.8,-0.5) {$\mbome{-}$};
+		\bf{xf}
+	}
+	\caption{负反馈模型}\label{Pic: Neg fb model}
+\end{figure}
+
+\begin{example}
+	求运放电路的闭环输出。
+	\begin{center}
+		\vspace{-1em}
+		（1）
+		\cbox{
+			\draw (0,0) node[left]{$v_\mrm{in}$} to[R, o-, l=$R_1$] ++(1.5,0) coordinate(F)
+				-- ++(0.5,0) node[op amp, anchor=-](AMP){$\infty$}
+			(AMP.+) node[ground]{}
+			(AMP.out) -- ++(0.3,0) coordinate(OUT)
+			(F) -- ++(0,-1.5) coordinate(fc) 
+				to[R, l=$R_2$] (fc -| OUT)
+				-- (OUT)
+				to[short, -o] ++(0.5,0) node[right]{$v_o$}
+			;
+		}\qquad
+		（2）
+		\cbox{
+			\draw (0,0) node[left]{$v_\mrm{in1}$} to[R, o-, l=$R$] ++(1.5,0) coordinate(F)
+				-- ++(0.5,0) node[op amp, anchor=-](AMP){$\infty$}
+			(AMP.+) node[ground]{}
+			(AMP.out) -- ++(0.3,0) coordinate(OUT)
+			(F) -- ++(0,-1.5) coordinate(fc) 
+				to[R, l=$R$] (fc -| OUT)
+				-- (OUT)
+				to[short, -o] ++(0.5,0) node[right]{$v_o$}
+			(0,-0.5) node[left]{$v_\mrm{in2}$} to[R, o-, l=$2R$, label distance=-2.5pt] ++(1.5,0)
+			(0,-1) node[left]{$v_\mrm{in3}$} to[R, o-, l=$4R$, label distance=-2.5pt] ++(1.5,0)
+			(0,-1.5) node[left]{$v_\mrm{in4}$} to[R, o-, l=$8R$, label distance=-2.5pt] ++(1.5,0)
+			;
+		}
+	\end{center}
+\begin{solution}
+	（1）构成负反馈回路，能够保持运放工作在 Linear区。则由$v_n=v_p=0$，可有$\dfrac{v_\mrm{in} - 0}{R_1}=\dfrac{0-v_o}{R_2}$，即闭环增益$$\dfrac{v_o }{v_\mrm{in }}=-\dfrac{R_2}{R_1}$$
+
+	（2）Linear区可以应用叠加原理，即有 
+	\begin{equation*}
+		v_o = -\dfrac{R }{R }v_\mrm{in1} -\dfrac{R }{2R }v_\mrm{in2} -\dfrac{R }{4R }v_\mrm{in3} -\dfrac{R }{8R }v_\mrm{in4} \qedhere
+	\end{equation*}
+\end{solution}
+\end{example}
+
+\subsubsection{同相闭环组态}
+
+\section{电路应用衔接}
+
+\subsection{CMOS数字逻辑电路}
+
+\subsubsection{CMOS反相器}
+
+\ctikzset{tripoles/mos style/arrows}
+\ctikzset{tripoles/pmos style/nocircle}
+\ctikzset{transistors/scale=1.3}
+\ctikzset{tr circle=true, transistors/thickness=4, transistors/fill=bali!30, transistor circle/relative thickness=0, transistor circle/color=bali!30}
+\ctikzset{logic ports/fill=bali!25!white}
+
+CMOS数字逻辑反相器如图~\ref{Pic: CMOS Inverter}~所示。在其电压传输特性曲线（图~\ref{Pic: CMOS Inverter vtc}）上，取切线斜率为$-1$的位置输入为$V_\mrm{IL}，V_\mrm{IH}$。而若进行级联，则输入信号会介于输出信号的最值\(V_\mrm{OL}\)，\(V_\mrm{OH}\)之间。于是，认为
+\begin{itemize}
+	\item 输入信号介于\(V_\mrm{OL}\)和\(V_\mrm{IL}\)之间时，输出视为\tboba{高电平}，\(NM_\mrm{L} := V_\mrm{IL} - V_\mrm{OL}\)称为\tboba{低输入噪声门限（裕度）\hskip-0.5em}；
+	\item 输入信号介于\(V_\mrm{IH}\)和\(V_\mrm{OH}\)之间时，输出视为\tboba{低电平}，\(NM_\mrm{H} := V_\mrm{OH} - V_\mrm{IH}\)称为\tboba{高输入噪声门限（裕度）\hskip-0.5em}。
+\end{itemize}
+\begin{figure}[ht!]
+	\centering
+	\vspace{-1.5em}
+	\subfloat[电路]{\label{Pic: CMOS Inverter}
+		\begin{circuitikz}
+			\draw (0,0) node[left]{\(v_I\)} to[short, o-] ++(0.8,0) coordinate(in)
+				-- ++(0,0.8) -- ++(0.5,0) node[pmos, anchor=G](Pmos){\(Q_P\)}
+			(Pmos.S) node[vcc]{\(V_{dd}\)}
+			(in) -- ++(0,-0.8) -- ++(0.5,0) node[nmos, anchor=G](Nmos){\(Q_N\)}
+			(Nmos.S) node[ground]{}
+			(Nmos.D) -- (Pmos.D)
+			(in -| Nmos.D) to[short, -o] ++(0.8,0) node[right]{\(v_O\)}
+			;
+		\end{circuitikz}
+	}
+	\quad
+	\subfloat[电压传输特性]{\label{Pic: CMOS Inverter vtc}\includegraphics[width=6.33cm]{CMOS_vtf.png}}
+	\caption{CMOS反相器}
+	\vspace{-1em}
+\end{figure}
+
+在\(v_I=V_\mrm{IH}\)处，\(\begin{cases}
+	v_{SG,P} \ge V_\mrm{th}，\\ v_{DG,P} \le V_\mrm{th}， 
+\end{cases}\)即\(Q_P\)工作在 Saturation区；\(\begin{cases}
+	v_{GS,N} \ge V_\mrm{th}，\\ v_{GD,N} \ge V_\mrm{th}， 
+\end{cases}\)即\(Q_N\)工作在 Triode区。于是列式 
+\begin{equation*}
+	\begin{cases}
+		i_{D,P}=i_{D,N}， \\
+		i_{D,N}=\big(\mu_\textsl{n}C_{ox}\big)\left(\dfrac{W}{L}\right)_\textsl{n}\left[\big(v_{GS,N}-V_\mrm{th}\big)v_{DS,N}-\dfrac{1}{2}v_{DS,N}^{2}\right]， \\[3pt]
+		i_{D,P}=\dfrac{1}{2}\big(\mu_\textsl{p}C_{ox}\big)\left(\dfrac{W}{L}\right)_\textsl{p}\big(v_{SG,P}-V_\mrm{th}\big)^{2}， \\
+		\dfrac{\dif v_O}{\dif v_I} = \dfrac{\dif v_{DS,N}}{\dif v_{GS,N}} = -1
+	\end{cases}
+	\quad\xLongrightarrow{\text{假设~}(\mu_\textsl{n}C_{ox})\left(\frac{W}{L}\right)_\textsl{n} = (\mu_\textsl{p}C_{ox})\left(\frac{W}{L}\right)_\textsl{p}}\quad
+	V_\mrm{IH} = \dfrac{5V_{dd} - 2 V_\mrm{th}}{8}
+\end{equation*}
+同理即得\(V_\mrm{IL} = \dfrac{3V_{dd} + 2V_\mrm{th}}{8}\)。若进一步假设\(V_\mrm{OL} = 0\)，\(V_\mrm{OH} = V_{dd}\)，则可求得\(NM_\mrm{L} = NM_\mrm{H} = \dfrac{3V_{dd} + 2V_\mrm{th}}{8}\)。
+
+下面向 CMOS反相器 输入 阶跃电压信号，考察其时间和能量的动态特性。
+
+\paragraph{传播延迟}
+
+对 CMOS反相器 输入 阶跃电压信号，其实际输出响应如图~\ref{Pic: CMOS Inverter delay}~所示，变化趋势类似电容的充放电过程，于是不妨将电路中所有容性成分集中为电容\(C\)，而MOS管保持理想，如图~\ref{Pic: CMOS Inverter C}。定义输出电压从低电位到高电位、从高电位到低电位的过程中，越过最高电平一半所用的时间为\tboba{传输延时}~\(t_\mrm{PLH}，t_\mrm{PHL}\)。
+
+\begin{figure}[ht!]
+	\centering
+	\subfloat[阶跃响应]{\label{Pic: CMOS Inverter delay}\includegraphics[width=6.33cm]{CMOS_Pd.png}}
+	\quad
+	\subfloat[等效电路]{\label{Pic: CMOS Inverter C}
+		\begin{circuitikz}
+			\draw (0,0) node[left]{\(v_I\)} to[short, o-] ++(0.8,0) coordinate(in)
+				-- ++(0,0.8) -- ++(0.5,0) node[pmos, anchor=G](Pmos){\(Q_P\)}
+			(Pmos.S) node[vcc]{\(V_{dd}\)}
+			(in) -- ++(0,-0.8) -- ++(0.5,0) node[nmos, anchor=G](Nmos){\(Q_N\)}
+			(Nmos.S) node[ground]{}
+			(Nmos.D) -- (Pmos.D)
+			(in -| Nmos.D) -- ++(0.8,0) coordinate(cap) to[short, -o] ++(0.8,0) node[right]{\(v_O\)}
+			(cap) to[C, l=\(C\)] ++(0,-1) node[ground]{}
+			;
+		\end{circuitikz}
+	}
+	\caption{CMOS反相器的传播延迟}
+	\vspace{-1em}
+\end{figure}
+
+下面考察输出由低电平到高电平的过程。
+\begin{itemize}
+	\item 输入在\(V_{dd}\)，输出在GND时，\(Q_P\)在 Cutoff区，\(Q_N\)在 Triode区；
+	\item 当输入跳变到GND后，\(Q_N\)进入 Cutoff区保持关断，\(Q_P\)进入 Saturation区，有\(i_D = \dfrac{1}{2}k_\textsl{p}(v_{SG,P}-V_\mrm{th})^2 = \dfrac{1}{2}k_\textsl{p}(V_{dd}-V_\mrm{th})^2 \)为恒值，直到\(v_{DG,P} = v_O\)达到\(V_\mrm{th}\)。于是 
+	\[
+		t_\mrm{PLH1} = \dfrac{C \Dif v_O }{i_D } = \dfrac{2CV_\mrm{th}}{k_\textsl{p}(V_{dd}-V_\mrm{th})^2}
+	\]
+	\item 当\(v_{DG,P} = v_O\)达到\(V_\mrm{th}\)后，\(Q_P\)进入 Triode区，有\(i_D = k_\textsl{p}\left[ (v_{SG,P}-V_\mrm{th})v_{SD,P} - \dfrac{1}{2}v_{SD,P}^2 \right] = k_\textsl{p}\Big[ (V_{dd}-V_\mrm{th})\cdot(V_{dd}-v_O) - \dfrac{1}{2}(V_{dd}-v_O)^2 \Big]\)，于是
+	\[
+		t_\mrm{PLH2} = \int_{V_\mrm{th}}^\frac{V_{dd}}{2} \dfrac{C \dif v_O}{i_D}
+		= \dfrac{C}{k_\textsl{p}} \int_{V_\mrm{th}}^\frac{V_{dd}}{2} \dfrac{ \dif v_O}{(V_{dd}-V_\mrm{th})(V_{dd}-v_O) - \dfrac{1}{2}(V_{dd}-v_O)^2}
+		= \dfrac{C}{k_\textsl{p}(V_{dd}-V_\mrm{th})} \ln \dfrac{3V_{dd} - 4V_\mrm{th}}{V_{dd}}
+	\]
+\end{itemize}
+故总的传输延迟为
+\equ{
+	t_\mrm{PLH} = \dfrac{2CV_\mrm{th}}{k_\textsl{p}(V_{dd}-V_\mrm{th})^2} + \dfrac{C}{k_\textsl{p}(V_{dd}-V_\mrm{th})} \ln \dfrac{3V_{dd} - 4V_\mrm{th}}{V_{dd}}
+}
+
+\paragraph{能量消耗}
+
+电容\(C\)放电过程中，耗散能量即为慢点所储能量，为\(E_\mrm{dissipated1} = \dfrac{1}{2}CV_{dd}^2\)；充电过程中，耗散能量为电源供能与电容储能之差，即\(E_\mrm{dissipated2} = V_{dd}\dint_{t_\mrm{PLH}} i_D \dif t - \dfrac{1}{2}CV_{dd}^2 = \dfrac{1}{2}CV_{dd}^2\)。故，每个周期能量消耗为\(CV_{dd}^2\)，动态耗能功率即\(P_\mrm{dyn} = fCV_{dd}^2\)。
+
+\subsubsection{CMOS逻辑门电路}
+
+CMOS逻辑门电路是CMOS反相器的扩展或推广：逆变器由NMOS下拉晶体管和PMOS上拉晶体管组成，以输入电压与期望输出相反的方式工作。CMOS逻辑门将这两个晶体管扩展为如图~\ref{Pic: CMOS Gate Mode}~所示的两个网络：由NMOS晶体管构成的\tboba{下拉网络（PDN）}和由PMOS晶体管构成的\tboba{上拉网络（PUN）\hskip-0.5em}。
+
+这两个网络由一组输入变量以互补的方式控制。在所有期望低输出（\(Y \eqcirc 0\)\footnote{在本文档中，为区分电压值和逻辑值两种情况，逻辑值的相等使用「\(\eqcirc\)」（\texttt{\backslash eqcirc}）表示。}）的输入组合下，PDN将导通，将输出节点接通到地，使得输出端\(v_Y = 0\)，同时PUN关断，\(V_{dd}\)和地面之间不存在直流路径；在所有期望高输出（\(Y \eqcirc 1\)）的输入组合下，PUN将导通，将输出节点拉到\(V_{dd}\)，使得输出电压\(v_Y = V_{dd}\)，同时PDN关断，电路中同样不存在\(V_{dd}\)和地之间的直流路径。
+
+\begin{figure}[!ht]
+	\centering
+	\vspace{-0.5em}
+	\begin{circuitikz}
+		\draw [ fill={rgb,255:red,206; green,218; blue,238} ] (3.75,13) rectangle  node {\normalsize \shortstack{PDN\\(NMOS)}} (5.75,11.5);
+		\draw [ fill={rgb,255:red,243; green,221; blue,227} ] (3.75,15.5) rectangle  node {\normalsize \shortstack{PUN\\(PMOS)}} (5.75,14);
+		\draw [](4.75,14) to[short] (4.75,13);
+		\draw [](4.75,13.5) to[short] (5.75,13.5);
+		\draw [](4.75,15.5) to[short] (4.75,16) node[vcc]{$V_{dd}$};
+		\draw [](4.75,11.5) to[short] (4.75,11) node[ground]{};
+		\draw [](3.75,14.75) to[short, -o] (2.75,14.75) node[left] {$B$};
+		\draw [](3.75,15.25) to[short, -o] (2.75,15.25) node[left] {$A$};
+		\draw [](3.75,14.25) to[short, -o] (2.75,14.25) node[left] {$C$};
+		\draw [](3.75,12.75) to[short, -o] (2.75,12.75) node[left] {$A$};
+		\draw [](3.75,12.25) to[short, -o] (2.75,12.25) node[left] {$B$};
+		\draw [](3.75,11.75) to[short, -o] (2.75,11.75) node[left] {$C$};
+		\draw [](5.75,13.5) to[short, -o] (6.75,13.5) node[right] {$Y$};
+	\end{circuitikz}
+	\caption{CMOS逻辑门电路的一般模式}\label{Pic: CMOS Gate Mode}
+	\vspace{-0.5em}
+\end{figure}
+
+\ctikzset{logic ports=ieee}
+
+\bu[非门]{
+	输入信号\(A\)做非运算输出\(Y\)，记作\cbox{
+		\draw (0,0) node[left]{\(A\)} to[short, o-] ++(0.5,0) node[not port, anchor=in](Not){}
+		(Not.out) to[short, -o] ++(0.5,0) node[right]{\(Y\)};
+	}。
+}{
+	\(Y \eqcirc \overline{A}\)。
+}
+
+前面的CMOS反相器输出与输入的关系为\begin{tabular}{c|c}
+	\(v_I\) & \(v_O\) \\
+	\hline
+	\(V_{dd}\) & GND \\
+	GND & \(V_{dd}\)
+\end{tabular}，这就是一个CMOS非门。
+
+\bu[与非门]{
+	输入信号\(A，B\)做与非运算输出\(Y\)，记作\cbox{
+		\draw (0,0) node[left]{\(A\)} to[short, o-] ++(0.5,0) node[nand port, anchor=in 1](Not){}
+		(Not.in 2) to[short, -o] ++(-0.5,0) node[left]{\(B\)}
+		(Not.out) to[short, -o] ++(0.5,0) node[right]{\(Y\)};
+	}。
+}{
+	\(Y \eqcirc \overline{A \cdot B}\)。
+}
+
+如图~\ref{Pic: CMOS nand}~所示为一种CMOS与非门逻辑电路。当\(A\)或\(B \)有一个输入为 GND 时，对应的\(Q_{PA}\)和\(Q_{PB}\)总有至少一路导通到\(V_{dd}\)，而接地路线上\(Q_{NA}\)和\(Q_{NB}\)总有至少一处断开，输出\(Y = V_{dd}\)。
+\newcommand{\pmosin}[2]{% 1: input signal label; 2: D point
+	\draw #2 -- ++(0,0.1) node[pmos, anchor=D](Pin#1){\(Q_{P#1}\)}
+		(Pin#1.G) to[short, -o] ++(-0.2,0) node[left](Pin#1-G){\(#1\)}
+		(Pin#1.S) -- ++(0,0.1) coordinate(Pin#1-S)
+	;
+}
+\newcommand{\nmosin}[2]{% 1: input signal label; 2: D point
+	\draw #2 -- ++(0,-0.1) node[nmos, anchor=D](Nin#1){\(Q_{N#1}\)}
+		(Nin#1.G) to[short, -o] ++(-0.2,0) node[left](Nin#1-G){\(#1\)}
+		(Nin#1.S) -- ++(0,-0.1) coordinate(Nin#1-S)
+	;
+}
+\begin{figure}[!ht]
+	\centering
+	\vspace{-0.5em}
+	\cbox{
+		\draw (0,0) to[short, -o] ++(2.5,0) node[right]{\(Y\)};
+		\pmosin{A}{(0,0)}
+		\pmosin{B}{(2,0)}
+		\nmosin{A}{(1,0)}
+		\nmosin{B}{(NinA-S) ++(0,0.4)}
+		\draw (PinA-S) node[vcc]{\(V_{dd}\)} (PinB-S) node[vcc]{\(V_{dd}\)} (NinB-S) node[ground]{};
+	}
+	\qquad
+	\begin{tabular}{cc|c}
+		\(A\) & \(B\) & \(Y\)\\
+		\hline
+		\(V_{dd}\) & \(V_{dd}\) & GND \\
+		\(V_{dd}\) & GND & \(V_{dd}\) \\
+		GND & \(V_{dd}\) & \(V_{dd}\) \\
+		GND & GND & \(V_{dd}\)
+	\end{tabular}
+	\caption{一种CMOS与非门电路}\label{Pic: CMOS nand}
+	\vspace{-0.5em}
+\end{figure}
+
+\bu[或非门]{
+	输入信号\(A，B\)做或非运算输出\(Y\)，记作\cbox{
+		\draw (0,0) node[left]{\(A\)} to[short, o-] ++(0.5,0) node[nor port, anchor=in 1](Not){}
+		(Not.in 2) to[short, -o] ++(-0.5,0) node[left]{\(B\)}
+		(Not.out) to[short, -o] ++(0.5,0) node[right]{\(Y\)};
+	}。
+}{
+	\(Y \eqcirc \overline{A + B}\)。
+}
+如图~\ref{Pic: CMOS nor}~所示为一种CMOS或非门逻辑电路。当\(A\)或\(B \)有一个输入为 \(V_{dd}\) 时，导通到\(V_{dd}\)路线上对应的\(Q_{PA}\)和\(Q_{PB}\)总有至少一处断开，而\(Q_{NA}\)和\(Q_{NB}\)总有至少一路接地，输出\(Y = \mrm{GND}\)。
+
+\begin{figure}[!ht]
+	\centering
+	\vspace{-0.5em}
+	\cbox{
+		\draw (-1,0) to[short, -o] (1.5,0) node[right]{\(Y\)};
+		\pmosin{B}{(0,0)}
+		\pmosin{A}{(PinB-S) ++(0,-0.4)}
+		\nmosin{A}{(-1,0)}
+		\nmosin{B}{(1,0)}
+		\draw (PinA-S) node[vcc]{\(V_{dd}\)} (NinA-S) node[ground]{} (NinB-S) node[ground]{};
+	}
+	\qquad
+	\begin{tabular}{cc|c}
+		\(A\) & \(B\) & \(Y\)\\
+		\hline
+		\(V_{dd}\) & \(V_{dd}\) & GND \\
+		\(V_{dd}\) & GND & GND \\
+		GND & \(V_{dd}\) & GND \\
+		GND & GND & \(V_{dd}\)
+	\end{tabular}
+	\caption{一种CMOS或非门电路}\label{Pic: CMOS nor}
+	\vspace{-0.5em}
+\end{figure}
+
+\zhu[逻辑门的扇入与伪NMOS逻辑电路]{
+	扇入（Fan-in）表示单个逻辑门接受的最大输入信号数量。以上图~\ref{Pic: CMOS nand}~和图~\ref{Pic: CMOS nor}~中的逻辑门都只是 Fan-in 为2的情况，但这种构造每增加1个输入需要多出2个晶体管，不够节约硅片面积，也会引入更多寄生电容。图~\ref{Pic: p-NMOS}~是一种\tboqi{伪NMOS}~逻辑电路，通过调整\(Q_P\)和各\(Q_N\)的工艺参数，可以使得上下同时导通时\(Y \approx \mrm{GND}\)，从而有\(Y \eqcirc \overline{A+B+C+D}\)，而且每增加1个输入只需要多出1个晶体管。
+	\begin{center}
+		\cbox{
+			\draw (0,0) to[short, -o] ++(6.5,0) node[right]{\(Y\)};
+			\nmosin{A}{(0,0)}
+			\nmosin{B}{(2,0)}
+			\nmosin{C}{(4,0)}
+			\nmosin{D}{(6,0)}
+			\draw (3,0) -- ++(0,0.1) node[pmos, anchor=D](Pin){\(Q_P\)} 
+				(Pin.G) -- ++(-0.2,0) node[ground]{}
+				(Pin.S) -- ++(0,0.1) node[vcc]{\(V_{dd}\)}
+				(NinA-S) node[ground]{}
+				(NinB-S) node[ground]{}
+				(NinC-S) node[ground]{}
+				(NinD-S) node[ground]{}
+			;
+		}
+	\end{center}
+	\captionof{figure}{一种伪NMOS或非门}\label{Pic: p-NMOS}
+}
+
+\subsubsection{数字开关与动态逻辑电路}
+
+单个的NMOS管可以用作开关，如图~\ref{Pic: single NMOS switch}~所示。
+
+\begin{figure}[ht!]
+	\vspace{-1.5em}
+	\centering
+	\subfloat[]{\begin{circuitikz}\label{Pic: single NMOS switch}
+		\draw (5.5,11.5) to[Tnmos, name=N, invert, mirror] (7.5,11.5); 
+		\draw (5.7,11.5) to[short, -o] (5.5,11.5) node[left] {$v_I$};
+		\draw (7.3,11.5) to[short, -o] (7.5,11.5) node[right] {$v_O$};
+		\draw (N.G) to[short, -o] (6.5,12.5) node[right] {$\phi$};
+	\end{circuitikz}}\quad
+	\subfloat[]{\begin{circuitikz}\label{Pic: single NMOS switch with cap}
+		\draw (5.5,11.5) to[Tnmos, name=N, invert, mirror, l=\(Q_\mrm{s}\)] (7.5,11.5); 
+		\draw (5.7,11.5) to[short, -o] (5.5,11.5) node[left] {$v_I$};
+		\draw (7.3,11.5) to[short, -o] (8,11.5) node[right] {$v_O$};
+		\draw (N.G) to[short, -o] (6.5,12.5) node[right] {$\phi$};
+		\draw (7.5,11.5) to[C, l=\(C_L\)] (7.5,10.5) node[ground]{};
+	\end{circuitikz}}\quad
+	\subfloat[]{\begin{circuitikz}\label{Pic: single NMOS switch with inverter}
+		\draw (5.5,11.5) to[Tnmos, name=N, invert, mirror, l=\(Q_\mrm{s}\)] (7.5,11.5); 
+		\draw (5.7,11.5) to[short, -o] (5.5,11.5) node[left] {$v_I$};
+		\draw (7.3,11.5) to[short, -o] (7.5,11.5) node[below]{$v_x$};
+		\draw (N.G) to[short, -o] (6.5,12.5) node[right] {$\phi$};
+		\draw (7.5,11.5) to[short, o-] ++(0.4,0) coordinate(in)
+			-- ++(0,0.8) -- ++(0.5,0) node[pmos, anchor=G](Pmos){\(Q_P\)}
+		(Pmos.S) node[vcc]{\(V_{dd}\)}
+		(in) -- ++(0,-0.8) -- ++(0.5,0) node[nmos, anchor=G](Nmos){\(Q_N\)}
+		(Nmos.S) node[ground]{}
+		(Nmos.D) -- (Pmos.D)
+		(in -| Nmos.D) -- ++(0.8,0) coordinate(cap) to[short, -o] ++(0.5,0) node[right]{\(v_O\)}
+		(cap) to[C, l=\(C_L\)] ++(0,-1) node[ground]{}
+		;
+	\end{circuitikz}}
+	\caption{单NMOS开关}
+	\vspace{-1em}
+\end{figure}
+
+由于电路中各种寄生电容的存在，单NMOS开关输出端的阶跃响应也有传播延迟，可看作图~\ref{Pic: single NMOS switch with cap}~电路。但与前面反相器的响应不同的是，NMOS导通时要求\(v_{GS,N} = \phi - v_O > V_\mrm{th}\)，即\(v_O < \phi - V_\mrm{th} \le V_{dd} - V_\mrm{th}\)，则\(V_\mrm{OH} = V_{dd} - V_\mrm{th}\)比供电电压低。这导致\textbf{噪声门限减小}，若以此控制一个CMOS反相器的输入信号（如图~\ref{Pic: single NMOS switch with inverter}），各MOS管相匹配，则\(v_{SG,P} = V_{dd} - v_x > |V_\mrm{th}|\)，即\(Q_P\)将始终打开。类似地，若使用PMOS作开关，由于\(v_{SG,N} = v_O - \phi > V_\mrm{th}\)的限制，\(V_\mrm{OL} = V_\mrm{th}\)比GND高。
+
+单NMOS、单PMOS开关分别有不能得到理想高电平、低电平的问题。若将其并联为图~\ref{Pic: CMOS tg}~电路，并令\(\phi = V_{dd}\)，则\(v_I\)跳变到\(V_{dd}\)时，\(Q_N\)偏置到 Saturation区，负载电容充电至\(V_{dd} - V_\mrm{th}\)，此时\(Q_N\)关断但\(Q_P \)仍导通，于是保证了\(V_\mrm{OH} = V_{dd}\)；由MOS管源极和漏极的对称性，即也可保证\(V_\mrm{OL}=0\)。而当\(\phi=0\)时，\(Q_P\)、\(Q_N\)均只能在 Cutoff区，即切断了\(v_I\)与\(v_O\)的电路联系。
+
+\begin{figure}[!ht]
+	\centering
+	\vspace{-0.5em}
+	\cbox{
+		\draw (0,0) node[left]{\(v_I\)} to[short, o-] ++(0.5,0) coordinate(in)
+		(in) -- ++(0,0.5) to[Tpmos, name=P, invert, mirror] ++(2,0) -- ++(0,-0.5) coordinate(out) to[short, -o] ++(1,0) node[right]{\(v_O\)}
+		(in) -- ++(0,-0.5) to[Tnmos, name=N, invert] ++(2,0) -- ++(0,0.5)
+		++(0.5,0) to[C, l=\(C\)] ++(0,-1) node[ground]{}
+		(P.G) to[short, -o] ++(0,0.2) node[above]{\(\bar{\phi}\)}
+		(N.G) to[short, -o] ++(0,-0.2) node[below]{\(\phi\)}
+		;
+		\draw (1.5,0.5) node[below] {\(Q_P\)} (1.5,-0.5) node[above] {\(Q_N\)};
+	}
+	\caption{CMOS传输门}\label{Pic: CMOS tg}
+	\vspace{-1em}
+\end{figure}
+
+\bu[传输门]{
+	信号\(\phi\)控制\(X\)到\(Y\)的传输，记作
+	\cbox{
+		\draw (0,0) node[left]{\(X\)} to[short, o-] ++(0.2,0) node[ieee double tgate, anchor=in](TG){} 
+		(TG.out) to[short, -o] ++(0.2,0) node[right]{\(Y\)}
+		(TG.up) to[short, -o] ++(0,0.2) node[above]{\(\bar{\phi}\)}
+		(TG.down) to[short, -o] ++(0,-0.2) node[below]{\(\phi\)}
+		;
+	}。
+}{
+	当\(\phi \eqcirc 1\)时，\(Y \eqcirc X\)。
+}
+
+CMOS传输门电路的缺点在于使用的晶体管数目较多，不利于节省硅片面积。如果在特定要求情境下，可以\textbf{将开关功能与逻辑运算功能结合}构造电路，则可以节省一些面积。
+\newcommand{\pmosil}[3]{% 1: input signal text label; 2: input signal tex lavel; 3: D point
+	\draw #3 -- ++(0,0.1) node[pmos, anchor=D](Pin#1){\(Q_{P#2}\)}
+		(Pin#1.G) to[short, -o] ++(-0.2,0) node[left](Pin#1-G){\(#2\)}
+		(Pin#1.S) -- ++(0,0.1) coordinate(Pin#1-S)
+	;
+}
+\newcommand{\nmosil}[3]{% 1: input signal text label; 2: input signal tex lavel; 3: D point
+	\draw #3 -- ++(0,-0.1) node[nmos, anchor=D](Nin#1){\(Q_{N#2}\)}
+		(Nin#1.G) to[short, -o] ++(-0.2,0) node[left](Nin#1-G){\(#2\)}
+		(Nin#1.S) -- ++(0,-0.1) coordinate(Nin#1-S)
+	;
+}
+\begin{example}[3]
+	讨论下面电路中，控制信号\(\phi\)不同时，输出信号\(Y \)与信号\(A，B\)的关系。
+	\begin{center}
+		\cbox{
+			\draw (-1,0) to[short, -o] (1.5,0) node[right]{\(Y\)};
+			\pmosil{phi}{\phi}{(0,0)}
+			\nmosin{A}{(-1,0)}
+			\nmosin{B}{(1,0)}
+			\nmosil{phi}{\phi}{(NinA-S) ++(1,0)}
+			\draw (NinA-S) -- (NinB-S) (Ninphi-S) node[ground]{} (Pinphi-S) node[vcc]{\(V_{dd}\)};
+		}
+	\end{center}
+	\begin{solution}
+		\(\phi \eqcirc 0\)时，\(Q_{P\phi}\)导通而\(Q_{N\phi}\)关断，\(Y \eqcirc 1\)，与\(A，B\)无关；\(\phi \eqcirc 1\)时，\(Q_{P\phi}\)关断而\(Q_{N\phi}\)导通，\(Y\)接到地仅需\(A，B\)中有一个接到\(V_{dd}\)，即\(Y \eqcirc \overline{A+B}\)。
+	\end{solution}
+\end{example}
+综合来看，上例中实际上有\(Y \eqcirc \overline{A+B} + \overline{\phi} \eqcirc \overline{(A+B)\cdot\phi}\)。但其中，\(\phi \eqcirc 1\)时\(Y \eqcirc \overline{A+B}\)要求\(Q_{NA}，Q_{NB}\)全部关断时\(Y \eqcirc 1\)，因此必须保证在取\(\begin{cases}
+	\phi \eqcirc 1，\\[-2pt] A \eqcirc 1， \\[-3pt] B \eqcirc 1
+\end{cases}\)之前有\(Y \eqcirc 1\)，即在这之前\(\phi \eqcirc 0\)。一般\(\phi\)设为时钟信号。
+
+\subsubsection{反馈回路与存储电路}
+
+前面所研究的逻辑电路被称为\tboba{组合电路}，它们的输出只取决于输入的现值。因此，这些电路没有存储能力。存储电路是数字系统的重要组成部分，包含存储的逻辑电路称为\tboba{顺序电路}；也就是说，它们的输出不仅取决于输入的现值，还取决于输入的先前值。
+
+\begin{example}[3]
+	用时钟信号\(\phi\)控制如图~\ref{Pic: D Flip Flop}~所示的电路，分析输出信号\(Q\)。\label{e.g: D Flip Flop}
+	\begin{figure}[!ht]
+		\centering
+		\vspace{-1em}
+		\subfloat[]{\label{Pic: D Flip Flop}\begin{circuitikz}
+			\draw (0,0) node[left]{\(D\)} to[Tnmos, name=N, o-, invert, mirror] ++(1.5,0) node[above]{\(v_1\)}
+				to[inline not=\(\hspace{-0.5em}I_1\)] ++(1.5,0) node[above]{\(v_2\)}
+				to[inline not=\(\hspace{-0.5em}I_2\), color=meihong!75!black] ++(1.5,0) node[above](fst){\(v_3\)}
+				to[short, -o] ++(0.5,0) node[right]{\(Q\)}
+			(fst.south) -- ++(0,-1) to[Tnmos, name=Nf] ++(-3,0) -- ++(0,1);
+			\draw (0.75,0) node[below] {\(Q_1\)} (3,-1) node[above] {\(Q_2\)};
+			\draw (N.G) to[short, -o] ++(0,0.2) node[above]{\(\overline{\phi}\)} (Nf.G) to[short, -o] ++(0,-0.2) node[below]{\(\phi\)};
+		\end{circuitikz}}
+		\quad
+		\subfloat[]{\label{Pic: Double inverter}\includegraphics[width=5.04cm]{double inverter.png}}
+		\caption{一个D触发器电路}
+		\vspace{-1em}
+	\end{figure}
+\begin{solution}
+	\(\phi \eqcirc 0\)时，\(Q_1\)打开、\(Q_2\)关闭，可直接充电至\(Q \eqcirc D\)。
+	
+	\(\phi \eqcirc 1\)时，\(Q_1\)关闭、\(Q_2\)打开，反馈回路将两个反相器的输出信号送回输入。据图~\ref{Pic: CMOS Inverter delay}~所示的传输曲线，得此时\(v_1，v_2，v_3\)的关系如图~\ref{Pic: Double inverter}。读图可知，\((V_\mrm{M}，V_\mrm{M})\)不是一个稳定的平衡点，因此输出端\(v_3\)只可能取为\(V_\mrm{OH}\)或\(V_\mrm{OL}\)，即\(Q\)保持前面输入的\(D\)不变。
+\end{solution}
+\end{example}
+
+将例~\ref{e.g: D Flip Flop}~中的反相器用CMOS电路展开，调整两个NMOS开关的位置，就得到图~\ref{Pic: Memory cell}~所示的存储单元。
+
+\begin{figure}[ht!]
+	\centering
+	\begin{circuitikz}
+		\circuitikzset{bipoles/crossing/size=0.3,}
+		\draw (6,14) node[vcc]{\(V_{dd}\)} to[Tpmos, name=M1] (6,12.5); 
+		\draw (M1.G) to[short] (7,13.25);
+		\draw (10-1,12.5) to[Tpmos, name=M2] (10-1,14) node[vcc]{\(V_{dd}\)}; 
+		\draw (M2.G) to[short] (9-1,13.25);
+		\draw (6,11.75) to[Tnmos, name=M3] (6,10.25); 
+		\draw (M3.G) to[short] (7,11);
+		\draw (10-1,10.25) to[Tnmos, name=M4] (10-1,11.75); 
+		\draw (M4.G) to[short] (9-1,11);
+		\draw (3.5,11.75) to[Tnmos, name=M5] (6,11.75); 
+		\draw (4.75,12.75) to[short] (M5.G);
+		\draw (10-1,12.5) to[Tnmos, name=M6] (12.5-1,12.5); 
+		\draw (M6.G) to[short] (11.25-1,13.5);
+		\draw [](6,12.5) to[short] (6,11.75);
+		\draw [](10-1,12.5) to[short] (10-1,11.75);
+		\draw [](7,13.25) to[short] (7.25,13.25);
+		\draw [](7.25,13.25) to[short] (7.25,11);
+		\draw[] (7.25,11) to[short] (7,11);
+		\draw[] (9-1,13.25) to[short] (8.75-1,13.25);
+		\draw [](8.75-1,13.25) to[short] (8.75-1,11);
+		\draw [](8.75-1,11) to[short] (9-1,11);
+		\draw [](6,11.75) -- (7,11.75) to[crossing, black] (8.5-1,11.75);
+		\draw[] (10-1,12.5) -- (8,12.5) to[crossing, black] (7.5,12.5);
+		\draw [](7.25,12.5) to[short] (7.5,12.5);
+		\draw [](8.5-1,11.75) to[short] (8.75-1,11.75);
+		\draw (6,10.25) node[ground]{};
+		\draw (10-1,10.25) node[ground]{};
+		\draw [](3.5,10.5-0.5) to[short] (3.5,16.5-1);
+		\draw [](12.5-1,10.5-0.5) to[short] (12.5-1,16.5-1);
+		\draw [](3,16-1) to[crossing, black] (4,16-1);
+		\draw [](12-1,16-1) to[crossing, black] (13-1,16-1);
+		\draw [](4,16-1) to[short] (12-1,16-1);
+		\draw [](4.75,12.75) to[short] (4.75,16-1);
+		\draw [](11.25-1,13.5) to[short] (11.25-1,16-1);
+		\node [font=\small] at (13.25-1,16-1) {$WL$};
+		\node [font=\small] at (2.75,16-1) {$WL$};
+		\node [font=\small] at (3.5,10.25-0.5) {$\overline{BL}$};
+		\node [font=\small] at (3.5,16.75-1) {$\overline{BL}$};
+		\node [font=\small] at (12.5-1,16.75-1) {$BL$};
+		\node [font=\small] at (12.5-1,10.25-0.5) {$BL$};
+		\node at (6,11.75) [circ] {} ;
+		\node at (6,11.75) [below left] {\(\overline{Q}\)} ;
+		\node at (10-1,12.5) [circ] {};
+		\node at (10-1,12.5) [below right] {\(Q\)};
+	\end{circuitikz}
+	\caption{一种随机存取存储器单元}\label{Pic: Memory cell}
+\end{figure}
+
+首先考虑读取操作，并假设该单元格正在存储一个1。在这种情况下，\(Q\)在高电平\(V_{dd}\)，\(\overline{Q}\)在低电平GND。在读取操作开始之前，\(BL\)和\(\overline{BL}\)线路都被拉高到高电平范围，这个过程称为\textbf{预充电}。为了简化问题，这里假设\(BL\)和\(\overline{BL}\)的预充电电压为\(V_{dd}\)，当字线被选择和接入晶体管被打开时，对电路的检查显示，唯一将导电的部分如图15
+
+\subsection{振荡电路}
+
+\subsubsection{负阻值与振荡器}
+
+前面第~~节已经研究，RLC电路的振荡是一个能量衰减的过程。如果在电路中引入\tboba{负电阻}，则电路信号的振荡有可能不再衰减。\textbf{负电阻是能量输入的一种体现。}
+
+\begin{example}
+	计算下面电路的小信号输入阻抗。
+	\begin{center}
+		\cbox{
+			\draw (7.25,7.5) to[short, -o] (6.75,7.5) coordinate(in1);
+			\draw (7.25,6.5) to[short, -o] (6.75,6.5) ;
+			\draw (7.25,7.5) to[short] (10,7.5);
+			\draw (7.25,6.5) to[short] (7.75,6.5);
+			\draw (7.75,6.5) to[R, european, l=\(Z_1\)] (7.75,5.5);
+			\draw (7.75,5.5) coordinate(gnd) to (7.75,5.25) node[ground]{};
+			\draw (7.75,5.5) to[short] (10,5.5);
+			\draw (10,7.5) to[R, european, l=\(Z_2\)] (10,5.5);
+			\draw (7.75,6.5) to[short] (8.25,6.5) node[nmos, anchor=G](1){}
+			(1.S) -- (gnd -| 1.S) (1.D) -- (in1 -| 1.D);
+			\draw [ color={rgb,255:red,190; green,0; blue,0}, line width=0.5pt, short] (7,5.5) node[left]{\(\symbf{Z_\mrm{in}}\)} ++(0,-0.2) -- (7,8);
+			\draw [ color={rgb,255:red,190; green,0; blue,0}, line width=0.5pt, -latex] (7,8) -- (7.5,8);
+		}
+	\end{center}
+	\begin{solution}
+		
+	\end{solution}
+\end{example}
 
 
-
-
-
-
-
-
-
+\cbox{
+	\draw (6,6.5) to (6,6.25) node[ground]{};
+	\draw (6,6.5) to[short] (6,8.5);
+	\draw (6,8.5) to[short, -o] (6.5,8.5) ;
+	\draw (7.5,7.5) to[short, -o] (6.5,7.5) to[open, o-o, v<=\(v_{gs}\)] (6.5,8.5);
+	\draw (7.5,7.5) to[R,l={ \small $R_S$}] (7.5,6.5);
+	\draw (8.75,7.5) to[C,l={ \small $C_2$}] (8.75,6.5);
+	\draw (8.75,7.5) to[C,l_={ \small $C_1$}] (8.75,8.5);
+	\draw (7.5,8.5) to[short] (10,8.5);
+	\draw (10,8.5) to[R,l={ \small $R_L$}] (10,7.5);
+	\draw (7.5,8.5) to[american controlled current source,l={ \small $g_mv_{gs}$}] (7.5,7.5);
+	\draw (7.5,8.5) to[L,l={ \small $L_1$} ] (7.5,9.5);
+	\draw (10,7.5) to (10,7.25) node[ground]{};
+	\draw (7.5,9.5) to (7.75,9.5) node[ground]{};
+	\draw (10,8.5) to[short, -o] (10.5,8.5) node[right] {$v_\mrm{out}$};
+	\draw (7.5,6.5) to (7.5,6.25) node[ground]{};
+	\draw (8.75,6.5) to (8.75,6.25) node[ground]{};
+}
 
 
 
